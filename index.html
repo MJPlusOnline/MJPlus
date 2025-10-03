@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>MJ+ Intro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html,body{margin:0;height:100%;background:#000;overflow:hidden}
+    #introVideo{width:100%;height:100%;object-fit:cover;display:block;background:#000}
+  </style>
+</head>
+<body>
+  <!-- Passe den Dateinamen an, falls du anders exportiert hast -->
+  <video id="introVideo" autoplay playsinline muted>
+    <source src="Intro_1080p_main_faststart.mp4" type="video/mp4">
+    Dein Gerät unterstützt kein HTML5 Video.
+  </video>
+  <script>
+    const HOME = "home.html";
+    const SEEN_KEY = "mjplus_intro_seen_session";
+
+    // Intro nur 1× pro Session
+    if (sessionStorage.getItem(SEEN_KEY) === "1") {
+      location.replace(HOME);
+    }
+
+    const v = document.getElementById('introVideo');
+
+    // Autoplay robust: erst mit Ton probieren, sonst muted
+    v.muted = false;
+    v.play().catch(()=>{ v.muted = true; v.play().catch(()=>{}); });
+
+    function endIntro() {
+      try { sessionStorage.setItem(SEEN_KEY, "1"); } catch(e){}
+      location.replace(HOME);
+    }
+
+    // Ende -> Home
+    v.addEventListener('ended', endIntro);
+
+    // Skip: beliebige Taste, Klick, Touch
+    const skip = e => { e && e.preventDefault && e.preventDefault(); endIntro(); };
+    document.addEventListener('keydown', skip, {passive:false});
+    document.addEventListener('click',   skip, {passive:false});
+    document.addEventListener('touchstart', skip, {passive:false});
+  </script>
+</body>
+</html>

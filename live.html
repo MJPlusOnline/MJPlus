@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MJ+ – Live</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+  <style>
+    :root{
+      --accent:#e50914; --spaceX:clamp(14px,3vw,44px); --spaceY:clamp(12px,2.2vw,28px);
+      --logoH:clamp(70px,9vh,110px); --navFS:clamp(11px,.95vw,15px); --h2FS:clamp(16px,1.2vw,20px);
+      --tileW:clamp(120px,10vw,170px); --gap:clamp(10px,1.2vw,16px);
+    }
+    *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+    html,body{height:100%}
+    body{margin:0;background:#000;color:#fff;font:clamp(13px,1vw,16px)/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;overflow-x:hidden}
+    a{color:inherit;text-decoration:none} :focus,:focus-visible{outline:0}
+    header{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;
+      padding:10px var(--spaceX);background:#000d;border-bottom:1px solid #ffffff14;backdrop-filter:saturate(1.15) blur(4px)}
+    .logo{height:var(--logoH);display:block}
+    nav{display:flex;gap:clamp(8px,.8vw,12px);align-items:center;white-space:nowrap}
+    nav a, .nav-btn{color:#fff;font-size:var(--navFS);text-transform:uppercase;font-weight:800;letter-spacing:.04em;
+      padding:4px 8px;border-radius:6px;transition:transform .16s,color .16s,text-shadow .16s;background:none;border:0;cursor:pointer}
+    nav a:hover,nav a:focus-visible,.nav-btn:hover,.nav-btn:focus-visible{transform:scale(1.06);color:var(--accent);text-shadow:0 0 10px rgba(229,9,20,.55)}
+    nav a.active{color:var(--accent);text-shadow:0 0 10px rgba(229,9,20,.55)}
+    /* Make SEARCH stand out */
+    #openSearch{background:var(--accent);border:1px solid var(--accent);color:#fff;padding:6px 12px;border-radius:10px}
+    #openSearch:hover,#openSearch:focus-visible{transform:scale(1.06);filter:brightness(1.08)}
+    .menu-spacer{height:8px}
+    .section{padding:var(--spaceY) var(--spaceX)} .section h2{font-size:var(--h2FS);margin:0 0 10px 6px}
+    .filters{display:flex;gap:10px;align-items:center;padding:0 var(--spaceX)}
+    .filter-btn{background:#000;color:#fff;border:1px solid #ffffff33;cursor:pointer;
+      padding:6px 12px;border-radius:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;
+      transition:color .15s,border-color .15s,transform .15s,box-shadow .15s}
+    .filter-btn:hover,.filter-btn:focus-visible{color:var(--accent);border-color:var(--accent);box-shadow:0 0 10px rgba(229,9,20,.45);transform:scale(1.03)}
+    .filter-btn.active{color:#fff;background:var(--accent);border-color:var(--accent)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--tileW),1fr));gap:var(--gap);padding:var(--spaceY) var(--spaceX)}
+    .tile{position:relative;background:none;border:0;padding:0;cursor:pointer;transition:transform .18s ease;width:var(--tileW)}
+    .tile img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:12px;display:block;box-shadow:0 2px 6px #000a}
+    .tile::after{content:"";position:absolute;inset:-10px;border-radius:14px;
+      background:radial-gradient(ellipse at center, rgba(229,9,20,.35) 0%, rgba(229,9,20,.18) 36%, transparent 70%);
+      filter:blur(14px);opacity:0;transition:opacity .18s}
+    .tile:hover,.tile:focus-visible{transform:scale(1.06)} .tile:hover::after,.tile:focus-visible::after{opacity:1}
+    .badge{position:absolute;top:6px;right:6px;font-weight:900;font-size:11px;letter-spacing:.06em;
+      padding:4px 6px;border-radius:8px;background:#e50914;color:#fff;box-shadow:0 2px 10px #000c}
+
+    /* Search overlay */
+    #searchModal{position:fixed;inset:0;display:none;z-index:120;align-items:center;justify-content:center;background:rgba(0,0,0,.7)}
+    .search-card{width:min(95vw,980px);max-height:85vh;background:#111;border-radius:14px;box-shadow:0 10px 40px #000c;display:flex;flex-direction:column;overflow:hidden}
+    .search-head{display:flex;gap:10px;align-items:center;padding:12px;border-bottom:1px solid #ffffff14}
+    .search-field{position:relative;flex:1;display:flex}
+    .search-input{flex:1;background:#000;border:1px solid #ffffff33;border-radius:10px;color:#fff;padding:10px 40px 10px 12px;font-weight:700;letter-spacing:.02em}
+    .search-x{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:#000;border:1px solid #ffffff33;border-radius:50%;width:28px;height:28px;color:#fff;font-weight:900;cursor:pointer}
+    .search-btn{background:#e50914;border:0;color:#fff;padding:10px 14px;border-radius:10px;font-weight:800;letter-spacing:.04em;cursor:pointer}
+    .search-body{padding:12px;overflow:auto}
+    .search-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--tileW),1fr));gap:var(--gap)}
+  </style>
+</head>
+<body data-page="live">
+  <header>
+    <img src="logo.png" alt="MJ+ Logo" class="logo">
+    <nav id="mainNav" aria-label="Main menu">
+      <a href="home.html" tabindex="0" data-nav>Home</a>
+      <a href="live.html" class="active" tabindex="0">Live</a>
+      <a href="tv-appearances.html" tabindex="0" data-nav>TV Appearances</a>
+      <a href="interviews.html" tabindex="0" data-nav>Interviews</a>
+      <a href="documentaries.html" tabindex="0" data-nav>Documentaries</a>
+      <a href="short-films.html" tabindex="0" data-nav>Short Films</a>
+      <a href="jacksons.html" tabindex="0" data-nav>The Jacksons</a>
+      <button id="openSearch" class="nav-btn" tabindex="0" aria-haspopup="dialog">Search</button>
+    </nav>
+  </header>
+  <div class="menu-spacer"></div>
+
+  <main id="appMain" aria-live="polite">
+    <section class="section">
+      <h2>Filter</h2>
+      <div id="filterBar" class="filters">
+        <button class="filter-btn active" data-filter="all" tabindex="0">All</button>
+        <button class="filter-btn" data-filter="pro" tabindex="0">PRO</button>
+        <button class="filter-btn" data-filter="am" tabindex="0">AM.</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Live Concerts</h2>
+      <div id="grid" class="grid"></div>
+    </section>
+  </main>
+
+  <!-- Search Overlay -->
+  <div id="searchModal" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+    <div class="search-card">
+      <div class="search-head">
+        <div class="search-field">
+          <input id="searchInput" class="search-input" type="search" placeholder="Search all titles…" />
+          <button id="searchX" class="search-x" aria-label="Clear and close">×</button>
+        </div>
+        <button id="searchClose" class="search-btn" style="background:#000;border:1px solid #ffffff33">Close</button>
+        <button id="searchGo" class="search-btn">Search</button>
+      </div>
+      <div class="search-body">
+        <div id="searchGrid" class="search-grid"></div>
+      </div>
+    </div>
+  </div>
+
+<script src="player.js?v=1.0.3"></script>
+<script src="catalog.js?v=1.0.3"></script>
+  <script>
+    window.MJPLUS?.initLive?.();
+    window.MJPLUS?.initSearchUI?.(); // enable search on this page
+  </script>
+</body>
+</html>
