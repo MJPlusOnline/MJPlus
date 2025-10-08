@@ -1,0 +1,81 @@
+/* mobile.css – nur aktiv bei (max-width: 768px) */
+
+/* Grundlayout */
+header {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  position: relative;
+}
+
+/* Menü verstecken standardmäßig */
+header nav {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #000;
+  border-top: 1px solid #222;
+  padding: 10px 0;
+  z-index: 50;
+}
+
+/* sichtbarer Zustand */
+header.nav-open nav {
+  display: flex;
+}
+
+/* Menütoggle-Button (☰) */
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 32px; /* größer für Touch */
+  font-weight: 700;
+  cursor: pointer;
+  margin: 8px auto 4px auto; /* zentriert unter dem Logo */
+}
+
+/* Logo kleiner */
+.logo {
+  height: 60px;
+}
+
+/* Search-Button kompakter */
+#openSearch {
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+/* Menülinks im Dropdown */
+header nav a, header nav .nav-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 0;
+  transition: background .2s;
+}
+header nav a:hover, header nav .nav-btn:hover {
+  background: rgba(255,255,255,0.08);
+}
+/* Grid auf Mobil: immer 4 Spalten */
+.grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  justify-items: center;
+}
+
+/* Falls Thumbnails abgeschnitten waren */
+.tile, .thumb-wrap, .thumb {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
