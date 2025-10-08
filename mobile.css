@@ -1,0 +1,136 @@
+/* mobile.css – nur aktiv bei (max-width: 768px) */
+@media (max-width: 768px){
+
+  /* --- Grundlagen --- */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: rgba(0,0,0,.85);
+    backdrop-filter: saturate(1.1) blur(4px);
+  }
+
+  /* Logo kleiner + mittig */
+  .logo {
+    height: 64px !important;
+    margin: 4px auto 0 auto;
+    display: block;
+  }
+
+  /* --- Hamburger (☰) unter dem Logo --- */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 28px;      /* groß genug für Touch */
+    line-height: 1;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 6px auto 0 auto;  /* mittig unter dem Logo */
+  }
+
+  /* --- Dropdown-Navigation --- */
+  header nav {
+    width: 100%;
+    max-width: 520px;
+    margin: 8px auto 0 auto;
+    display: block;             /* Block fürs Container-Layout */
+    overflow: hidden;           /* für Smooth-Open per max-height */
+    max-height: 0;              /* standardmäßig zu */
+    transition: max-height .28s ease;
+    border: 1px solid #ffffff14;
+    border-radius: 12px;
+    background: #000a;
+  }
+  header.nav-open nav {
+    max-height: 60vh;           /* aufgeklappt */
+  }
+
+  /* Links im Dropdown – einspaltig */
+  header nav a,
+  header nav .nav-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 14px;
+    font-size: 14px;
+    border-radius: 0;
+    border-bottom: 1px solid #ffffff14;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  header nav a:last-child,
+  header nav .nav-btn:last-child {
+    border-bottom: 0;
+  }
+
+  /* Suche gern etwas kompakter */
+  #openSearch {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  /* --- Grids/Kacheln: immer 4 pro Reihe --- */
+
+  /* Home/Live (.grid-basiert) */
+  .grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 10px;
+    align-items: start;
+  }
+  .tile {
+    width: 100% !important;     /* überschreibt var(--tileW) vom Desktop */
+  }
+  /* Poster-Bilder im 2:3-Verhältnis (Home/Live) */
+  .tile img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Continue-Row: von horizontaler Leiste → 4er-Grid */
+  .continue-row {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 10px;
+    overflow: visible !important;
+    padding: 8px 0;
+  }
+  .continue-row .tile {
+    flex: initial !important;
+    width: 100% !important;
+  }
+
+  /* Short-Films-Seite (16:9 Kacheln) */
+  .thumb-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 6px #000a;
+  }
+  .thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: #111;
+    transform: translateZ(0);
+  }
+
+}
