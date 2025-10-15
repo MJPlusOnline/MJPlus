@@ -149,19 +149,33 @@ footer{
     })();
   </script>
 
-  <header>
-    <img src="logo.png" alt="MJ+ Logo" class="logo">
-    <nav>
-      <a href="home.html" data-nav>Home</a>
-      <a href="live.html" data-nav>Live</a>
-      <a href="tv-appearances.html" data-nav>TV Appearances</a>
-      <a href="interviews.html" data-nav>Interviews</a>
-      <a href="documentaries.html" data-nav>Documentaries</a>
-      <a href="short-films.html" class="active" data-nav>Short Films</a>
-      <a href="jacksons.html" data-nav>The Jacksons</a>
-    </nav>
+   <header>
+   <img src="logo.png" alt="MJ+ Logo" class="logo">
+<nav aria-label="Main menu">
+  <a href="home.html" tabindex="0" data-nav>Home</a>
+  <a href="live.html" tabindex="0" data-nav>Live</a>
+  <a href="tv-appearances.html" tabindex="0" data-nav>TV Appearances</a>
+  <a href="short-films.html" class="active" tabindex="0" data-nav>Short Films</a>
+  <a href="jacksons.html" tabindex="0" data-nav>The Jacksons</a>
+  <a href="feedback.html" tabindex="0" data-nav>Feedback</a>
+  <button id="openSearch" class="nav-btn" tabindex="-1" aria-disabled="true" 
+  style="
+    background:#333;
+    border:1px solid #444;
+    color:#888;
+    cursor:default;
+    pointer-events:none;
+    border-radius:6px;
+    padding:4px 8px;
+    font-weight:800;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    opacity:0.8;
+  ">
+  Search
+</button>
+</nav>
   </header>
-
   <div class="menu-spacer"></div>
 
   <main class="section">
