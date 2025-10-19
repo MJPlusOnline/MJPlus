@@ -2124,6 +2124,35 @@ window.catalog = [
     }
   ]
 },
+  {
+  id: 'hockenheim97',
+  title: 'Hockenheim, Germany August 3, 1997',
+  category: ['Live'],
+  tier: 'am',
+  poster: 'hockenheim97.jpg',
+  versions: [
+    {
+      key: 'original',
+      label: 'Original',
+      type: 'mp4',
+      mp4: 'https://mjtvplus.com/0/Hockenheim_1997_merged_lossless.mp4',
+      chapters: [
+        { label: 'PLAY ALL', sec: 0 },
+        { label: 'INTRO', sec: 114 },                     // 01:54
+        { label: "WANNA BE STARTIN' SOMETHIN'", sec: 148 },// 02:28
+        { label: 'BILLIE JEAN (ENDING)', sec: 320 },       // 05:20
+        { label: 'THRILLER', sec: 391 },                   // 06:31
+        { label: 'BEAT IT', sec: 810 },                    // 13:30
+        { label: 'BLOOD ON THE DANCE FLOOR', sec: 1350 },  // 22:30
+        { label: 'DANGEROUS', sec: 1690 },                 // 28:10
+        { label: 'BLACK OR WHITE', sec: 1957 },            // 32:37
+        { label: 'EARTH SONG', sec: 2351 },                // 39:11
+        { label: 'HEAL THE WORLD', sec: 3120 },            // 52:00
+        { label: 'HISTORY', sec: 3812 }                    // 01:03:32
+      ]
+    }
+  ]
+},
 {
   id: 'gelsenkirchen97',
   title: 'AM. Gelsenkirchen, Germany June 15, 1997',
@@ -2158,6 +2187,90 @@ window.catalog = [
         { label: 'EARTH SONG', sec: 6224 },
         { label: 'HEAL THE WORLD', sec: 6988 },
         { label: 'HISTORY', sec: 7642 }
+      ]
+    }
+  ]
+},
+  {
+  id: 'memphis81',
+  title: 'Memphis, Tennessee 1981',
+  category: ['The Jacksons', 'Live'],
+  tier: 'pro',
+  poster: 'memphis81.jpg',
+  versions: [
+    {
+      key: 'original',
+      label: 'Original',
+      type: 'mp4',
+      mp4: 'https://mjtvplus.com/0/%5b1981.7.8%5d%20Memphis_One%20Camera.mp4',
+      chapters: [
+        { label: 'PLAY ALL', sec: 0 },
+        { label: 'INTRO', sec: 0 },
+        { label: 'CAN YOU FEEL IT', sec: 136 },             // 2:16
+        { label: 'THINGS I DO FOR YOU', sec: 372 },         // 6:12
+        { label: 'OFF THE WALL', sec: 590 },                // 9:50
+        { label: 'BEN', sec: 785 },                         // 13:05
+        { label: 'THIS PLACE HOTEL', sec: 1003 },           // 16:43
+        { label: "SHE'S OUT OF MY LIFE", sec: 1290 }        // 21:30
+      ]
+    },
+    {
+      key: 'enhanced',
+      label: 'Enhanced (soon)',
+      type: 'mp4',
+      mp4: '',
+      upcoming: true
+    }
+  ]
+},
+  {
+  id: 'basel97',
+  title: 'Basel, Switzerland June 8, 1997',
+  category: ['Live'],
+  tier: 'pro',
+  poster: 'basel97.jpg',
+  versions: [
+    {
+      key: 'pro',
+      label: 'PRO',
+      type: 'mp4',
+      mp4: 'https://mjtvplus.com/0/MJ%20-%201997%20Basel%20(Full%20Pro).mp4',
+      chapters: [
+        { label: 'PLAY ALL', sec: 0 },
+        { label: 'SCREAM', sec: 391 },                    // 6:31
+        { label: "THEY DON'T CARE ABOUT US", sec: 619 },  // 10:19
+        { label: 'IN THE CLOSET', sec: 786 },             // 13:06
+        { label: "WANNA BE STARTIN' SOMETHIN'", sec: 912 }, // 15:12
+        { label: 'STRANGER IN MOSCOW', sec: 1317 },       // 21:57
+        { label: 'SMOOTH CRIMINAL', sec: 1752 },          // 29:12
+        { label: 'YOU ARE NOT ALONE', sec: 2231 },        // 37:11
+        { label: 'THE JACKSON 5 MEDLEY', sec: 2699 },     // 44:59
+        { label: 'BILLIE JEAN', sec: 3624 },              // 1:00:24
+        { label: 'THRILLER', sec: 4156 },                 // 1:09:16
+        { label: 'BEAT IT', sec: 4544 },                  // 1:15:44
+        { label: 'BLOOD ON THE DANCE FLOOR', sec: 5101 }, // 1:25:01
+        { label: 'DANGEROUS', sec: 5590 },                // 1:33:10
+        { label: 'BLACK OR WHITE', sec: 5955 },           // 1:39:15
+        { label: 'EARTH SONG', sec: 6300 },               // 1:45:00
+        { label: 'HEAL THE WORLD', sec: 7088 },           // 1:58:08
+        { label: 'HISTORY', sec: 7929 }                   // 2:12:09
+      ]
+    },
+    {
+      key: 'am',
+      label: 'AM.',
+      type: 'mp4',
+      mp4: 'https://mjtvplus.com/0/basel%201997am.mp4',
+      chapters: [
+        { label: 'PLAY ALL', sec: 0 },
+        { label: 'SCREAM', sec: 0 },
+        { label: "THEY DON'T CARE ABOUT US", sec: 215 },   // 03:35
+        { label: 'IN THE CLOSET', sec: 390 },              // 06:30
+        { label: "WANNA BE STARTIN' SOMETHIN'", sec: 504 },// 08:24
+        { label: 'STRANGER IN MOSCOW', sec: 920 },         // 15:20
+        { label: 'SMOOTH CRIMINAL', sec: 1430 },           // 23:50
+        { label: 'YOU ARE NOT ALONE', sec: 1843 },         // 30:43
+        { label: 'J5 MEDLEY', sec: 2245 }                  // 37:25
       ]
     }
   ]
@@ -2224,7 +2337,6 @@ window.catalog = [
   { id:"mexico93",       title:"Mexico 93",     poster:"mexico93.jpg",      source:"", type:"hls", category:"live", tier:"am" },
   { id:"amsterdam96",    title:"Amsterdam 96",  poster:"amsterdam96.jpg",   source:"", type:"hls", category:"live", tier:"am" },
   { id:"tokyo97",        title:"Tokyo 97",      poster:"tokyo97.jpg",       source:"", type:"hls", category:"live", tier:"am" },
-  { id:"hockenheim97",   title:"Hockenheim 97", poster:"hockenheim97.jpg",  source:"", type:"hls", category:"live", tier:"am" },
 
   // --- Tour Reports ---
   { id:"badreports89",        title:"Bad Tour Report 1989",        poster:"badreports89.jpg",        source:"", type:"hls", category:"live", tier:"pro" },
