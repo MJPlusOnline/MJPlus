@@ -1575,7 +1575,7 @@ window.catalog = [
 {
   id: "livingwithmj",
   title: "Living with Michael Jackson (2003)",
-  poster: "livingwithmj2003.jpg",
+  poster: "livingwithmj2003.jpeg",
   type: "single",
   category: "tv",
   tier: "tv",
@@ -1785,6 +1785,40 @@ window.catalog = [
           source: "",
           mp4: ""
         }
+      ]
+    }
+  ]
+},
+  {
+  id: 'mexico75',
+  title: 'Mexico (1975)',
+  category: ['Live'],
+  tier: 'pro',
+  poster: 'mexico75.jpg',
+  versions: [
+    {
+      key: 'pro',
+      label: 'PRO',
+      type: 'mp4',
+      mp4: 'https://mjtvplus.com/0/Moving_Violation_Tour_1975_Merged_Lossless.mp4',
+      chapters: [
+        { label: 'PLAY ALL', sec: 0 },
+        { label: '(YOU WERE MADE) ESPECIALLY FOR ME', sec: 0 },        // 0:00
+        { label: "IT'S TOO LATE TO CHANGE THE TIME", sec: 201 },       // 3:21
+        { label: 'NEVER CAN SAY GOODBYE', sec: 360 },                   // 6:00
+        { label: "PAPA WAS A ROLLIN' STONE", sec: 471 },               // 7:51
+        { label: 'HAPPY', sec: 746 },                                   // 12:26
+        { label: 'I AM LOVE', sec: 1015 },                              // 16:55
+        { label: "ROCKIN' ROBIN", sec: 1506 },                          // 25:06
+        { label: 'THE LIFE OF THE PARTY', sec: 1637 },                  // 27:17
+        { label: 'FOREVER CAME TODAY', sec: 1826 },                     // 30:26
+        { label: 'MUSIC AND ME', sec: 2101 },                           // 35:01
+        { label: 'BEN', sec: 2264 },                                    // 37:44
+        { label: "I'LL BE THERE", sec: 2445 },                          // 40:45
+        { label: 'MEDLEY: I WANT YOU BACK / ABC / THE LOVE YOU SAVE', sec: 2577 }, // 42:57
+        { label: 'ONE DAY IN YOUR LIFE', sec: 3181 },                   // 53:01
+        { label: 'DANCING MACHINE', sec: 3507 },                        // 58:27
+        { label: 'BODY LANGUAGE (DO THE LOVE DANCE)', sec: 3857 }       // 1:04:17
       ]
     }
   ]
