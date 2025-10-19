@@ -1575,7 +1575,7 @@ window.catalog = [
 {
   id: "livingwithmj",
   title: "Living with Michael Jackson (2003)",
-  poster: "livingwithmj2003.jpeg",
+  poster: "livingwithmj2003.jpg",
   type: "single",
   category: "tv",
   tier: "tv",
