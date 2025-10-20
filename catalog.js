@@ -41,6 +41,43 @@ window.catalog = [
       ]
     },
     {
+  id: 'tvperformances',
+  title: 'TV Performances',
+  poster: "tvperformances",
+  category: ['TV Appearances'],
+  tier: 'TV',
+  poster: 'tvperformances.jpg',
+  versions: [
+    {
+      key: 'collection',
+      label: 'Collection',
+      type: 'list',
+      chapters: [
+        { label: 'PLAY ALL', sec: 0 },
+        { label: 'DISNEY MEDLEY (1979)', link: 'https://mjtvplus.com/0/DisneyMedley79.mp4' },
+        { label: 'ROCK WITH YOU (1979 THE DIANA ROSS SHOW)', link: '' }, // soon
+        { label: 'ROCK WITH YOU (1980 BECAUSE WE CARE GALA)', link: 'https://mjtvplus.com/0/Rock%20With%20You%20¦%20Because%20We%20Care%20Gala,%201980%20.mp4' },
+        { label: 'ROCK WITH YOU / EASE ON DOWN (1981 DIANA ROSS)', link: 'https://mjtvplus.com/0/DianaCBS81_1.mp4' },
+        { label: 'YOU WERE THERE (1990 SAMMY DAVIS JR. 60TH ANNIVERSARY)', link: 'https://mjtvplus.com/0/MJ%20-%201990%20You%20Were%20There%204K%20Upscale%20(No%20Logo).mp4' },
+        { label: 'BLACK OR WHITE / WILL YOU BE THERE (1991 MTV 10TH ANNIVERSARY)', link: 'https://mjtvplus.com/0/%5b1991.06.06%5d%20MTV\'s%2010th%20Anniversary%20Special%20-%20Black%20Or%20White,%20Will%20You%20Be%20There.mp4' },
+        { label: 'GONE TOO SOON / HEAL THE WORLD (1992 ROYAL CONCERT FOR AIDS)', link: 'https://mjtvplus.com/0/%5b1992.01.20%5d%20Clinton\'s%20Inaugural%20Gala%20-%20Gone%20Too%20Soon,%20Heal%20The%20World.mp4' },
+        { label: 'DANGEROUS (1993 AMA\'S)', link: 'https://mjtvplus.com/0/dangerous93_4x3_lossless.mp4' },
+        { label: 'REMEMBER THE TIME (1993 SOUL TRAIN MUSIC AWARDS)', link: '' }, // soon
+        { label: 'DANGEROUS (1995 WETTEN DASS...?)', link: 'https://mjtvplus.com/0/Wetten%20Dass%201995%20-%20Dangerous%20(ZDF%20logo%20removed).mp4' },
+        { label: 'EARTH SONG (1995 WETTEN DASS...?)', link: 'https://mjtvplus.com/0/%5b1995.11.4%5d%20Wetter%20Dass%20-%20Earth%20Song%20(no%20logo%20Version).mp4' },
+        { label: 'EARTH SONG (1996 BRIT AWARDS)', link: 'https://mjtvplus.com/0/Michael%20Jackson%20-%20Earth%20Song%20(1996%20Brit%20Awards%20Performance).mp4' },
+        { label: 'EARTH SONG (1996 VMA\'S)', link: 'https://mjtvplus.com/0/Earth%20Song%20VMA96.mp4' },
+        { label: 'ELIZABETH, I LOVE YOU (1997 ELIZABETH TAYLOR CELEBRATION)', link: 'https://mjtvplus.com/0/%5b1997.02.16%5d%20Taylor\'s%2065th%20Birthday%20Gala%20-%20Elizabeth%20I%20Love%20You.mp4' },
+        { label: 'POP (FEAT. \'N SYNC) (2001 VMA\'S)', link: 'https://mjtvplus.com/0/NSYNC%20&%20Michael%20Jackson%20-%20Pop%20-%20MTV%20VMA%20(2001).mp4' },
+        { label: 'WHAT MORE CAN I GIVE (2001 WASHINGTON DC BENEFIT)', link: 'https://mjtvplus.com/0/%5b2001.10.21%5d%20United%20We%20Stand%20Concert%20-%20What%20More%20Can%20I%20Give.mp4' },
+        { label: 'DANGEROUS (2002 AMERICAN BANDSTAND 50TH ANNIVERSARY)', link: 'https://mjtvplus.com/0/%5b2002.05.03%5d%20American%20Bandstand\'s%2050th%20Anniversary%20Celebration%20-%20Dangerous.mp4' },
+        { label: 'DANGEROUS (2002 AT THE APOLLO)', link: 'https://mjtvplus.com/0/%5b2002.10.08%5d%20A%20Night%20At%20The%20Apollo%20-%20Dangerous%20(HQ%20Version).mp4' },
+        { label: 'WE ARE THE WORLD (2006 VMA\'S)', link: 'https://mjtvplus.com/0/WATW2006.mp4' }
+      ]
+    }
+  ]
+},
+    {
       key: "enhanced",
       label: "Enhanced",
       type: "mp4",
