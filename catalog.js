@@ -43,7 +43,7 @@ window.catalog = [
     {
   id: 'tvperformances',
   title: 'TV Performances',
-  poster: "tvperformances",
+  poster: "tvperformances.jpg",
   category: ['TV Appearances'],
   tier: 'TV',
   poster: 'tvperformances.jpg',
