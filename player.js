@@ -934,6 +934,7 @@ function mountGlowBackdrop() {
       return 'special';
     }
     const tourMeta = {
+      early:{title:'The Early Years'},
       destiny:{title:'Destiny Tour (1979)'},
       triumph:{title:'Triumph Tour (1981)'},
       victory:{title:'Victory Tour (1984)'},
@@ -943,6 +944,7 @@ function mountGlowBackdrop() {
       special:{title:'Special Concerts'}
     }
 const tourLogo = {
+  early:     'teylogo.png',
   destiny:   'dtlogo.png',
   triumph:   'ttlogo.png',
   victory:   'vtlogo.png',
