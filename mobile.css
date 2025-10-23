@@ -1,0 +1,140 @@
+/* mobile.css – wird nur geladen bis 768px (über das media-Attribut im <link>) */
+
+/* Kleinere, dezente Badges auf Mobile (nur auf Kacheln) */
+.tile .badge{
+  top: 4px !important;
+  right: 4px !important;
+  font-size: 8.5px !important;
+  letter-spacing: .04em !important;
+  padding: 2px 4px !important;
+  border-radius: 5px !important;
+  transform: scale(0.9);
+  box-shadow: 0 1px 4px rgba(0,0,0,.45);
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(0,0,0,.85);
+  backdrop-filter: saturate(1.1) blur(4px);
+}
+
+/* Logo kleiner + mittig */
+.logo {
+  height: 64px !important;
+  margin: 4px auto 0 auto;
+  display: block;
+}
+
+/* Hamburger (☰) unter dem Logo */
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 28px;      /* groß genug für Touch */
+  line-height: 1;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 6px auto 0 auto;  /* mittig unter dem Logo */
+}
+
+/* Dropdown-Navigation (eingeklappt) */
+header nav {
+  width: 100%;
+  max-width: 520px;
+  margin: 8px auto 0 auto;
+  display: block;
+  overflow: hidden;
+  max-height: 0;              /* standardmäßig zu */
+  transition: max-height .28s ease;
+  border: 1px solid #ffffff14;
+  border-radius: 12px;
+  background: #000a;
+}
+
+/* aufgeklappt */
+header.nav-open nav {
+  max-height: 60vh;
+}
+
+/* Links im Dropdown – einspaltig */
+header nav a,
+header nav .nav-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 12px 14px;
+  font-size: 14px;
+  border-radius: 0;
+  border-bottom: 1px solid #ffffff14;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+header nav a:last-child,
+header nav .nav-btn:last-child {
+  border-bottom: 0;
+}
+
+/* Suchbutton etwas kompakter */
+#openSearch {
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+/* Grids/Kacheln */
+.grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 10px;
+  align-items: start;
+}
+.tile {
+  width: 100% !important;     /* überschreibt var(--tileW) vom Desktop */
+}
+.tile img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+/* Continue Watching: von horizontaler Leiste → 4er-Grid */
+.continue-row {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 10px;
+  overflow: visible !important;
+  padding: 8px 0;
+}
+.continue-row .tile {
+  flex: initial !important;
+  width: 100% !important;
+}
+
+/* Short-Films-Seite (16:9 Kacheln) */
+.thumb-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 6px #000a;
+}
+.thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #111;
+  transform: translateZ(0);
+}
