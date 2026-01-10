@@ -73,6 +73,183 @@ window.catalog = [
     }
   ]
 },
+ {
+  id: "osaka87",
+  title: "Osaka, Japan (1987)",
+  poster: "osaka87.jpg",
+  type: "multi",
+  category: "live",
+  tier: "pro",
+
+  versions: [
+    {
+      key: "original",
+      label: "Original",
+      type: "mp4",
+      source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Osaka%20OG%20File.mp4",
+      mp4: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Osaka%20OG%20File.mp4",
+      chapters: [
+        { sec:   0,  label: "PLAY ALL" },
+
+        { sec:  10,  label: "WANNA BE STARTIN' SOMETHIN'" },
+        { sec: 333,  label: "THINGS I DO FOR YOU" },
+        { sec: 543,  label: "OFF THE WALL" },
+        { sec: 764,  label: "HUMAN NATURE" },
+        { sec:1115,  label: "THIS PLACE HOTEL (HEARTBREAK HOTEL)" },
+        { sec:1417,  label: "SHE'S OUT OF MY LIFE" },
+
+        { sec:1670,  label: "JACKSON 5 MEDLEY" },
+        { sec:2060,  label: "ROCK WITH YOU" },
+        { sec:2295,  label: "LOVELY ONE" },
+
+        { sec:2765,  label: "THRILLER" },
+        { sec:3033,  label: "BAD" },
+        { sec:3393,  label: "BEAT IT" }
+      ]
+    },
+    {
+      key: "enhanced",
+      label: "Enhanced (coming soon)",
+      type: "mp4",
+      source: "",
+      mp4: "",
+      chapters: [
+        { sec:   0,  label: "PLAY ALL" },
+
+        { sec:  10,  label: "WANNA BE STARTIN' SOMETHIN'" },
+        { sec: 333,  label: "THINGS I DO FOR YOU" },
+        { sec: 543,  label: "OFF THE WALL" },
+        { sec: 764,  label: "HUMAN NATURE" },
+        { sec:1115,  label: "THIS PLACE HOTEL (HEARTBREAK HOTEL)" },
+        { sec:1417,  label: "SHE'S OUT OF MY LIFE" },
+
+        { sec:1670,  label: "JACKSON 5 MEDLEY" },
+        { sec:2060,  label: "ROCK WITH YOU" },
+        { sec:2295,  label: "LOVELY ONE" },
+
+        { sec:2765,  label: "THRILLER" },
+        { sec:3033,  label: "BAD" },
+        { sec:3393,  label: "BEAT IT" }
+      ]
+    }
+  ]
+},
+  
+    {
+      key: "enhanced",
+      label: "Enhanced (coming soon)",
+      type: "mp4",
+      source: "",
+      mp4: "",
+      chapters: [
+        { sec:    0, label: "PLAY ALL" },
+
+        { sec:   12, label: "WANNA BE STARTIN' SOMETHIN'" },
+        { sec:  325, label: "THINGS I DO FOR YOU" },
+        { sec:  541, label: "OFF THE WALL" },
+        { sec:  759, label: "HUMAN NATURE" },
+        { sec: 1101, label: "THIS PLACE HOTEL (HEARTBREAK HOTEL)" },
+        { sec: 1421, label: "SHE'S OUT OF MY LIFE" },
+
+        { sec: 1644, label: "JACKSON 5 MEDLEY" },
+        { sec: 2036, label: "ROCK WITH YOU" },
+        { sec: 2265, label: "LOVELY ONE" },
+
+        // WORKING DAY AND NIGHT – nicht klickbar / kein genauer Timestamp
+
+        { sec: 2591, label: "BEAT IT" },
+        { sec: 3013, label: "BILLIE JEAN" },
+        { sec: 3408, label: "SHAKE YOUR BODY (DOWN TO THE GROUND)" },
+        { sec: 4202, label: "THRILLER" },
+        { sec: 4539, label: "I JUST CAN'T STOP LOVING YOU (INCOMPLETE)" },
+        { sec: 4633, label: "BAD" }
+      ]
+    }
+  ]
+},
+{
+  id: "tokyo87",
+  title: "Tokyo, Japan (September 12 & 13, 1987)",
+  poster: "tokyo87.jpg",
+  type: "bundle",
+  category: "live",
+  tier: "pro",
+
+  defaultRecording: "1987-09-12",
+
+  recordings: [
+    {
+      key: "1987-09-12",
+      label: "September 12, 1987",
+      chapters: [
+        { label: "PLAY ALL", sec: 0 },
+
+        { label: "WANNA BE STARTIN' SOMETHIN'", sec: 0 },
+        { label: "THINGS I DO FOR YOU", sec: 325 },
+        { label: "OFF THE WALL", sec: 534 },
+        { label: "HUMAN NATURE", sec: 792 },
+        { label: "THIS PLACE HOTEL (HEARTBREAK HOTEL)", sec: 1066 },
+        { label: "SHE'S OUT OF MY LIFE", sec: 1421 },
+
+        { label: "I WANT YOU BACK", sec: 1678 },
+        { label: "THE LOVE YOU SAVE", sec: 1749 },
+        { label: "I'LL BE THERE", sec: 1809 },
+
+        { label: "ROCK WITH YOU", sec: 2051 },
+        { label: "LOVELY ONE", sec: 2294 },
+        { label: "WORKING DAY AND NIGHT", sec: 2655 },
+        { label: "BEAT IT", sec: 3052 }
+      ],
+      versions: [
+        {
+          key: "main",
+          label: "Full Show",
+          type: "mp4",
+          source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Tokyo%20%2812th%29%20OG%20File.mp4",
+          mp4:    "https://videos.mjplus.online/MJPlus/Bad%20Tour/Tokyo%20%2812th%29%20OG%20File.mp4"
+        }
+      ]
+    },
+   {
+      key: "1987-09-13",
+      label: "September 13, 1987",
+      chapters: [
+        { label: "PLAY ALL", sec: 0 },
+
+        { label: "WANNA BE STARTIN' SOMETHIN'", sec: 43 },
+        { label: "THINGS I DO FOR YOU", sec: 368 },
+        { label: "OFF THE WALL", sec: 580 },
+        { label: "HUMAN NATURE", sec: 827 },
+        { label: "THIS PLACE HOTEL (HEARTBREAK HOTEL)", sec: 1118 },
+        { label: "SHE'S OUT OF MY LIFE", sec: 1468 },
+
+        { label: "I WANT YOU BACK", sec: 1708 },
+        { label: "THE LOVE YOU SAVE", sec: 1778 },
+        { label: "I'LL BE THERE", sec: 1838 },
+
+        { label: "ROCK WITH YOU", sec: 2095 },
+        { label: "LOVELY ONE", sec: 2341 },
+        { label: "BAD GROOVE INTERLUDE", sec: 2737 },
+        { label: "WORKING DAY AND NIGHT", sec: 2906 },
+        { label: "BEAT IT", sec: 3323 },
+        { label: "BILLIE JEAN", sec: 3738 },
+        { label: "SHAKE YOUR BODY (DOWN TO THE GROUND)", sec: 4075 },
+        { label: "THRILLER", sec: 4774 },
+        { label: "I JUST CAN'T STOP LOVING YOU", sec: 5051 },
+        { label: "BAD", sec: 5458 }
+      ],
+      versions: [
+        {
+          key: "main",
+          label: "Full Show",
+          type: "mp4",
+          source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/1987-9-13%20Tokyo%20%28silver%29.mp4",
+          mp4:    "https://videos.mjplus.online/MJPlus/Bad%20Tour/1987-9-13%20Tokyo%20%28silver%29.mp4"
+        }
+      ]
+    }
+  ]
+},
 {
   id: 'tvperformances',
   title: 'TV Performances 1979–2006',
