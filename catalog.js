@@ -101,11 +101,11 @@ window.catalog = [
         { label: 'EARTH SONG (1996 BRIT AWARDS)', link: 'https://mjtvplus.com/0/Michael%20Jackson%20-%20Earth%20Song%20(1996%20Brit%20Awards%20Performance).mp4' },
         { label: "EARTH SONG (1996 VMA'S)", link: 'https://mjtvplus.com/0/Earth%20Song%20VMA96.mp4' },
         { label: "ELIZABETH, I LOVE YOU (1997 ELIZABETH TAYLOR CELEBRATION)", link: "https://mjtvplus.com/0/%5b1997.02.16%5d%20Taylor's%2065th%20Birthday%20Gala%20-%20Elizabeth%20I%20Love%20You.mp4" },
-        { label: "POP (FEAT. 'N SYNC) (2001 VMA'S)", link: 'https://mjtvplus.com/0/NSYNC%20&%20Michael%20Jackson%20-%20Pop%20-%20MTV%20VMA%20(2001).mp4' },
+        { label: "POP (FEAT. 'N SYNC) (2001 VMA'S)", link: 'https://videos.mjplus.online/MJPlus/TV/NSYNC%20%26%20Michael%20Jackson%20-%20Pop%20-%20MTV%20VMA%20%282001%29.mp4' },
         { label: 'WHAT MORE CAN I GIVE (2001 WASHINGTON DC BENEFIT)', link: 'https://mjtvplus.com/0/%5b2001.10.21%5d%20United%20We%20Stand%20Concert%20-%20What%20More%20Can%20I%20Give.mp4' },
         { label: "DANGEROUS (2002 AMERICAN BANDSTAND 50TH ANNIVERSARY)", link: "https://mjtvplus.com/0/%5b2002.05.03%5d%20American%20Bandstand's%2050th%20Anniversary%20Celebration%20-%20Dangerous.mp4" },
         { label: 'DANGEROUS (2002 AT THE APOLLO)', link: 'https://mjtvplus.com/0/%5b2002.10.08%5d%20A%20Night%20At%20The%20Apollo%20-%20Dangerous%20(HQ%20Version).mp4' },
-        { label: "WE ARE THE WORLD (2006 VMA'S)", link: 'https://mjtvplus.com/0/WATW2006.mp4' }
+        { label: "WE ARE THE WORLD (2006 VMA'S)", link: 'https://videos.mjplus.online/MJPlus/TV/WATW2006.mp44' }
       ]
     }
   ]
@@ -400,8 +400,8 @@ window.catalog = [
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "https://mjtvplus.com/0/Yokohama.%20Another%20Day..mp4",
-          mp4:    "https://mjtvplus.com/0/Yokohama.%20Another%20Day..mp4"
+          source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Yokohama.%20Another%20Day..mp4",
+          mp4:    "https://videos.mjplus.online/MJPlus/Bad%20Tour/Yokohama.%20Another%20Day..mp4"
         }
       ]
     }
@@ -633,8 +633,8 @@ window.catalog = [
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "https://mjtvplus.com/0/MJ%20-%202001%2030th%20Anniversary%20(HD).mp4",
-          mp4:    "https://mjtvplus.com/0/MJ%20-%202001%2030th%20Anniversary%20(HD).mp4"
+          source: "https://videos.mjplus.online/MJPlus/Special%20Performances/MJ%20-%202001%2030th%20Anniversary%20%28HD%29.mp4",
+          mp4:    "https://videos.mjplus.online/MJPlus/Special%20Performances/MJ%20-%202001%2030th%20Anniversary%20%28HD%29.mp4"
         },
         {
           key: "enhanced",
@@ -2150,15 +2150,15 @@ window.catalog = [
           key: "english",
           label: "English",
           type: "mp4",
-          source: "https://mjtvplus.com/0/opraheng.mp4",
-          mp4: "https://mjtvplus.com/0/opraheng.mp4"
+          source: "https://videos.mjplus.online/MJPlus/TV/opraheng.mp4",
+          mp4: "https://videos.mjplus.online/MJPlus/TV/opraheng.mp4"
         },
         {
           key: "german",
           label: "German",
           type: "mp4",
-          source: "https://mjtvplus.com/0/oprahgerm.mp4",
-          mp4: "https://mjtvplus.com/0/oprahgerm.mp4"
+          source: "https://videos.mjplus.online/MJPlus/TV/oprahgerm.mp4",
+          mp4: "https://videos.mjplus.online/MJPlus/TV/oprahgerm.mp4"
         }
       ]
     }
@@ -2521,7 +2521,7 @@ window.catalog = [
   // --- Interviews (sichtbar auf Home + Interviews, nicht unter Live) ---
   { id:"barbarawalters97",      title:"Barbara Walters Interview (1997)", poster:"barbarawalters97.jpg",      source:"https://mjtvplus.com/0/Barbara%20Walters.mp4",                             type:"mp4", category:["interviews","home"], tier:"interview" },
   { id:"commemorated2010",      title:"Michael Jackson Commemorated (2010)", poster:"commemorated2010.jpg",    source:"https://mjtvplus.com/0/2010%20Commemorated_stream.mp4",                   type:"mp4", category:["interviews","home"], tier:"doc" },
-  { id:"oprahouttakes93",       title:"Oprah Interview – Outtakes (1993)",  poster:"oprahouttakes93.jpg",      source:"https://mjtvplus.com/0/1995%20-%20Oprah%20Outtakes%20(merged).mp4",       type:"mp4", category:["interviews","home"], tier:"tv" },
+  { id:"oprahouttakes93",       title:"Oprah Interview – Outtakes (1993)",  poster:"oprahouttakes93.jpg",      source:"https://videos.mjplus.online/MJPlus/TV/1995%20-%20Oprah%20Outtakes%20%28merged%29.mp4",       type:"mp4", category:["interviews","home"], tier:"tv" },
   { id:"privatehomemovies2003", title:"Michael Jackson: Private Home Movies (2003)", poster:"privatehomemovies2003.jpg", source:"https://mjtvplus.com/0/Michael%20Jackson%20Private%20Home%20Movies.mp4", type:"mp4", category:["interviews","home"], tier:"tv" },
   { id:"taketwo2003",           title:"Take Two – The Footage You Were Never Meant to See (2003)", poster:"taketwo2003.jpg", source:"https://mjtvplus.com/0/Michael%20Jackson%20-%20Take%202%20(german,%20Jetzt%20rede%20ich).mp4", type:"mp4", category:["interviews","home"], tier:"doc" },
 
