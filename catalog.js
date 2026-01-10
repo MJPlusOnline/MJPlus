@@ -507,8 +507,8 @@ window.catalog = [
       versions: [
         { key: "original",  label: "Original",  type: "mp4", source: "", mp4: "" },
         { key: "enhanced",  label: "Enhanced",  type: "mp4",
-          source: "http://2.56.96.84/MJPlus/Bad%20Tour/Rome88%20(No%20Logo%20by%20Kai)%20SD.mp4",
-          mp4:    "http://2.56.96.84/MJPlus/Bad%20Tour/Rome88%20(No%20Logo%20by%20Kai)%20SD.mp4" }
+          source: "http://videos.mjplus.online/MJPlus/Bad%20Tour/Rome88%20(No%20Logo%20by%20Kai)%20SD.mp4",
+          mp4:    "http://videos.mjplus.online/MJPlus/Bad%20Tour/Rome88%20(No%20Logo%20by%20Kai)%20SD.mp4" }
       ]
     },
     {
