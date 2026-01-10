@@ -73,7 +73,7 @@ window.catalog = [
     }
   ]
 },
- {
+{
   id: "osaka87",
   title: "Osaka, Japan (1987)",
   poster: "osaka87.jpg",
@@ -86,27 +86,25 @@ window.catalog = [
       key: "original",
       label: "Original",
       type: "mp4",
-      source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Osaka%20OG%20File.mp4",
-      mp4: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Osaka%20OG%20File.mp4",
+      source: "",
+      mp4: "",
       chapters: [
-        { sec:   0,  label: "PLAY ALL" },
-
-        { sec:  10,  label: "WANNA BE STARTIN' SOMETHIN'" },
-        { sec: 333,  label: "THINGS I DO FOR YOU" },
-        { sec: 543,  label: "OFF THE WALL" },
-        { sec: 764,  label: "HUMAN NATURE" },
-        { sec:1115,  label: "THIS PLACE HOTEL (HEARTBREAK HOTEL)" },
-        { sec:1417,  label: "SHE'S OUT OF MY LIFE" },
-
-        { sec:1670,  label: "JACKSON 5 MEDLEY" },
-        { sec:2060,  label: "ROCK WITH YOU" },
-        { sec:2295,  label: "LOVELY ONE" },
-
-        { sec:2765,  label: "THRILLER" },
-        { sec:3033,  label: "BAD" },
-        { sec:3393,  label: "BEAT IT" }
+        { sec:   0, label: "PLAY ALL" },
+        { sec:  10, label: "WANNA BE STARTIN' SOMETHIN'" },
+        { sec: 333, label: "THINGS I DO FOR YOU" },
+        { sec: 543, label: "OFF THE WALL" },
+        { sec: 764, label: "HUMAN NATURE" },
+        { sec:1115, label: "THIS PLACE HOTEL (HEARTBREAK HOTEL)" },
+        { sec:1417, label: "SHE'S OUT OF MY LIFE" },
+        { sec:1670, label: "JACKSON 5 MEDLEY" },
+        { sec:2060, label: "ROCK WITH YOU" },
+        { sec:2295, label: "LOVELY ONE" },
+        { sec:2765, label: "THRILLER" },
+        { sec:3033, label: "BAD" },
+        { sec:3393, label: "BEAT IT" }
       ]
     },
+
     {
       key: "enhanced",
       label: "Enhanced (coming soon)",
@@ -114,25 +112,23 @@ window.catalog = [
       source: "",
       mp4: "",
       chapters: [
-        { sec:   0,  label: "PLAY ALL" },
-
-        { sec:  10,  label: "WANNA BE STARTIN' SOMETHIN'" },
-        { sec: 333,  label: "THINGS I DO FOR YOU" },
-        { sec: 543,  label: "OFF THE WALL" },
-        { sec: 764,  label: "HUMAN NATURE" },
-        { sec:1115,  label: "THIS PLACE HOTEL (HEARTBREAK HOTEL)" },
-        { sec:1417,  label: "SHE'S OUT OF MY LIFE" },
-
-        { sec:1670,  label: "JACKSON 5 MEDLEY" },
-        { sec:2060,  label: "ROCK WITH YOU" },
-        { sec:2295,  label: "LOVELY ONE" },
-
-        { sec:2765,  label: "THRILLER" },
-        { sec:3033,  label: "BAD" },
-        { sec:3393,  label: "BEAT IT" }
-       }
+        { sec:   0, label: "PLAY ALL" },
+        { sec:  10, label: "WANNA BE STARTIN' SOMETHIN'" },
+        { sec: 333, label: "THINGS I DO FOR YOU" },
+        { sec: 543, label: "OFF THE WALL" },
+        { sec: 764, label: "HUMAN NATURE" },
+        { sec:1115, label: "THIS PLACE HOTEL (HEARTBREAK HOTEL)" },
+        { sec:1417, label: "SHE'S OUT OF MY LIFE" },
+        { sec:1670, label: "JACKSON 5 MEDLEY" },
+        { sec:2060, label: "ROCK WITH YOU" },
+        { sec:2295, label: "LOVELY ONE" },
+        { sec:2765, label: "THRILLER" },
+        { sec:3033, label: "BAD" },
+        { sec:3393, label: "BEAT IT" }
       ]
-    },
+    }
+  ]
+},
    {
   id: "tokyo87",
   title: "Tokyo, Japan (September 12 & 13, 1987)",
