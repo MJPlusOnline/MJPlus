@@ -186,29 +186,14 @@ function mountGlowBackdrop() {
     closeXBtn.addEventListener('click', () => {
   stopPlayback();
 
-  // Nur dann Setlist anzeigen, wenn das aktuelle Video eine eigene oder zugehörige Setlist hat
-  if (currentItem) {
-    // prüfe, ob currentItem selbst eine Setlist hat
-    const hasOwnSetlist =
-      (Array.isArray(currentItem.chapters) && currentItem.chapters.length > 0);
+const root = getCatalogRoot(currentItem);
 
-    // oder ob es zu einer Collection gehört
-    const parentSetlist = currentItem.groupId
-      ? (window.catalog || []).find(x => x.id === currentItem.groupId)
-      : null;
-
-    if (hasOwnSetlist) {
-      showSetlist(currentItem);
-      NavStack.markSetlist(true);
-    } else if (parentSetlist) {
-      showSetlist(parentSetlist);
-      NavStack.markSetlist(true);
-    } else {
-      NavStack.markSetlist(false);
-    }
-  } else {
-    NavStack.markSetlist(false);
-  }
+if (root) {
+  showSetlist(root);
+  NavStack.markSetlist(true);
+} else {
+  NavStack.markSetlist(false);
+}
 });
     overlay.appendChild(closeXBtn);
 
@@ -346,7 +331,18 @@ function closeOverlay() {
   document.body.classList.remove('player-open'); // 🔴 Player geschlossen → Klasse entfernen
 }
 
-  /* ---------- Varianten / Bundle-Helpers ---------- */
+  /* ---------- Catalog Root Resolver (Setlist Fix) ---------- */
+function getCatalogRoot(item){
+  if (!item) return null;
+
+  // Bundle-Child → Parent
+  if (item.groupId) {
+    return (window.catalog || []).find(x => x.id === item.groupId) || item;
+  }
+
+  // Direktes Catalog-Item
+  return (window.catalog || []).find(x => x.id === item.id) || item;
+}
   function hasVariants(item){
     if (!item) return false;
     if (Array.isArray(item.versions)) return item.versions.length >= 2;
