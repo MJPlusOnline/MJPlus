@@ -130,44 +130,10 @@ window.catalog = [
         { sec:2765,  label: "THRILLER" },
         { sec:3033,  label: "BAD" },
         { sec:3393,  label: "BEAT IT" }
+       }
       ]
-    }
-  ]
-},
-  
-    {
-      key: "enhanced",
-      label: "Enhanced (coming soon)",
-      type: "mp4",
-      source: "",
-      mp4: "",
-      chapters: [
-        { sec:    0, label: "PLAY ALL" },
-
-        { sec:   12, label: "WANNA BE STARTIN' SOMETHIN'" },
-        { sec:  325, label: "THINGS I DO FOR YOU" },
-        { sec:  541, label: "OFF THE WALL" },
-        { sec:  759, label: "HUMAN NATURE" },
-        { sec: 1101, label: "THIS PLACE HOTEL (HEARTBREAK HOTEL)" },
-        { sec: 1421, label: "SHE'S OUT OF MY LIFE" },
-
-        { sec: 1644, label: "JACKSON 5 MEDLEY" },
-        { sec: 2036, label: "ROCK WITH YOU" },
-        { sec: 2265, label: "LOVELY ONE" },
-
-        // WORKING DAY AND NIGHT – nicht klickbar / kein genauer Timestamp
-
-        { sec: 2591, label: "BEAT IT" },
-        { sec: 3013, label: "BILLIE JEAN" },
-        { sec: 3408, label: "SHAKE YOUR BODY (DOWN TO THE GROUND)" },
-        { sec: 4202, label: "THRILLER" },
-        { sec: 4539, label: "I JUST CAN'T STOP LOVING YOU (INCOMPLETE)" },
-        { sec: 4633, label: "BAD" }
-      ]
-    }
-  ]
-},
-{
+    },
+   {
   id: "tokyo87",
   title: "Tokyo, Japan (September 12 & 13, 1987)",
   poster: "tokyo87.jpg",
