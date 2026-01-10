@@ -13,8 +13,8 @@ window.catalog = [
       key: "original",
       label: "Original",
       type: "mp4",
-      source: "https://mjtvplus.com/0/MICHAEL_JACKSON_BAD_LIVE_WEMBLEY_originalinterlaced.mp4",
-      mp4:    "https://mjtvplus.com/0/MICHAEL_JACKSON_BAD_LIVE_WEMBLEY_originalinterlaced.mp4",
+      source: "",
+      mp4:    "",
       chapters: [
         { sec:   0, label: "PLAY ALL" },
         { sec: 107, label: "INTRO" },
@@ -44,8 +44,8 @@ window.catalog = [
       key: "enhanced",
       label: "Enhanced",
       type: "mp4",
-      source: "https://mjtvplus.com/0/MJ%20-%201988%20Wembley%20Remaster%20(Pro%20FULL).mp4",
-      mp4:    "https://mjtvplus.com/0/MJ%20-%201988%20Wembley%20Remaster%20(Pro%20FULL).mp4",
+      source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201988%20Wembley%20Remaster%20%28Pro%20FULL%29.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201988%20Wembley%20Remaster%20%28Pro%20FULL%29.mp4",
       chapters: [
         { sec:   0, label: "PLAY ALL" },
         { sec: 107, label: "INTRO" },
@@ -91,11 +91,11 @@ window.catalog = [
         { label: 'ROCK WITH YOU (1979 THE DIANA ROSS SHOW)', link: '' },
         { label: 'ROCK WITH YOU (1980 BECAUSE WE CARE GALA)', link: 'https://mjtvplus.com/0/Rock%20With%20You%20%C2%A6%20Because%20We%20Care%20Gala,%201980%20.mp4' },
         { label: 'ROCK WITH YOU / EASE ON DOWN (1981 DIANA ROSS)', link: 'https://mjtvplus.com/0/DianaCBS81_1.mp4' },
-        { label: 'YOU WERE THERE (1990 SAMMY DAVIS JR. 60TH ANNIVERSARY)', link: 'https://mjtvplus.com/0/MJ%20-%201990%20You%20Were%20There%204K%20Upscale%20(No%20Logo).mp4' },
+        { label: 'YOU WERE THERE (1990 SAMMY DAVIS JR. 60TH ANNIVERSARY)', link: 'https://videos.mjplus.online/MJPlus/TV/MJ%20-%201990%20You%20Were%20There%204K%20Upscale%20%28No%20Logo%29.mp4' },
         { label: "BLACK OR WHITE / WILL YOU BE THERE (1991 MTV 10TH ANNIVERSARY)", link: "https://mjtvplus.com/0/%5b1991.06.06%5d%20MTV's%2010th%20Anniversary%20Special%20-%20Black%20Or%20White,%20Will%20You%20Be%20There.mp4" },
         { label: "GONE TOO SOON / HEAL THE WORLD (1992 ROYAL CONCERT FOR AIDS)", link: "https://mjtvplus.com/0/%5b1992.01.20%5d%20Clinton's%20Inaugural%20Gala%20-%20Gone%20Too%20Soon,%20Heal%20The%20World.mp4" },
-        { label: "DANGEROUS (1993 AMA'S)", link: 'https://mjtvplus.com/0/dangerous93_4x3_lossless.mp4' },
-        { label: 'REMEMBER THE TIME (1993 SOUL TRAIN MUSIC AWARDS)', link: '' },
+        { label: "DANGEROUS (1993 AMA'S)", link: 'https://videos.mjplus.online/MJPlus/TV/dangerous93.mp4' },
+        { label: 'REMEMBER THE TIME (1993 SOUL TRAIN MUSIC AWARDS)', link: 'https://videos.mjplus.online/MJPlus/TV/MJ%20-%201993%20Soul%20Train%20Awards%20-%20Remember%20The%20Time.mp4' },
         { label: "DANGEROUS (1995 WETTEN DASS...?)", link: 'https://mjtvplus.com/0/Wetten%20Dass%201995%20-%20Dangerous%20(ZDF%20logo%20removed).mp4' },
         { label: "EARTH SONG (1995 WETTEN DASS...?)", link: 'https://mjtvplus.com/0/%5b1995.11.4%5d%20Wetter%20Dass%20-%20Earth%20Song%20(no%20logo%20Version).mp4' },
         { label: 'EARTH SONG (1996 BRIT AWARDS)', link: 'https://mjtvplus.com/0/Michael%20Jackson%20-%20Earth%20Song%20(1996%20Brit%20Awards%20Performance).mp4' },
@@ -196,7 +196,7 @@ window.catalog = [
     tier: "pro",
     versions: [
       { key: "original", label: "Original", type: "mp4", source: "", mp4: "" },
-      { key: "enhanced", label: "Enhanced", type: "mp4", source: "https://mjtvplus.com/0/MJ%20-%201992%20Dangerous%20Tour%20Copenhagen,%20Denmark.mp4", mp4: "https://mjtvplus.com/0/MJ%20-%201992%20Dangerous%20Tour%20Copenhagen,%20Denmark.mp4" }
+      { key: "enhanced", label: "Enhanced", type: "mp4", source: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201992%20Dangerous%20Tour%20Copenhagen%2C%20Denmark.mp4", mp4: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201992%20Dangerous%20Tour%20Copenhagen%2C%20Denmark.mp4" }
     ],
     chapters: [
       { sec:   0, label: "PLAY ALL" },
@@ -249,15 +249,15 @@ window.catalog = [
             key: "original",
             label: "Original",
             type: "mp4",
-            source: "https://mjtvplus.com/0/MJ%20-%201988%20Tokyo%20SD%20(No%20Logo%20by%20Kai).mp4",
-            mp4:    "https://mjtvplus.com/0/MJ%20-%201988%20Tokyo%20SD%20(No%20Logo%20by%20Kai).mp4"
+            source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201988%20Tokyo%20SD%20%28No%20Logo%20by%20Kai%29.mp4",
+            mp4:    "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201988%20Tokyo%20SD%20%28No%20Logo%20by%20Kai%29.mp4"
           },
           {
             key: "enhanced",
             label: "Enhanced",
             type: "mp4",
-            source: "https://mjtvplus.com/0/MJ%20-%201988%20Tokyo%20(No%20Logo%20by%20Kai)%20HD-Upscale.mp4",
-            mp4:    "https://mjtvplus.com/0/MJ%20-%201988%20Tokyo%20(No%20Logo%20by%20Kai)%20HD-Upscale.mp4"
+            source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201988%20Tokyo%20%28No%20Logo%20by%20Kai%29%20HD-Upscale.mp4",
+            mp4:    "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201988%20Tokyo%20%28No%20Logo%20by%20Kai%29%20HD-Upscale.mp4"
           }
         ]
       },
@@ -283,8 +283,8 @@ window.catalog = [
     category: "live",
     tier: "pro",
     versions: [
-      { key: "original", label: "Original", type: "mp4", source: "https://mjtvplus.com/0/Bad%20Tour%20-%20Brisbane%20'87%20(Original%20Source).mp4", mp4: "https://mjtvplus.com/0/Bad%20Tour%20-%20Brisbane%20'87%20(Original%20Source).mp4" },
-      { key: "enhanced", label: "Enhanced", type: "mp4", source: "https://mjtvplus.com/0/MJ%20-%201987%20Brisbane%20(HD%20Upscale).mp4", mp4: "https://mjtvplus.com/0/MJ%20-%201987%20Brisbane%20(HD%20Upscale).mp4" }
+      { key: "original", label: "Original", type: "mp4", source: "", mp4: "" },
+      { key: "enhanced", label: "Enhanced", type: "mp4", source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201987%20Brisbane.mp4", mp4: "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201987%20Brisbane.mp4" }
     ],
     chapters: [
       { sec:   0,  label: "PLAY ALL" },
@@ -309,7 +309,7 @@ window.catalog = [
     tier: "pro",
     versions: [
       { key: "original", label: "Original", type: "mp4", source: "", mp4: "" },
-      { key: "enhanced", label: "Enhanced", type: "mp4", source: "https://mjtvplus.com/0/MJ%20-%201993%20Live%20In%20Buenos%20Aires.mp4", mp4: "https://mjtvplus.com/0/MJ%20-%201993%20Live%20In%20Buenos%20Aires.mp4" }
+      { key: "enhanced", label: "Enhanced", type: "mp4", source: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201993%20Live%20In%20Buenos%20Aires.mp4", mp4: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201993%20Live%20In%20Buenos%20Aires.mp4" }
     ],
     chapters: [
       { sec:    0, label: "PLAY ALL" },
@@ -370,15 +370,15 @@ window.catalog = [
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "https://mjtvplus.com/0/Michael%20Jackson%20-%20BAD%20Tour%20Yokohama%20'87%20(H264).mp4",
-          mp4:    "https://mjtvplus.com/0/Michael%20Jackson%20-%20BAD%20Tour%20Yokohama%20'87%20(H264).mp4"
+          source: "",
+          mp4:    ""
         },
         {
           key: "enhanced",
           label: "Enhanced",
           type: "mp4",
-          source: "https://mjtvplus.com/0/MJ%20-%201987%20Bad%20Tour%20Yokohama,%20Japan%201987.mp4",
-          mp4:    "https://mjtvplus.com/0/MJ%20-%201987%20Bad%20Tour%20Yokohama,%20Japan%201987.mp4"
+          source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201987%20Bad%20Tour%20Yokohama%2C%20Japan%201987.mp4",
+          mp4:    "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201987%20Bad%20Tour%20Yokohama%2C%20Japan%201987.mp4"
         }
       ]
     },
@@ -505,10 +505,10 @@ window.catalog = [
         { label: "THRILLER", sec: 3319 }
       ],
       versions: [
-        { key: "original",  label: "Original",  type: "mp4", source: "", mp4: "" },
+        { key: "original",  label: "Original",  type: "mp4", source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Rome88%20(No%20Logo%20by%20Kai)%20SD.mp4", mp4: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Rome88%20(No%20Logo%20by%20Kai)%20SD.mp4" },
         { key: "enhanced",  label: "Enhanced",  type: "mp4",
-          source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Rome88%20(No%20Logo%20by%20Kai)%20SD.mp4",
-          mp4:    "https://videos.mjplus.online/MJPlus/Bad%20Tour/Rome88%20(No%20Logo%20by%20Kai)%20SD.mp4" }
+          source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201988%20Rome%20%28No%20Logo%20by%20Kai%29%20HD.mp4",
+          mp4:    "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201988%20Rome%20%28No%20Logo%20by%20Kai%29%20HD.mp4" }
       ]
     },
     {
@@ -658,8 +658,8 @@ window.catalog = [
   versions: [
     { key: "original",  label: "Original",  type: "mp4", source: "", mp4: "" },
     { key: "enhanced",  label: "Enhanced",  type: "mp4",
-      source: "https://mjtvplus.com/0/MJ%20-%201997%20Munich%20HD%20ZDF%20(lee)_HD.mp4",
-      mp4:    "https://mjtvplus.com/0/MJ%20-%201997%20Munich%20HD%20ZDF%20(lee)_HD.mp4"
+      source: "https://videos.mjplus.online/MJPlus/History%20Tour/MJ%20-%201997%20Munich%20HD%20ZDF%20%28lee%29_HD.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/History%20Tour/MJ%20-%201997%20Munich%20HD%20ZDF%20%28lee%29_HD.mp4"
     }
   ],
 
@@ -988,8 +988,8 @@ window.catalog = [
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "https://mjtvplus.com/0/MJ%20-%201999%20MJ%20&%20Friends%20(Seoul%20New%20Rip).mp4",
-          mp4:    "https://mjtvplus.com/0/MJ%20-%201999%20MJ%20&%20Friends%20(Seoul%20New%20Rip).mp4"
+          source: "https://videos.mjplus.online/MJPlus/Special%20Performances/MJ%20-%201999%20MJ%20%26%20Friends%20%28Seoul%20New%20Rip%29.mp4",
+          mp4:    "https://videos.mjplus.online/MJPlus/Special%20Performances/MJ%20-%201999%20MJ%20%26%20Friends%20%28Seoul%20New%20Rip%29.mp4"
         },
         {
           key: "enhanced",
@@ -1287,8 +1287,8 @@ window.catalog = [
       key: "tape1and4",
       label: "Tape #1 & 4 '92",
       type: "mp4",
-      source: "https://mjtvplus.com/0/dwt%20reh%20tape1.mp4",
-      mp4:    "https://mjtvplus.com/0/dwt%20reh%20tape1.mp4",
+      source: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201991%20DWT%20Rehearsal%20Tape1%20%28New%20Rip%202025%20Upscale%29.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201991%20DWT%20Rehearsal%20Tape1%20%28New%20Rip%202025%20Upscale%29.mp4",
       chapters: [
         { sec: 0, label: "Play All" },
         { sec: 381, label: "Jam" },
@@ -1325,8 +1325,8 @@ window.catalog = [
       key: "tape2",
       label: "Tape #2 '92",
       type: "mp4",
-      source: "https://mjtvplus.com/0/MJ%20-%201992%20Tape%202%20Dangerous%20Rehearsal_Processed%20by%20HappyLee%20V2.mp4",
-      mp4:    "https://mjtvplus.com/0/MJ%20-%201992%20Tape%202%20Dangerous%20Rehearsal_Processed%20by%20HappyLee%20V2.mp4",
+      source: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201992%20Tape%202%20Dangerous%20Rehearsal_Processed%20by%20HappyLee%20V2.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201992%20Tape%202%20Dangerous%20Rehearsal_Processed%20by%20HappyLee%20V2.mp4",
       chapters: [
         { sec: 0, label: "Bad" },
         { sec: 63, label: "Black Or White" },
@@ -1338,8 +1338,8 @@ window.catalog = [
       key: "orange93",
       label: "Orange '93",
       type: "mp4",
-      source: "https://mjtvplus.com/0/Orange%20rehearsal%20OG%20TAPE.mp4",
-      mp4:    "https://mjtvplus.com/0/Orange%20rehearsal%20OG%20TAPE.mp4",
+      source: "",
+      mp4:    "",
       chapters: [
         { sec: 0, label: "Dangerous" },
         { sec: 345, label: "Dangerous (Second)" },
@@ -1356,8 +1356,8 @@ window.catalog = [
       key: "dress93",
       label: "Dress Reh. '93",
       type: "mp4",
-      source: "https://mjtvplus.com/0/MJ%20-%201993-08-16%20Dangerous%20Dress%20Rehearsal%20Enhanced%20by%20HappyLee.mp4",
-      mp4:    "https://mjtvplus.com/0/MJ%20-%201993-08-16%20Dangerous%20Dress%20Rehearsal%20Enhanced%20by%20HappyLee.mp4",
+      source: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201993-08-16%20Dangerous%20Dress%20Rehearsal%20Enhanced%20by%20HappyLee.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201993-08-16%20Dangerous%20Dress%20Rehearsal%20Enhanced%20by%20HappyLee.mp4",
       chapters: [
         { sec: 0, label: "Working Day And Night" },
         { sec: 456, label: "Beat It" },
@@ -1475,8 +1475,8 @@ window.catalog = [
       key: "enhanced",
       label: "Enhanced",
       type: "mp4",
-      source: "https://mjtvplus.com/0/MJ%20-%201997%20History%20Tour%20Johannesburg,%20South%20Africa.mp4",
-      mp4:    "https://mjtvplus.com/0/MJ%20-%201997%20History%20Tour%20Johannesburg,%20South%20Africa.mp4"
+      source: "https://videos.mjplus.online/MJPlus/History%20Tour/MJ%20-%201997%20History%20Tour%20Johannesburg%2C%20South%20Africa.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/History%20Tour/MJ%20-%201997%20History%20Tour%20Johannesburg%2C%20South%20Africa.mp4"
     }
   ],
   chapters: [
@@ -1611,8 +1611,8 @@ window.catalog = [
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "https://mjtvplus.com/0/MJ%20-%201997%20Copenhagen%20(HD%20AI%20Remaster%2060fps)small.mp4",
-          mp4: "https://mjtvplus.com/0/MJ%20-%201997%20Copenhagen%20(HD%20AI%20Remaster%2060fps)small.mp4"
+          source: "https://videos.mjplus.online/MJPlus/History%20Tour/MJ%20-%201997%20Copenhagen%20%28HD%20AI%20Remaster%2060fps%29small.mp4",
+          mp4: "https://videos.mjplus.online/MJPlus/History%20Tour/MJ%20-%201997%20Copenhagen%20%28HD%20AI%20Remaster%2060fps%29small.mp4"
         }
       ]
     },
@@ -1802,8 +1802,8 @@ window.catalog = [
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "https://mjtvplus.com/0/MJ%20-%201988%20Gothenburg,%20Sweden%20(Amateur)small.mp4",
-          mp4:    "https://mjtvplus.com/0/MJ%20-%201988%20Gothenburg,%20Sweden%20(Amateur)small.mp4"
+          source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201988%20Gothenburg%2C%20Sweden%20%28Amateur%29small.mp4",
+          mp4:    "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201988%20Gothenburg%2C%20Sweden%20%28Amateur%29small.mp4"
         }
       ]
     }
@@ -1949,8 +1949,8 @@ window.catalog = [
           key: "enhanced",
           label: "Enhanced",
           type: "mp4",
-          source: "https://mjtvplus.com/0/MJ%20-%201996%20Brunei%20Royal%20(Lee%20Remaster).mp4",
-          mp4: "https://mjtvplus.com/0/MJ%20-%201996%20Brunei%20Royal%20(Lee%20Remaster).mp4"
+          source: "https://videos.mjplus.online/MJPlus/Special%20Performances/MJ%20-%201996%20Brunei%20Royal%20%28Lee%20Remaster%29.mp4",
+          mp4: "https://videos.mjplus.online/MJPlus/Special%20Performances/MJ%20-%201996%20Brunei%20Royal%20%28Lee%20Remaster%29.mp4"
         }
       ]
     }
@@ -2406,7 +2406,7 @@ window.catalog = [
       key: 'pro',
       label: 'PRO',
       type: 'mp4',
-      mp4: 'https://mjtvplus.com/0/MJ%20-%201997%20Basel%20(Full%20Pro).mp4',
+      mp4: 'https://videos.mjplus.online/MJPlus/History%20Tour/MJ%20-%201997%20Basel%20%28Full%20Pro%29.mp4',
       chapters: [
         { label: 'PLAY ALL', sec: 0 },
         { label: 'SCREAM', sec: 391 },                    // 6:31
