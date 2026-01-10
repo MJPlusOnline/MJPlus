@@ -447,7 +447,7 @@ window.catalog = [
     tier: "pro",
     versions: [
       { key: "original", label: "Original", type: "hls", source: "", mp4: "" },
-      { key: "enhanced", label: "Enhanced", type: "mp4", source: "https://mjtvplus.com/0/MJ%20-%201992%20DWT%20Bremen,%20Germany_BQ%20by%20HappyLee.mp4", mp4: "https://mjtvplus.com/0/MJ%20-%201992%20DWT%20Bremen,%20Germany_BQ%20by%20HappyLee.mp4" }
+      { key: "enhanced", label: "Enhanced", type: "mp4", source: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201992%20DWT%20Bremen%2C%20Germany_BQ%20by%20HappyLee.mp4", mp4: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201992%20DWT%20Bremen%2C%20Germany_BQ%20by%20HappyLee.mp4" }
     ],
     chapters: [
       { label: "PLAY ALL", sec: 0 },
