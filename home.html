@@ -164,22 +164,20 @@ Thank you for your continued patience, understanding, and support.
     </div>
   </div>
 
-  <script>
-    (function () {
-      try {
-        const KEY = 'mjplus_notice_seen';
-        const overlay = document.getElementById('noticeOverlay');
-        const btn = document.getElementById('noticeClose');
-        if (!localStorage.getItem(KEY)) {
-          overlay.style.display = 'flex';
-          btn.addEventListener('click', function () {
-            overlay.style.display = 'none';
-            localStorage.setItem(KEY, '1');
-          });
-        }
-      } catch (e) { console.warn('notice overlay init failed', e); }
-    })();
-  </script>
+ <script>
+  (function () {
+    try {
+      const overlay = document.getElementById('noticeOverlay');
+      const btn = document.getElementById('noticeClose');
+
+      overlay.style.display = 'flex';
+
+      btn.addEventListener('click', function () {
+        overlay.style.display = 'none';
+      });
+    } catch (e) { console.warn('notice overlay init failed', e); }
+  })();
+</script>
 
   <!-- Header + Nav -->
   <header>
