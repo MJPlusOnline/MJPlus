@@ -83,7 +83,6 @@ window.catalog = [
 
   source: "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20Private%20Home%20Movies.mp4",
   mp4:    "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20Private%20Home%20Movies.mp4"
-  ]
 },
   {
   id: "invincible-signing-nyc-2001",
