@@ -139,6 +139,74 @@
     header nav a:last-child, header nav .nav-btn:last-child{ border-bottom:0; }
     html,body{ overflow-x:hidden; }
   }
+    /* MJPlus – Email Floating Button (Home only) */
+
+.mj-email-fab {
+  position: fixed;
+  bottom: 22px;
+  left: 22px;
+
+  width: 42px;
+  height: 42px;
+
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ccc;
+  text-decoration: none;
+
+  z-index: 9999;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.mj-email-fab svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.mj-email-fab:hover {
+  color: #e50914; /* MJPlus Rot */
+  border-color: #e50914;
+}
+
+.mj-email-tooltip {
+  position: absolute;
+  left: 54px;
+  bottom: 50%;
+  transform: translateY(50%);
+
+  background: rgba(0, 0, 0, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  color: #eee;
+  padding: 8px 10px;
+  border-radius: 6px;
+
+  font-size: 12px;
+  line-height: 1.4;
+  width: 260px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.mj-email-fab:hover .mj-email-tooltip {
+  opacity: 1;
+}
+
+/* Tooltip auf Touch-Geräten ausblenden */
+@media (hover: none) {
+  .mj-email-tooltip {
+    display: none;
+  }
+}
   </style>
 </head>
 
@@ -282,12 +350,22 @@ Thank you for your continued patience, understanding, and support.
     data-id="mjplus" data-description="Support me on Buy me a coffee!"
     data-message="" data-color="#ffd200" data-position="Right" data-x_margin="18" data-y_margin="18">
   </script>
+  <!-- MJPlus Email Contact (Home only) -->
+<a
+  href="mailto:behindthemusic93@gmail.com"
+  class="mj-email-fab"
+  aria-label="Contact MJPlus"
+>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M2 4h20v16H2V4zm10 7L4 6v12h16V6l-8 5z"/>
+  </svg>
+
+  <span class="mj-email-tooltip">
+    You have questions?<br>
+    You have something to share that’s missing on MJPlus?<br>
+    Send us an email.
+  </span>
+</a>
 </body>
 </html>
-<script data-name="BMC-Widget" data-cfasync="false"
-  src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-  data-id="mjplus" data-description="Support me on Buy me a coffee!"
-  data-message="" data-color="#ffd200" data-position="Right" data-x_margin="18" data-y_margin="18">
-</script>
-</body>
-</html>
+
