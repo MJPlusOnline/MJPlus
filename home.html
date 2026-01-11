@@ -171,7 +171,9 @@
 
 .mj-email-tooltip {
   position: absolute;
-  bottom: 52px;              /* ⬆️ über dem Icon */
+
+  /* 🔥 WICHTIG: komplett neue Positionierung */
+  bottom: calc(100% + 10px);   /* über dem Icon */
   left: 50%;
   transform: translateX(-50%);
 
@@ -184,9 +186,10 @@
 
   font-size: 12px;
   line-height: 1.4;
-  white-space: normal;
-  max-width: 320px;          /* Sicherheit */
-  width: max-content;        /* 🔥 nur so breit wie Text */
+
+  width: max-content;          /* nur so breit wie Text */
+  max-width: 320px;
+  text-align: center;
 
   opacity: 0;
   pointer-events: none;
