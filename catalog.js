@@ -73,7 +73,7 @@ window.catalog = [
     }
   ]
 },
-  {
+ {
   id: "privatehomemovies",
   title: "Private Home Movies",
   poster: "privatehomemovies2003.jpg",
@@ -81,14 +81,8 @@ window.catalog = [
   category: ["tv", "documentary", "home"],
   tier: "documentary",
 
-  versions: [
-    {
-      key: "original",
-      label: "Original",
-      type: "mp4",
-      source: "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20Private%20Home%20Movies.mp4",
-      mp4:    "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20Private%20Home%20Movies.mp4"
-    }
+  source: "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20Private%20Home%20Movies.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20Private%20Home%20Movies.mp4"
   ]
 },
   {
@@ -2945,16 +2939,16 @@ window.catalog = [
     }
   ]
 },
-  {
-  id:"oprahouttakes93",
-  title:"Oprah Interview – Outtakes (1993)",
-  poster:"oprahouttakes93.jpg",
-  type:"mp4",
-  category:["interviews","home"],
-  tier:"tv",
+{
+  id: "oprahouttakes93",
+  title: "Oprah Interview – Outtakes (1993)",
+  poster: "oprahouttakes93.jpg",
+  type: "single",
+  category: ["interviews", "home"],
+  tier: "tv",
 
-  source:"https://videos.mjplus.online/MJPlus/TV/1995%20-%20Oprah%20Outtakes%20%28merged%29.mp4",
-  mp4:   "https://videos.mjplus.online/MJPlus/TV/1995%20-%20Oprah%20Outtakes%20%28merged%29.mp4"
+  source: "https://videos.mjplus.online/MJPlus/TV/1995%20-%20Oprah%20Outtakes%20%28merged%29.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/TV/1995%20-%20Oprah%20Outtakes%20%28merged%29.mp4"
 },
 {
   id: 'gothenburg97',
