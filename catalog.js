@@ -101,7 +101,7 @@ window.catalog = [
   poster: "moscowcase93.jpg",
   type: "single",
   category: ["tv", "documentary", "home"],
-  tier: "documentary",
+  tier: "doc",
 
   source: "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20The%20Moscow%20Case.mp4",
   mp4:    "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20The%20Moscow%20Case.mp4"
