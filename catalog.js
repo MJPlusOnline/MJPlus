@@ -2891,7 +2891,7 @@ window.catalog = [
   { id:"barbarawalters97",      title:"Barbara Walters Interview (1997)", poster:"barbarawalters97.jpg",      source:"https://videos.mjplus.online/MJPlus/TV/Barbara%20Walters.mp4",                             type:"mp4", category:["interviews","home"], tier:"interview" },
   { id:"commemorated2010",      title:"Michael Jackson Commemorated (2010)", poster:"commemorated2010.jpg",    source:"https://videos.mjplus.online/MJPlus/TV/2010%20Commemorated_stream.mp4",                   type:"mp4", category:["interviews","home"], tier:"doc" },
   { id:"oprahouttakes93",       title:"Oprah Interview – Outtakes (1993)",  poster:"oprahouttakes93.jpg",      source:"https://videos.mjplus.online/MJPlus/TV/1995%20-%20Oprah%20Outtakes%20%28merged%29.mp4",       type:"mp4", category:["interviews","home"], tier:"tv" },
-  { id:"privatehomemovies2003", title:"Michael Jackson: Private Home Movies (2003)", poster:"privatehomemovies2003.jpg", source:"https://mjtvplus.com/0/Michael%20Jackson%20Private%20Home%20Movies.mp4", type:"mp4", category:["interviews","home"], tier:"tv" },
+  { id:"privatehomemovies2003", title:"Michael Jackson: Private Home Movies (2003)", poster:"privatehomemovies2003.jpg", source:"https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20Private%20Home%20Movies.mp4", type:"mp4", category:["interviews","home"], tier:"tv" },
   { id:"taketwo2003",           title:"Take Two – The Footage You Were Never Meant to See (2003)", poster:"taketwo2003.jpg", source:"https://mjtvplus.com/0/Michael%20Jackson%20-%20Take%202%20(german,%20Jetzt%20rede%20ich).mp4", type:"mp4", category:["interviews","home"], tier:"doc" },
 
   // --- The Jacksons ---
