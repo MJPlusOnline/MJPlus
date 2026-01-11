@@ -2692,6 +2692,5 @@ window.catalog = [
   { id:"taketwo2003",           title:"Take Two – The Footage You Were Never Meant to See (2003)", poster:"taketwo2003.jpg", source:"https://mjtvplus.com/0/Michael%20Jackson%20-%20Take%202%20(german,%20Jetzt%20rede%20ich).mp4", type:"mp4", category:["interviews","home"], tier:"doc" },
 
   // --- The Jacksons ---
-  { id:"losangeles81",  title:"Los Angeles (1981)", poster:"losangeles81.jpg",  source:"", type:"hls", category:["jacksons","live"], tier:"pro" }
 
 ]; // <-- einziges schließendes Ende der window.catalog-Array
