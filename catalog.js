@@ -319,7 +319,7 @@ window.catalog = [
         { label: "EARTH SONG (1996 VMA'S)", link: 'https://mjtvplus.com/0/Earth%20Song%20VMA96.mp4' },
         { label: "ELIZABETH, I LOVE YOU (1997 ELIZABETH TAYLOR CELEBRATION)", link: "https://mjtvplus.com/0/%5b1997.02.16%5d%20Taylor's%2065th%20Birthday%20Gala%20-%20Elizabeth%20I%20Love%20You.mp4" },
         { label: "POP (FEAT. 'N SYNC) (2001 VMA'S)", link: 'https://videos.mjplus.online/MJPlus/TV/NSYNC%20%26%20Michael%20Jackson%20-%20Pop%20-%20MTV%20VMA%20%282001%29.mp4' },
-        { label: 'WHAT MORE CAN I GIVE (2001 WASHINGTON DC BENEFIT)', link: 'https://mjtvplus.com/0/%5b2001.10.21%5d%20United%20We%20Stand%20Concert%20-%20What%20More%20Can%20I%20Give.mp4' },
+        { label: 'WHAT MORE CAN I GIVE (2001 WASHINGTON DC BENEFIT)', link: 'https://videos.mjplus.online/MJPlus/Special%20Performances/%5B2001.10.21%5D%20United%20We%20Stand%20Concert%20-%20What%20More%20Can%20I%20Give_strm.mp4' },
         { label: "DANGEROUS (2002 AMERICAN BANDSTAND 50TH ANNIVERSARY)", link: "https://mjtvplus.com/0/%5b2002.05.03%5d%20American%20Bandstand's%2050th%20Anniversary%20Celebration%20-%20Dangerous.mp4" },
         { label: 'DANGEROUS (2002 AT THE APOLLO)', link: 'https://mjtvplus.com/0/%5b2002.10.08%5d%20A%20Night%20At%20The%20Apollo%20-%20Dangerous%20(HQ%20Version).mp4' },
         { label: "WE ARE THE WORLD (2006 VMA'S)", link: 'https://videos.mjplus.online/MJPlus/TV/WATW2006.mp44' }
@@ -404,6 +404,38 @@ window.catalog = [
       { sec:6692, label: "MAN IN THE MIRROR" }
     ]
   },
+  {
+  id: "tunis96",
+  title: "Tunisia (October 7 1996)",
+  poster: "tunis96.jpg",
+  type: "single",
+  category: "live",
+  tier: "pro",
+
+  source: "https://videos.mjplus.online/MJPlus/History%20Tour/Michel.Jackson.Concer.In.Tunisia.1996.By.Mahjoub.www.Tunisia-Sat.com_strm.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/History%20Tour/Michel.Jackson.Concer.In.Tunisia.1996.By.Mahjoub.www.Tunisia-Sat.com_strm.mp4",
+
+  chapters: [
+    { sec:    0, label: "PLAY ALL" },
+    { sec:   20, label: "SCREAM" },
+    { sec:  240, label: "THEY DON'T CARE ABOUT US" },
+    { sec:  388, label: "IN THE CLOSET" },
+    { sec:  500, label: "WANNA BE STARTIN' SOMETHIN'" },
+    { sec:  868, label: "STRANGER IN MOSCOW" },
+    { sec: 1284, label: "SMOOTH CRIMINAL" },
+    { sec: 1680, label: "YOU ARE NOT ALONE" },
+    { sec: 1990, label: "THE WAY YOU MAKE ME FEEL" },
+    { sec: 2270, label: "JACKSON 5 MEDLEY" },
+    { sec: 3308, label: "BILLIE JEAN" },
+    { sec: 3825, label: "THRILLER" },
+    { sec: 4228, label: "BEAT IT" },
+    { sec: 4763, label: "COME TOGETHER / D.S." },
+    { sec: 5165, label: "DANGEROUS" },
+    { sec: 5505, label: "BLACK OR WHITE" },
+    { sec: 5798, label: "EARTH SONG" },
+    { sec: 6494, label: "HEAL THE WORLD" }
+  ]
+},
    {
     id: "copen92",
     title: "Copenhagen, Denmark (Aug 20, 1992)",
@@ -1849,8 +1881,8 @@ window.catalog = [
       key: "ch8-original",
       label: "Channel 8 · Original",
       type: "mp4",
-      source: "",
-      mp4: "",
+      source: "https://videos.mjplus.online/MJPlus/History%20Tour/manila_full_str.mp4",
+      mp4: "https://videos.mjplus.online/MJPlus/History%20Tour/manila_full_str.mp4",
       chapters: [
         { sec:    0, label: "PLAY ALL" },
         { sec:    0, label: "THE GREAT GATE OF KIEV (OPENING)" },
