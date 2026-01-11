@@ -139,7 +139,7 @@
     header nav a:last-child, header nav .nav-btn:last-child{ border-bottom:0; }
     html,body{ overflow-x:hidden; }
   }
-    /* MJPlus – Email Floating Button (Home only) */
+/* MJPlus – Email Floating Button (Home only) */
 
 .mj-email-fab {
   position: fixed;
@@ -149,55 +149,28 @@
   width: 42px;
   height: 42px;
 
-  background: #e50914;          /* 🔴 wieder rot gefüllt */
-  border: none;                 /* kein roter Rand */
+  background: #e50914;
   border-radius: 50%;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  color: #fff;                  /* Icon weiß */
+  z-index: 9999;
   text-decoration: none;
 
-  z-index: 9999;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-.mj-email-fab:hover .mj-email-tooltip {
-  opacity: 1;
-  transform: translateY(50%) translateX(4px);
+.mj-email-fab:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 14px rgba(229,9,20,0.55);
 }
 
-.mj-email-tooltip {
-  position: absolute;
-
-  left: calc(100% + 10px);   /* ➡️ rechts mit Abstand */
-  bottom: 60%;               /* ⬆️ etwas höher als Mitte */
-  transform: translateY(50%);
-
-  background: rgba(0, 0, 0, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-
-  color: #eee;
-  padding: 8px 10px;
-  border-radius: 6px;
-
-  font-size: 12px;
-  line-height: 1.4;
-
-  width: max-content;        /* nur so breit wie Text */
-  max-width: 280px;
-
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-/* Tooltip auf Touch-Geräten ausblenden */
-@media (hover: none) {
-  .mj-email-tooltip {
-    display: none;
-  }
+.mj-email-fab svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
 }
   </style>
 </head>
@@ -351,12 +324,6 @@ Thank you for your continued patience, understanding, and support.
   <svg viewBox="0 0 24 24" aria-hidden="true">
     <path d="M2 4h20v16H2V4zm10 7L4 6v12h16V6l-8 5z"/>
   </svg>
-
-  <span class="mj-email-tooltip">
-    You have questions?<br>
-    You have something to share that’s missing on MJPlus?<br>
-    Send us an email.
-  </span>
 </a>
 </body>
 </html>
