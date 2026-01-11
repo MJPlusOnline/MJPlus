@@ -74,6 +74,24 @@ window.catalog = [
   ]
 },
   {
+  id: "privatehomemovies",
+  title: "Private Home Movies",
+  poster: "privatehomemovies2003.jpg",
+  type: "single",
+  category: ["tv", "documentary", "home"],
+  tier: "documentary",
+
+  versions: [
+    {
+      key: "original",
+      label: "Original",
+      type: "mp4",
+      source: "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20Private%20Home%20Movies.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20Private%20Home%20Movies.mp4"
+    }
+  ]
+},
+  {
   id: "invincible-signing-nyc-2001",
   title: "Invincible Album Signing – New York (November 7, 2001)",
   poster: "virgin01.jpg",
@@ -3011,7 +3029,6 @@ window.catalog = [
   // --- Interviews (sichtbar auf Home + Interviews, nicht unter Live) ---
   { id:"barbarawalters97",      title:"Barbara Walters Interview (1997)", poster:"barbarawalters97.jpg",      source:"https://videos.mjplus.online/MJPlus/TV/Barbara%20Walters.mp4",                             type:"mp4", category:["interviews","home"], tier:"interview" },
   { id:"commemorated2010",      title:"Michael Jackson Commemorated (2010)", poster:"commemorated2010.jpg",    source:"https://videos.mjplus.online/MJPlus/TV/2010%20Commemorated_stream.mp4",                   type:"mp4", category:["interviews","home"], tier:"doc" },
-  { id:"privatehomemovies2003", title:"Michael Jackson: Private Home Movies (2003)", poster:"privatehomemovies2003.jpg", source:"https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20Private%20Home%20Movies.mp4", type:"mp4", category:["interviews","home"], tier:"tv" },
   { id:"taketwo2003",           title:"Take Two – The Footage You Were Never Meant to See (2003)", poster:"taketwo2003.jpg", source:"https://mjtvplus.com/0/Michael%20Jackson%20-%20Take%202%20(german,%20Jetzt%20rede%20ich).mp4", type:"mp4", category:["interviews","home"], tier:"doc" },
 
   // --- The Jacksons ---
