@@ -580,9 +580,9 @@ window.catalog = [
   id: "er84",
   title: "East Rutherford (July 30, 1984)",
   poster: "er84.jpg",
-  type: "multi",
+  type: "single",
   category: "live",
-  tier: "AM.",
+  tier: "am",
   versions: [
     {
       key: "original",
