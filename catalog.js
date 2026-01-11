@@ -2966,7 +2966,7 @@ window.catalog = [
   poster: "barbarawalters97.jpg",
   type: "single",
   category: ["tv", "interview"],
-  tier: "tv",
+  tier: "interview",
 
   source: "https://videos.mjplus.online/MJPlus/TV/Barbara%20Walters.mp4",
   mp4:    "https://videos.mjplus.online/MJPlus/TV/Barbara%20Walters.mp4"
@@ -3042,7 +3042,6 @@ window.catalog = [
   { id:"historyreports97",    title:"History Tour Report 1997",    poster:"historyreports97.jpg",    source:"", type:"hls", category:"live", tier:"pro" },
 
   // --- Interviews (sichtbar auf Home + Interviews, nicht unter Live) ---
-  { id:"barbarawalters97",      title:"Barbara Walters Interview (1997)", poster:"barbarawalters97.jpg",      source:"https://videos.mjplus.online/MJPlus/TV/Barbara%20Walters.mp4",                             type:"mp4", category:["interviews","home"], tier:"interview" },
   { id:"taketwo2003",           title:"Take Two – The Footage You Were Never Meant to See (2003)", poster:"taketwo2003.jpg", source:"https://mjtvplus.com/0/Michael%20Jackson%20-%20Take%202%20(german,%20Jetzt%20rede%20ich).mp4", type:"mp4", category:["interviews","home"], tier:"doc" },
 
   // --- The Jacksons ---
