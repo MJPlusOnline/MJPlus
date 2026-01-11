@@ -292,7 +292,7 @@ window.catalog = [
   type: 'single',
   category: ['TV'],        // damit er auf der TV-Seite erscheint
   tier: 'TV',              // sorgt für das rote "TV"-Badge
-  source: 'https://mjtvplus.com/0/Blitz_Sat1_1997.mp4',
+  source: 'https://videos.mjplus.online/MJPlus/TV/Blitz_Sat1_1997.mp4',
 },
  {
     id: "oslo92",
@@ -1110,20 +1110,53 @@ window.catalog = [
       versions: [
         {
           key: "original",
-          label: "Original",
+          label: "Original (soon)",
           type: "mp4",
-          source: "https://mjtvplus.com/0/the%20jacksons%20london%201975-1.mp4",
-          mp4:    "https://mjtvplus.com/0/the%20jacksons%20london%201975-1.mp4"
+          source: "",
+          mp4:    ""
         },
         {
           key: "enhanced",
-          label: "Enhanced (coming soon)",
+          label: "https://videos.mjplus.online/MJPlus/Jacksons/MJ%20-%201979%20The%20Jacksons%20London%20%28BBC%20MSTR%29%20Upscale%20STREAM.mp4",
           type: "mp4",
           source: "",
           mp4: ""
         }
       ]
     }
+  ]
+},
+  {
+  id: "motown83",
+  title: "Motown 25: Yesterday, Today, Forever (1983)",
+  poster: "motown83.jpg",
+  type: "multi",
+  category: "performance",
+  tier: "performance",
+
+  versions: [
+    {
+      key: "original",
+      label: "Original (4:3)",
+      type: "mp4",
+      source: "https://videos.mjplus.online/MJPlus/Special%20Performances/%5B1983.05.11%5D%20The%20Jacksons%20live%20in%20Motown%2025%20Yesterday%2C%20Today%2C%20Forever_stream.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/Special%20Performances/%5B1983.05.11%5D%20The%20Jacksons%20live%20in%20Motown%2025%20Yesterday%2C%20Today%2C%20Forever_stream.mp4"
+    },
+    {
+      key: "enhanced",
+      label: "Enhanced (16:9)",
+      type: "mp4",
+      source: "https://videos.mjplus.online/MJPlus/Special%20Performances/MJ%20-%201983%20-%20Motown%2025%20%28Widescreen%202K%29_stream.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/Special%20Performances/MJ%20-%201983%20-%20Motown%2025%20%28Widescreen%202K%29_stream.mp4"
+    }
+  ],
+
+  chapters: [
+    { sec:   34, label: "I WANT YOU BACK" },
+    { sec:   86, label: "THE LOVE YOU SAVE" },
+    { sec:  167, label: "I NEVER CAN SAY GOODBYE" },
+    { sec:  227, label: "I'LL BE THERE" },
+    { sec:  452, label: "BILLIE JEAN" }
   ]
 },
 {
@@ -1974,8 +2007,8 @@ window.catalog = [
       key: "original",
       label: "Original",
       type: "mp4",
-      source: "https://mjtvplus.com/0/lwmjeng.mp4",
-      mp4: "https://mjtvplus.com/0/lwmjeng.mp4"
+      source: "https://videos.mjplus.online/MJPlus/TV/lwmjeng.mp4",
+      mp4: "https://videos.mjplus.online/MJPlus/TV/lwmjeng.mp4"
     }
   ],
   chapters: [] // keine Setlist / Kapitel
@@ -2371,8 +2404,8 @@ window.catalog = [
           key: "german",
           label: "German",
           type: "mp4",
-          source: "https://mjtvplus.com/0/MJ&Lisa%20RTL%20Prime%20Time%20(merged%20lossless).mp4",
-          mp4: "https://mjtvplus.com/0/MJ&Lisa%20RTL%20Prime%20Time%20(merged%20lossless).mp4"
+          source: "https://videos.mjplus.online/MJPlus/TV/MJ%26Lisa%20RTL%20Prime%20Time%20%28merged%20lossless%29.mp4",
+          mp4: "https://videos.mjplus.online/MJPlus/TV/MJ%26Lisa%20RTL%20Prime%20Time%20%28merged%20lossless%29.mp4"
         }
       ]
     }
@@ -2434,7 +2467,7 @@ window.catalog = [
   tier: 'doc',                 // Groß/Klein egal – wird toLowerCase() verarbeitet
   category: ['TV Appearances'],
   type: 'mp4',                 // optional, aber nice to have
-  mp4: 'https://mjtvplus.com/0/MJ%20-%201995%20-%20Pop-Galerie%20(German%20Doku).mp4'
+  mp4: 'https://videos.mjplus.online/MJPlus/TV/MJ%20-%201995%20-%20Pop-Galerie%20%28German%20Doku%29.mp4'
 },
  {
   id: "oprah1993",
@@ -2855,8 +2888,8 @@ window.catalog = [
   { id:"historyreports97",    title:"History Tour Report 1997",    poster:"historyreports97.jpg",    source:"", type:"hls", category:"live", tier:"pro" },
 
   // --- Interviews (sichtbar auf Home + Interviews, nicht unter Live) ---
-  { id:"barbarawalters97",      title:"Barbara Walters Interview (1997)", poster:"barbarawalters97.jpg",      source:"https://mjtvplus.com/0/Barbara%20Walters.mp4",                             type:"mp4", category:["interviews","home"], tier:"interview" },
-  { id:"commemorated2010",      title:"Michael Jackson Commemorated (2010)", poster:"commemorated2010.jpg",    source:"https://mjtvplus.com/0/2010%20Commemorated_stream.mp4",                   type:"mp4", category:["interviews","home"], tier:"doc" },
+  { id:"barbarawalters97",      title:"Barbara Walters Interview (1997)", poster:"barbarawalters97.jpg",      source:"https://videos.mjplus.online/MJPlus/TV/Barbara%20Walters.mp4",                             type:"mp4", category:["interviews","home"], tier:"interview" },
+  { id:"commemorated2010",      title:"Michael Jackson Commemorated (2010)", poster:"commemorated2010.jpg",    source:"https://videos.mjplus.online/MJPlus/TV/2010%20Commemorated_stream.mp4",                   type:"mp4", category:["interviews","home"], tier:"doc" },
   { id:"oprahouttakes93",       title:"Oprah Interview – Outtakes (1993)",  poster:"oprahouttakes93.jpg",      source:"https://videos.mjplus.online/MJPlus/TV/1995%20-%20Oprah%20Outtakes%20%28merged%29.mp4",       type:"mp4", category:["interviews","home"], tier:"tv" },
   { id:"privatehomemovies2003", title:"Michael Jackson: Private Home Movies (2003)", poster:"privatehomemovies2003.jpg", source:"https://mjtvplus.com/0/Michael%20Jackson%20Private%20Home%20Movies.mp4", type:"mp4", category:["interviews","home"], tier:"tv" },
   { id:"taketwo2003",           title:"Take Two – The Footage You Were Never Meant to See (2003)", poster:"taketwo2003.jpg", source:"https://mjtvplus.com/0/Michael%20Jackson%20-%20Take%202%20(german,%20Jetzt%20rede%20ich).mp4", type:"mp4", category:["interviews","home"], tier:"doc" },
