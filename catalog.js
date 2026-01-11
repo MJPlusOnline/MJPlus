@@ -100,7 +100,7 @@ window.catalog = [
   title: "The Moscow Case (1993)",
   poster: "moscowcase93.jpg",
   type: "single",
-  category: "tv",
+  category: ["tv", "documentary", "home"]
   tier: "documentary",
 
   source: "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20The%20Moscow%20Case.mp4",
@@ -111,7 +111,7 @@ window.catalog = [
   title: "Mammut – Tour eines Megastars (1988)",
   poster: "mammut88.jpg",
   type: "single",
-  category: "tv",
+  category: ["tv", "documentary", "home"]
   tier: "tv",
 
   source: "https://videos.mjplus.online/MJPlus/TV/Mammut%20Tour%20eines%20Megastars_strm.mp4",
