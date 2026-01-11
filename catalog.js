@@ -237,7 +237,7 @@ window.catalog = [
         { label: 'REMEMBER THE TIME (1993 SOUL TRAIN MUSIC AWARDS)', link: 'https://videos.mjplus.online/MJPlus/TV/MJ%20-%201993%20Soul%20Train%20Awards%20-%20Remember%20The%20Time.mp4' },
         { label: "DANGEROUS (1995 WETTEN DASS...?)", link: 'https://mjtvplus.com/0/Wetten%20Dass%201995%20-%20Dangerous%20(ZDF%20logo%20removed).mp4' },
         { label: "EARTH SONG (1995 WETTEN DASS...?)", link: 'https://mjtvplus.com/0/%5b1995.11.4%5d%20Wetter%20Dass%20-%20Earth%20Song%20(no%20logo%20Version).mp4' },
-        { label: 'EARTH SONG (1996 BRIT AWARDS)', link: 'https://mjtvplus.com/0/Michael%20Jackson%20-%20Earth%20Song%20(1996%20Brit%20Awards%20Performance).mp4' },
+        { label: 'EARTH SONG (1996 BRIT AWARDS)', link: 'https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20-%20Earth%20Song%20%281996%20Brit%20Awards%20Performance%29.mp4' },
         { label: "EARTH SONG (1996 VMA'S)", link: 'https://mjtvplus.com/0/Earth%20Song%20VMA96.mp4' },
         { label: "ELIZABETH, I LOVE YOU (1997 ELIZABETH TAYLOR CELEBRATION)", link: "https://mjtvplus.com/0/%5b1997.02.16%5d%20Taylor's%2065th%20Birthday%20Gala%20-%20Elizabeth%20I%20Love%20You.mp4" },
         { label: "POP (FEAT. 'N SYNC) (2001 VMA'S)", link: 'https://videos.mjplus.online/MJPlus/TV/NSYNC%20%26%20Michael%20Jackson%20-%20Pop%20-%20MTV%20VMA%20%282001%29.mp4' },
@@ -303,7 +303,7 @@ window.catalog = [
     tier: "pro",
     versions: [
       { key: "original", label: "Original", type: "mp4", source: "", mp4: "" },
-      { key: "enhanced", label: "Enhanced", type: "mp4", source: "https://mjtvplus.com/0/Dangerous%20Tour%20Oslo,%20Norway%201992_HappyLee&Rudolf.mp4", mp4: "https://mjtvplus.com/0/Dangerous%20Tour%20Oslo,%20Norway%201992_HappyLee&Rudolf.mp4" }
+      { key: "enhanced", label: "Enhanced", type: "mp4", source: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/Dangerous%20Tour%20Oslo%2C%20Norway%201992_HappyLee%26Rudolf.mp4", mp4: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/Dangerous%20Tour%20Oslo%2C%20Norway%201992_HappyLee%26Rudolf.mp4" }
     ],
     chapters: [
       { sec:   0, label: "PLAY ALL" },
@@ -422,7 +422,7 @@ window.catalog = [
     category: "live",
     tier: "pro",
     versions: [
-      { key: "original", label: "Original", type: "mp4", source: "", mp4: "" },
+      { key: "original", label: "Original", type: "mp4", source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Bad%20Tour%20-%20Brisbane%20%2787.mp4", mp4: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Bad%20Tour%20-%20Brisbane%20%2787.mp4" },
       { key: "enhanced", label: "Enhanced", type: "mp4", source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201987%20Brisbane.mp4", mp4: "https://videos.mjplus.online/MJPlus/Bad%20Tour/MJ%20-%201987%20Brisbane.mp4" }
     ],
     chapters: [
@@ -554,8 +554,8 @@ window.catalog = [
     category: "live",
     tier: "pro",
     versions: [
-      { key: "original", label: "Original", type: "mp4", source: "https://mjtvplus.com/0/Toronto%201984_Original%20BQ.mp4", mp4: "https://mjtvplus.com/0/Toronto%201984_Original%20BQ.mp4" },
-      { key: "enhanced", label: "Enhanced", type: "mp4", source: "https://mjtvplus.com/0/Toronto%20UPSCALE%20NEW%202025%20kai.mp4", mp4: "https://mjtvplus.com/0/Toronto%20UPSCALE%20NEW%202025%20kai.mp4" }
+      { key: "original", label: "Original", type: "mp4", source: "https://videos.mjplus.online/MJPlus/Jacksons/Toronto%201984_Original%20BQ.mp4", mp4: "https://videos.mjplus.online/MJPlus/Jacksons/Toronto%201984_Original%20BQ.mp4" },
+      { key: "enhanced", label: "Enhanced", type: "mp4", source: "https://videos.mjplus.online/MJPlus/Jacksons/Toronto%20UPSCALE%20NEW%202025%20kai.mp4", mp4: "https://videos.mjplus.online/MJPlus/Jacksons/Toronto%20UPSCALE%20NEW%202025%20kai.mp4" }
     ],
     chapters: [
       { sec:    0,   label: "PLAY ALL" },
@@ -677,8 +677,8 @@ window.catalog = [
       ],
       versions: [
         { key: "original", label: "Original", type: "mp4",
-          source: "https://mjtvplus.com/0/Rome%2088%20Νew%20Rip.mp4",
-          mp4: "https://mjtvplus.com/0/Rome%2088%20Νew%20Rip.mp4" }
+          source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Rome88Ama.mp4",
+          mp4: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Rome88Ama.mp4" }
       ]
     }
   ]
@@ -795,7 +795,7 @@ window.catalog = [
   tier: "pro",
 
   versions: [
-    { key: "original",  label: "Original",  type: "mp4", source: "", mp4: "" },
+    { key: "original",  label: "Original",  type: "mp4", source: "https://videos.mjplus.online/MJPlus/History%20Tour/MJ%20-%201997%20Munich%20HD%20ZDF%20%28lee%29_HD.mp4", mp4: "https://videos.mjplus.online/MJPlus/History%20Tour/MJ%20-%201997%20Munich%20HD%20ZDF%20%28lee%29_HD.mp4" },
     { key: "enhanced",  label: "Enhanced",  type: "mp4",
       source: "https://videos.mjplus.online/MJPlus/History%20Tour/MJ%20-%201997%20Munich%20HD%20ZDF%20%28lee%29_HD.mp4",
       mp4:    "https://videos.mjplus.online/MJPlus/History%20Tour/MJ%20-%201997%20Munich%20HD%20ZDF%20%28lee%29_HD.mp4"
@@ -1477,8 +1477,8 @@ window.catalog = [
       key: "orange93",
       label: "Orange '93",
       type: "mp4",
-      source: "",
-      mp4:    "",
+      source: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/Orange%20rehearsal%20OG%20TAPE.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/Orange%20rehearsal%20OG%20TAPE.mp4",
       chapters: [
         { sec: 0, label: "Dangerous" },
         { sec: 345, label: "Dangerous (Second)" },
@@ -1552,8 +1552,8 @@ window.catalog = [
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "https://mjtvplus.com/0/Dallas%2084.mp4",
-          mp4: "https://mjtvplus.com/0/Dallas%2084.mp4"
+          source: "https://videos.mjplus.online/MJPlus/Jacksons/Dallas%2084.mp4",
+          mp4: "https://videos.mjplus.online/MJPlus/Jacksons/Dallas%2084.mp4"
         }
       ]
     }
@@ -1595,8 +1595,8 @@ window.catalog = [
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "https://mjtvplus.com/0/Kansas%2084%20OG%20File.mp4",
-          mp4:    "https://mjtvplus.com/0/Kansas%2084%20OG%20File.mp4"
+          source: "https://videos.mjplus.online/MJPlus/Jacksons/Kansas%2084%20OG%20File.mp4",
+          mp4:    "https://videos.mjplus.online/MJPlus/Jacksons/Kansas%2084%20OG%20File.mp4"
         }
       ]
     }
@@ -1701,8 +1701,8 @@ window.catalog = [
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "https://mjtvplus.com/0/Kuala%20Lumpur%2029.10.1996%20(merged).mp4",
-          mp4:    "https://mjtvplus.com/0/Kuala%20Lumpur%2029.10.1996%20(merged).mp4"
+          source: "https://videos.mjplus.online/MJPlus/History%20Tour/Kuala%20Lumpur%2029.10.1996%20%28merged%29.mp4",
+          mp4:    "https://videos.mjplus.online/MJPlus/History%20Tour/Kuala%20Lumpur%2029.10.1996%20%28merged%29.mp4"
         }
       ]
     }
@@ -2193,8 +2193,8 @@ window.catalog = [
           key: "english",
           label: "English",
           type: "mp4",
-          source: "https://mjtvplus.com/0/Primetime%2095%20HD.mp4", 
-          mp4: "https://mjtvplus.com/0/Primetime%2095%20HD.mp4"
+          source: "https://videos.mjplus.online/MJPlus/TV/Primetime%2095%20HD.mp4", 
+          mp4: "https://videos.mjplus.online/MJPlus/TV/Primetime%2095%20HD.mp4"
         },
         {
           key: "german",
@@ -2228,7 +2228,7 @@ window.catalog = [
       key: 'enhanced',
       label: 'Enhanced',
       type: 'mp4',
-      mp4: 'https://mjtvplus.com/0/MJ_Superbowl_50p_Upscale.mp4',
+      mp4: 'https://videos.mjplus.online/MJPlus/Special%20Performances/MJ_Superbowl_50p_Upscale.mp4',
       chapters: [
         { label: 'Intro',                          sec: 0   },
         { label: 'Toaster Entrance',               sec: 77  }, // 01:17
@@ -2343,8 +2343,8 @@ window.catalog = [
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "https://mjtvplus.com/0/helsinki97.mp4",
-          mp4: "https://mjtvplus.com/0/helsinki97.mp4"
+          source: "https://videos.mjplus.online/MJPlus/History%20Tour/helsinki97.mp4",
+          mp4: "https://videos.mjplus.online/MJPlus/History%20Tour/helsinki97.mp4"
         },
         {
           key: "enhanced",
@@ -2475,7 +2475,7 @@ window.catalog = [
       key: 'original',
       label: 'Original',
       type: 'mp4',
-      mp4: 'https://mjtvplus.com/0/Gelsen97Am.mp4',
+      mp4: 'https://videos.mjplus.online/MJPlus/History%20Tour/Gelsen97Am.mp4',
       chapters: [
         { label: 'PLAY ALL', sec: 0 },
         { label: 'INTRO', sec: 0 },
@@ -2532,6 +2532,33 @@ window.catalog = [
       mp4: '',
       upcoming: true
     }
+  ]
+},
+  {
+  id: "losangeles81",
+  title: "Los Angeles, USA (September 26, 1981)",
+  poster: "losangeles81.jpg",
+  type: "single",
+  category: "live",
+  tier: "pro",
+
+  source: "https://videos.mjplus.online/MJPlus/Jacksons/Triumph_Tour_LA_1981_lossless.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/Jacksons/Triumph_Tour_LA_1981_lossless.mp4",
+
+  chapters: [
+    { sec:    0, label: "PLAY ALL" },
+    { sec:  215, label: "CAN YOU FEEL IT" },
+    { sec:  446, label: "THINGS I DO FOR YOU" },
+    { sec:  664, label: "OFF THE WALL" },
+    { sec:  897, label: "BEN" },
+    { sec: 1139, label: "THIS PLACE HOTEL (HEARTBREAK HOTEL)" },
+    { sec: 1450, label: "SHE'S OUT OF MY LIFE" },
+    { sec: 1915, label: "I WANT YOU BACK" },
+    { sec: 1974, label: "ABC" },
+    { sec: 2009, label: "THE LOVE YOU SAVE" },
+    { sec: 2092, label: "I'LL BE THERE" },
+    { sec: 2280, label: "ROCK WITH YOU" },
+    { sec: 2516, label: "LOVELY ONE" }
   ]
 },
   {
