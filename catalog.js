@@ -265,7 +265,7 @@ window.catalog = [
       key: 'original',
       label: 'Original',
       type: 'mp4',
-      mp4: 'https://mjtvplus.com/0/Grammy%20Awards%201988%20%28TWYMMF%20%26MITM%29.mp4',
+      mp4: 'https://videos.mjplus.online/MJPlus/Special%20Performances/Grammy%20Awards%201988%20%28TWYMMF%20%26MITM%29.mp4',
       chapters: [
         { label: 'Intro',                       sec: 0   },
         { label: 'The Way You Make Me Feel',    sec: 86  }, // 01:26
@@ -276,7 +276,7 @@ window.catalog = [
       key: 'enhanced',
       label: 'Enhanced 16:9',
       type: 'mp4',
-      mp4: 'https://mjtvplus.com/0/Grammys%2088%20WIDE%20Small.mp4',
+      mp4: 'https://videos.mjplus.online/MJPlus/Special%20Performances/Grammys%2088%20WIDE%20Small.mp4',
       chapters: [
         { label: 'Intro',                       sec: 0   },
         { label: 'The Way You Make Me Feel',    sec: 86  }, // 01:26
@@ -576,6 +576,45 @@ window.catalog = [
       { sec: 5730,   label: "SHAKE YOUR BODY" }
     ]
   },
+ {
+  id: "er84",
+  title: "East Rutherford (July 30, 1984)",
+  poster: "er84.jpg",
+  type: "multi",
+  category: "live",
+  tier: "AM.",
+  versions: [
+    {
+      key: "original",
+      label: "Original",
+      type: "mp4",
+      source: "https://videos.mjplus.online/MJPlus/Jacksons/NewYork84_960x720_60fps_ref2.mp4",
+      mp4: "https://videos.mjplus.online/MJPlus/Jacksons/NewYork84_960x720_60fps_ref2.mp4"
+    }
+  ],
+  chapters: [
+    { sec:    0, label: "PLAY ALL" },
+    { sec:   21, label: "THE SWORD IN THE STONE" },
+    { sec:  242, label: "WANNA BE STARTIN' SOMETHIN'" },
+    { sec:  563, label: "THINGS I DO FOR YOU" },
+    { sec:  770, label: "OFF THE WALL" },
+    { sec:  996, label: "BEN (INTERLUDE)" },
+    { sec: 1031, label: "HUMAN NATURE" },
+    { sec: 1256, label: "THIS PLACE HOTEL" },
+    { sec: 1559, label: "SHE'S OUT OF MY LIFE" },
+    { sec: 1798, label: "LET'S GET SERIOUS" },
+    { sec: 2074, label: "TELL ME I'M NOT DREAMIN'" },
+    { sec: 2296, label: "I WANT YOU BACK" },
+    { sec: 2366, label: "THE LOVE YOU SAVE" },
+    { sec: 2432, label: "I'LL BE THERE" },
+    { sec: 2701, label: "ROCK WITH YOU" },
+    { sec: 2951, label: "LOVELY ONE" },
+    { sec: 3276, label: "WORKING DAY AND NIGHT" },
+    { sec: 3987, label: "BEAT IT" },
+    { sec: 4463, label: "BILLIE JEAN" },
+    { sec: 4838, label: "SHAKE YOUR BODY" }
+  ]
+},
 
   {
     id: "bremen92",
@@ -1889,8 +1928,8 @@ window.catalog = [
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "https://mjtvplus.com/0/MJ&Friends%20ZDF%20(1999).mp4",
-          mp4: "https://mjtvplus.com/0/MJ&Friends%20ZDF%20(1999).mp4"
+          source: "https://videos.mjplus.online/MJPlus/Special%20Performances/MJ%26Friends%20ZDF%20%281999%29.mp4",
+          mp4: "https://videos.mjplus.online/MJPlus/Special%20Performances/MJ%26Friends%20ZDF%20%281999%29.mp4"
         },
         {
           key: "enhanced",
@@ -2145,8 +2184,8 @@ window.catalog = [
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "https://mjtvplus.com/0/Auckland%20Nov9th%201996.mp4",
-          mp4:    "https://mjtvplus.com/0/Auckland%20Nov9th%201996.mp4"
+          source: "https://videos.mjplus.online/MJPlus/History%20Tour/Auckland%20Nov9th%201996.mp4",
+          mp4:    "https://videos.mjplus.online/MJPlus/History%20Tour/Auckland%20Nov9th%201996.mp4"
         }
       ]
     },
@@ -2624,7 +2663,7 @@ window.catalog = [
       key: 'original',
       label: 'Original',
       type: 'mp4',
-      mp4: 'https://mjtvplus.com/0/gothenburg95tv1000.mp4',
+      mp4: 'https://videos.mjplus.online/MJPlus/History%20Tour/gothenburg95tv1000.mp4',
       chapters: [
         { label: 'PLAY ALL', sec: 0 },
         { label: 'THE GREAT GATE OF KIEV (OPENING)', sec: 0 },
@@ -2668,8 +2707,7 @@ window.catalog = [
 
   // neue Poster + AM/PRO Markierungen
   { id:"nysept10-01ama", title:"New York 2001 (Sept 10)", poster:"nysept10-01ama.jpg", source:"", type:"hls", category:"live", tier:"am" },
-  { id:"ny84",           title:"New York 84",   poster:"ny84.jpg",          source:"", type:"hls", category:["jacksons","live"], tier:"am" },
-
+  
   // weitere AM-Markierungen laut deiner Liste
   { id:"mexico93",       title:"Mexico 93",     poster:"mexico93.jpg",      source:"", type:"hls", category:"live", tier:"am" },
   { id:"amsterdam96",    title:"Amsterdam 96",  poster:"amsterdam96.jpg",   source:"", type:"hls", category:"live", tier:"am" },
