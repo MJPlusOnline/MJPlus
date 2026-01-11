@@ -333,7 +333,7 @@ window.catalog = [
         { label: 'WHAT MORE CAN I GIVE (2001 WASHINGTON DC BENEFIT)', link: 'https://videos.mjplus.online/MJPlus/Special%20Performances/WMCIGlive.mp4' },
         { label: "DANGEROUS (2002 AMERICAN BANDSTAND 50TH ANNIVERSARY)", link: "https://mjtvplus.com/0/%5b2002.05.03%5d%20American%20Bandstand's%2050th%20Anniversary%20Celebration%20-%20Dangerous.mp4" },
         { label: 'DANGEROUS (2002 AT THE APOLLO)', link: 'https://mjtvplus.com/0/%5b2002.10.08%5d%20A%20Night%20At%20The%20Apollo%20-%20Dangerous%20(HQ%20Version).mp4' },
-        { label: "WE ARE THE WORLD (2006 VMA'S)", link: 'https://videos.mjplus.online/MJPlus/TV/WATW2006.mp44' }
+        { label: "WE ARE THE WORLD (2006 VMA'S)", link: 'https://videos.mjplus.online/MJPlus/TV/WATW2006.mp4' }
       ]
     }
   ]
