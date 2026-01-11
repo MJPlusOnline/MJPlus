@@ -2949,6 +2949,28 @@ window.catalog = [
   source: "https://videos.mjplus.online/MJPlus/TV/1995%20-%20Oprah%20Outtakes%20%28merged%29.mp4",
   mp4:    "https://videos.mjplus.online/MJPlus/TV/1995%20-%20Oprah%20Outtakes%20%28merged%29.mp4"
 },
+  {
+  id: "commemorated",
+  title: "Commemorated",
+  poster: "commemorated2010.jpg",
+  type: "single",
+  category: ["tv", "documentary"],
+  tier: "documentary",
+
+  source: "https://videos.mjplus.online/MJPlus/TV/2010%20Commemorated_stream.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/TV/2010%20Commemorated_stream.mp4"
+},
+  {
+  id: "barbara-walters-1997",
+  title: "Barbara Walters Interview (1997)",
+  poster: "barbarawalters97.jpg",
+  type: "single",
+  category: ["tv", "interview"],
+  tier: "tv",
+
+  source: "https://videos.mjplus.online/MJPlus/TV/Barbara%20Walters.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/TV/Barbara%20Walters.mp4"
+},
 {
   id: 'gothenburg97',
   title: 'Gothenburg, August 16, 1997',
@@ -3021,7 +3043,6 @@ window.catalog = [
 
   // --- Interviews (sichtbar auf Home + Interviews, nicht unter Live) ---
   { id:"barbarawalters97",      title:"Barbara Walters Interview (1997)", poster:"barbarawalters97.jpg",      source:"https://videos.mjplus.online/MJPlus/TV/Barbara%20Walters.mp4",                             type:"mp4", category:["interviews","home"], tier:"interview" },
-  { id:"commemorated2010",      title:"Michael Jackson Commemorated (2010)", poster:"commemorated2010.jpg",    source:"https://videos.mjplus.online/MJPlus/TV/2010%20Commemorated_stream.mp4",                   type:"mp4", category:["interviews","home"], tier:"doc" },
   { id:"taketwo2003",           title:"Take Two – The Footage You Were Never Meant to See (2003)", poster:"taketwo2003.jpg", source:"https://mjtvplus.com/0/Michael%20Jackson%20-%20Take%202%20(german,%20Jetzt%20rede%20ich).mp4", type:"mp4", category:["interviews","home"], tier:"doc" },
 
   // --- The Jacksons ---
