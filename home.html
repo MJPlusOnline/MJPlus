@@ -149,15 +149,15 @@
   width: 42px;
   height: 42px;
 
-  background: rgba(0, 0, 0, 0.85);
-  border: 1px solid #e50914;
+  background: #e50914;          /* 🔴 wieder rot gefüllt */
+  border: none;                 /* kein roter Rand */
   border-radius: 50%;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  color: #e50914; /* 🔴 dauerhaft rot */
+  color: #fff;                  /* Icon weiß */
   text-decoration: none;
 
   z-index: 9999;
@@ -166,16 +166,15 @@
 
 .mj-email-fab:hover .mj-email-tooltip {
   opacity: 1;
-  transform: translateX(-50%) translateY(-4px);
+  transform: translateY(50%) translateX(4px);
 }
 
 .mj-email-tooltip {
   position: absolute;
 
-  /* 🔥 WICHTIG: komplett neue Positionierung */
-  bottom: calc(100% + 10px);   /* über dem Icon */
-  left: 50%;
-  transform: translateX(-50%);
+  left: calc(100% + 10px);   /* ➡️ rechts mit Abstand */
+  bottom: 60%;               /* ⬆️ etwas höher als Mitte */
+  transform: translateY(50%);
 
   background: rgba(0, 0, 0, 0.92);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -187,18 +186,12 @@
   font-size: 12px;
   line-height: 1.4;
 
-  width: max-content;          /* nur so breit wie Text */
-  max-width: 320px;
-  text-align: center;
+  width: max-content;        /* nur so breit wie Text */
+  max-width: 280px;
 
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.mj-email-fab:hover .mj-email-tooltip {
-  opacity: 1;
-  transform: translateX(-50%) translateY(-4px);
 }
 /* Tooltip auf Touch-Geräten ausblenden */
 @media (hover: none) {
