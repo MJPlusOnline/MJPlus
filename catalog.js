@@ -112,7 +112,7 @@ window.catalog = [
   poster: "mammut88.jpg",
   type: "single",
   category: "tv",
-  tier: "documentary",
+  tier: "tv",
 
   source: "https://videos.mjplus.online/MJPlus/TV/Mammut%20Tour%20eines%20Megastars_strm.mp4",
   mp4:    "https://videos.mjplus.online/MJPlus/TV/Mammut%20Tour%20eines%20Megastars_strm.mp4"
