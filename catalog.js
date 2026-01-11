@@ -109,7 +109,7 @@ window.catalog = [
   {
   id: "mammut88",
   title: "Mammut – Tour eines Megastars (1988)",
-  poster: "mammut.jpg",
+  poster: "mammut88.jpg",
   type: "single",
   category: "tv",
   tier: "documentary",
