@@ -73,6 +73,84 @@ window.catalog = [
     }
   ]
 },
+  {
+  id: "invincible-signing-nyc-2001",
+  title: "Invincible Album Signing – New York (November 7, 2001)",
+  poster: "virgin01.jpg",
+  type: "single",
+  category: "tv",
+  tier: "tv",
+
+  source: "https://videos.mjplus.online/MJPlus/TV/MJ%20-%202001%20Invincible%20signing%20event_strm.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/TV/MJ%20-%202001%20Invincible%20signing%20event_strm.mp4"
+},
+  {
+  id: "moscowcase93",
+  title: "The Moscow Case (1993)",
+  poster: "moscowcase93.jpg",
+  type: "single",
+  category: "tv",
+  tier: "documentary",
+
+  source: "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20The%20Moscow%20Case.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20The%20Moscow%20Case.mp4"
+},
+  {
+  id: "mammut88",
+  title: "Mammut – Tour eines Megastars (1988)",
+  poster: "mammut.jpg",
+  type: "single",
+  category: "tv",
+  tier: "documentary",
+
+  source: "https://videos.mjplus.online/MJPlus/TV/Mammut%20Tour%20eines%20Megastars_strm.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/TV/Mammut%20Tour%20eines%20Megastars_strm.mp4"
+},
+  {
+  id: "dangerousdiary92",
+  title: "Dangerous Diary (MTV, 1992)",
+  poster: "diary92.jpg", // Dateiname ggf. anpassen
+  type: "multi",
+  category: "tv",
+  tier: "tv",
+
+  versions: [
+    {
+      key: "original",
+      label: "Original",
+      type: "mp4",
+      source: "https://videos.mjplus.online/MJPlus/TV/DDiaries_strm.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/TV/DDiaries_strm.mp4"
+    },
+    {
+      key: "enhanced",
+      label: "Enhanced",
+      type: "mp4",
+      source: "", // kommt noch
+      mp4: ""     // kommt noch
+    }
+  ],
+
+  chapters: [
+    { sec:    0, label: "Episode 1" },
+    { sec:  847, label: "Episode 2" },  // 14:07
+    { sec: 1741, label: "Episode 3" },  // 29:01
+    { sec: 2637, label: "Episode 4" },  // 43:57
+    { sec: 3542, label: "Episode 5" },  // 59:02
+    { sec: 4464, label: "Episode 6" }   // 1:14:24
+  ]
+},
+  {
+  id: "apom88",
+  title: "Another Part Of Me – MTV Special (1988)",
+  poster: "apom88.jpg",
+  type: "single",
+  category: "tv",
+  tier: "tv",
+
+  source: "https://videos.mjplus.online/MJPlus/TV/MTV_APOMSpecial1988_sream.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/TV/MTV_APOMSpecial1988_sream.mp4"
+},
 {
   id: "osaka87",
   title: "Osaka, Japan (1987)",
