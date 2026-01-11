@@ -692,6 +692,10 @@ function getCatalogRoot(item){
   function playItem(item, startAt=0){
     if(!item?.source && !item?.mp4){ alert('No stream assigned for this video yet.'); return; }
     currentItem = item;
+
+    // 🔒 Setlist IMMER zuerst ausblenden
+if (setlistModal) setlistModal.style.display = 'none';
+NavStack.markSetlist(false);
 // 🧭 Setlist-Logik: Wenn das Item selbst eine Setlist hat oder Teil einer Collection ist
 let parentSetlist = null;
 
