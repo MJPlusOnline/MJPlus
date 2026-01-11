@@ -1060,15 +1060,15 @@ window.catalog = [
           key: "original",
           label: "Original (BBC MSTR)",
           type: "mp4",
-          source: "https://mjtvplus.com/0/michael%20jackson%20bucharest%20mfx%20(1).mp4",
-          mp4:    "https://mjtvplus.com/0/michael%20jackson%20bucharest%20mfx%20(1).mp4"
+          source: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201992%20Bucharest%20BBC%20MSTR%20%2850fps%29_stream.mp4",
+          mp4:    "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201992%20Bucharest%20BBC%20MSTR%20%2850fps%29_stream.mp4"
         },
         {
           key: "enhanced",
-          label: "Enhanced (coming soon)",
+          label: "Enhanced",
           type: "mp4",
-          source: "",
-          mp4: ""
+          source: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201992%20Bucharest%20%28MASTER%20TAPE%20BBC%20UPSCALE%29_stream.mp4",
+          mp4: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/MJ%20-%201992%20Bucharest%20%28MASTER%20TAPE%20BBC%20UPSCALE%29_stream.mp4"
         }
       ]
     }
@@ -1675,6 +1675,138 @@ window.catalog = [
     { sec: 6242,   label: "EARTH SONG" },
     { sec: 7000,   label: "WE ARE THE WORLD" },
     { sec: 7901,   label: "HISTORY" }
+  ]
+},
+ {
+  id: "manila96",
+  title: "Manila, Philippines (December 10, 1996)",
+  poster: "manila96.jpg",
+  type: "multi",
+  category: "live",
+  tier: "pro",
+
+  versions: [
+    {
+      key: "gma-original",
+      label: "GMA · Original",
+      type: "mp4",
+      source: "",
+      mp4:    "",
+      chapters: [
+        { sec:    0, label: "PLAY ALL" },
+        { sec:  366, label: "SCREAM" },
+        { sec:  621, label: "THEY DON'T CARE ABOUT US" },
+        { sec:  770, label: "IN THE CLOSET" },
+        { sec:  874, label: "WANNA BE STARTIN' SOMETHIN'" },
+        { sec: 1060, label: "YOU ARE NOT ALONE" },
+        { sec: 1393, label: "I'LL BE THERE" },
+        { sec: 2090, label: "BILLIE JEAN" },
+        { sec: 2608, label: "THRILLER" },
+        { sec: 3002, label: "BEAT IT" },
+        { sec: 3445, label: "BLACK OR WHITE" },
+        { sec: 3717, label: "EARTH SONG" },
+        { sec: 4380, label: "HEAL THE WORLD" },
+        { sec: 5080, label: "HISTORY" }
+      ]
+    },
+
+    {
+      key: "gma-enhanced",
+      label: "GMA · Enhanced",
+      type: "mp4",
+      source: "https://videos.mjplus.online/MJPlus/History%20Tour/MJ%20-%201996%20Manila%20GMA%20%28New%20Rip%202025%20Upscale%29_stream.mp4",
+      mp4: "https://videos.mjplus.online/MJPlus/History%20Tour/MJ%20-%201996%20Manila%20GMA%20%28New%20Rip%202025%20Upscale%29_stream.mp4",
+      chapters: [
+        { sec:    0, label: "PLAY ALL" },
+        { sec:  366, label: "SCREAM" },
+        { sec:  621, label: "THEY DON'T CARE ABOUT US" },
+        { sec:  770, label: "IN THE CLOSET" },
+        { sec:  874, label: "WANNA BE STARTIN' SOMETHIN'" },
+        { sec: 1060, label: "YOU ARE NOT ALONE" },
+        { sec: 1393, label: "I'LL BE THERE" },
+        { sec: 2090, label: "BILLIE JEAN" },
+        { sec: 2608, label: "THRILLER" },
+        { sec: 3002, label: "BEAT IT" },
+        { sec: 3445, label: "BLACK OR WHITE" },
+        { sec: 3717, label: "EARTH SONG" },
+        { sec: 4380, label: "HEAL THE WORLD" },
+        { sec: 5080, label: "HISTORY" }
+      ]
+    },
+
+    {
+      key: "ch8-original",
+      label: "Channel 8 · Original",
+      type: "mp4",
+      source: "",
+      mp4: "",
+      chapters: [
+        { sec:    0, label: "PLAY ALL" },
+        { sec:    0, label: "THE GREAT GATE OF KIEV (OPENING)" },
+        { sec:  364, label: "SCREAM" },
+        { sec:  535, label: "THE DRILL" },
+        { sec:  590, label: "THEY DON'T CARE ABOUT US" },
+        { sec:  759, label: "IN THE CLOSET" },
+        { sec:  874, label: "WANNA BE STARTIN' SOMETHIN'" },
+        { sec: 1188, label: "STRANGER IN MOSCOW" },
+        { sec: 1543, label: "SMOOTH CRIMINAL (INTRO)" },
+        { sec: 1579, label: "SMOOTH CRIMINAL" },
+        { sec: 1848, label: "YOU ARE NOT ALONE" },
+        { sec: 2226, label: "I WANT YOU BACK" },
+        { sec: 2307, label: "THE LOVE YOU SAVE" },
+        { sec: 2370, label: "I'LL BE THERE" },
+        { sec: 2734, label: "REMEMBER THE TIME (INTERLUDE)" },
+        { sec: 2980, label: "BILLIE JEAN (INTRO)" },
+        { sec: 3079, label: "BILLIE JEAN" },
+        { sec: 3563, label: "THRILLER" },
+        { sec: 3981, label: "BEAT IT" },
+        { sec: 4433, label: "BLACK PANTHER (INTERLUDE)" },
+        { sec: 4640, label: "BLACK OR WHITE (INTERLUDE)" },
+        { sec: 4723, label: "BLACK OR WHITE" },
+        { sec: 4993, label: "EARTH SONG" },
+        { sec: 5551, label: "WE ARE THE WORLD (INTERLUDE)" },
+        { sec: 5691, label: "HEAL THE WORLD" },
+        { sec: 6196, label: "TDCAU & THE GREAT GATE OF KIEV (INTERLUDE)" },
+        { sec: 6375, label: "HISTORY" }
+      ]
+    },
+
+    {
+      key: "ch8-enhanced",
+      label: "Channel 8 · Enhanced",
+      type: "mp4",
+      source: "",
+      mp4: "",
+      chapters: [
+        { sec:    0, label: "PLAY ALL" },
+        { sec:    0, label: "THE GREAT GATE OF KIEV (OPENING)" },
+        { sec:  364, label: "SCREAM" },
+        { sec:  535, label: "THE DRILL" },
+        { sec:  590, label: "THEY DON'T CARE ABOUT US" },
+        { sec:  759, label: "IN THE CLOSET" },
+        { sec:  874, label: "WANNA BE STARTIN' SOMETHIN'" },
+        { sec: 1188, label: "STRANGER IN MOSCOW" },
+        { sec: 1543, label: "SMOOTH CRIMINAL (INTRO)" },
+        { sec: 1579, label: "SMOOTH CRIMINAL" },
+        { sec: 1848, label: "YOU ARE NOT ALONE" },
+        { sec: 2226, label: "I WANT YOU BACK" },
+        { sec: 2307, label: "THE LOVE YOU SAVE" },
+        { sec: 2370, label: "I'LL BE THERE" },
+        { sec: 2734, label: "REMEMBER THE TIME (INTERLUDE)" },
+        { sec: 2980, label: "BILLIE JEAN (INTRO)" },
+        { sec: 3079, label: "BILLIE JEAN" },
+        { sec: 3563, label: "THRILLER" },
+        { sec: 3981, label: "BEAT IT" },
+        { sec: 4433, label: "BLACK PANTHER (INTERLUDE)" },
+        { sec: 4640, label: "BLACK OR WHITE (INTERLUDE)" },
+        { sec: 4723, label: "BLACK OR WHITE" },
+        { sec: 4993, label: "EARTH SONG" },
+        { sec: 5551, label: "WE ARE THE WORLD (INTERLUDE)" },
+        { sec: 5691, label: "HEAL THE WORLD" },
+        { sec: 6196, label: "TDCAU & THE GREAT GATE OF KIEV (INTERLUDE)" },
+        { sec: 6375, label: "HISTORY" }
+      ]
+    }
   ]
 },
 {
