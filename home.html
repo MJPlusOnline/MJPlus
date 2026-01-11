@@ -150,36 +150,30 @@
   height: 42px;
 
   background: rgba(0, 0, 0, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid #e50914;
   border-radius: 50%;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  color: #ccc;
+  color: #e50914; /* 🔴 dauerhaft rot */
   text-decoration: none;
 
   z-index: 9999;
-  transition: border-color 0.2s ease, color 0.2s ease;
-}
-
-.mj-email-fab svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 .mj-email-fab:hover {
-  color: #e50914; /* MJPlus Rot */
-  border-color: #e50914;
+  transform: scale(1.06);
+  box-shadow: 0 0 14px rgba(229,9,20,0.55);
 }
 
 .mj-email-tooltip {
   position: absolute;
-  left: 54px;
-  bottom: 50%;
-  transform: translateY(50%);
+  bottom: 52px;              /* ⬆️ über dem Icon */
+  left: 50%;
+  transform: translateX(-50%);
 
   background: rgba(0, 0, 0, 0.92);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -190,17 +184,19 @@
 
   font-size: 12px;
   line-height: 1.4;
-  width: 260px;
+  white-space: normal;
+  max-width: 320px;          /* Sicherheit */
+  width: max-content;        /* 🔥 nur so breit wie Text */
 
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .mj-email-fab:hover .mj-email-tooltip {
   opacity: 1;
+  transform: translateX(-50%) translateY(-4px);
 }
-
 /* Tooltip auf Touch-Geräten ausblenden */
 @media (hover: none) {
   .mj-email-tooltip {
