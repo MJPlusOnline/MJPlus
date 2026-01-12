@@ -14,17 +14,6 @@ function mountGlowBackdrop() {
   body { background:#050508; }
 
   /* Farbwolken – zarter, mit weichem Sway (Parallax) */
-  body::before{
-    content:"";
-    position:fixed; inset:0;
-    z-index:-1; pointer-events:none;
-    background:
-      radial-gradient(40vmax 40vmax at 12% 18%, rgba(255,210,255,.42), transparent 60%),
-      radial-gradient(45vmax 45vmax at 82% 28%, rgba(210,255,255,.42), transparent 60%),
-      radial-gradient(36vmax 36vmax at 52% 84%, rgba(255,255,210,.42), transparent 60%),
-      #050508;
-    background-repeat:no-repeat;
-    background-size:100% 100%,100% 100%,100% 100%,cover;
 
     /* zarter, aber lebendiger Look */
     filter: blur(40px) saturate(140%) brightness(112%);
@@ -85,7 +74,32 @@ function mountGlowBackdrop() {
     78%  { opacity:.25; filter: brightness(1.03); }
     100% { opacity:.21; filter: brightness(1.00); }
   }
+  /* ✨ Subtle Sparkles Layer */
+  body::before{
+    background:
+      radial-gradient(2px 2px at 12% 18%, rgba(255,255,255,.55), transparent 60%),
+      radial-gradient(1.5px 1.5px at 32% 72%, rgba(255,255,255,.35), transparent 60%),
+      radial-gradient(1.8px 1.8px at 68% 22%, rgba(255,255,255,.45), transparent 60%),
+      radial-gradient(1.2px 1.2px at 82% 64%, rgba(255,255,255,.30), transparent 60%),
+      radial-gradient(2px 2px at 48% 48%, rgba(255,255,255,.25), transparent 60%),
+      /* dein bestehender Farb-Glow bleibt UNTEN */
+      radial-gradient(40vmax 40vmax at 12% 18%, rgba(255,210,255,.42), transparent 60%),
+      radial-gradient(45vmax 45vmax at 82% 28%, rgba(210,255,255,.42), transparent 60%),
+      radial-gradient(36vmax 36vmax at 52% 84%, rgba(255,255,210,.42), transparent 60%),
+      #050508;
+  }
 
+  body::after{
+    animation:
+      mjDim 9s ease-in-out infinite,
+      sparkleTwinkle 6s ease-in-out infinite alternate;
+  }
+
+  @keyframes sparkleTwinkle {
+    0%   { opacity:.18; filter: brightness(1) blur(50px); }
+    50%  { opacity:.26; filter: brightness(1.15) blur(46px); }
+    100% { opacity:.20; filter: brightness(1) blur(52px); }
+  }
   /* --- Badges (Tier) ------------------------------------------ */
     .badge {
     position: absolute;
