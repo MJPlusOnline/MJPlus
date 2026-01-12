@@ -2083,7 +2083,7 @@ window.catalog = [
   { sec: 5203,    label: "BLACK OR WHITE" },
   { sec: 5467,    label: "EARTH SONG" },
   { sec: 6234,    label: "HEAL THE WORLD" },
-  { sec: 6917,    label: "HISTORY" },
+  { sec: 6917,    label: "HISTORY" }
       ],
       versions: [
         {
