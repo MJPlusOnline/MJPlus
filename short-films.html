@@ -353,9 +353,9 @@ footer{
     // dieser Init macht die Suche funktionsfähig.
     window.MJPLUS?.initSearchUI?.();
   </script>
+  
 
-  <!-- MOBILE: Enter-Button -> Home -->
-  <script>
+<script>
     (function () {
       if (window.matchMedia('(max-width: 768px)').matches) {
         document.getElementById('sfEnter')?.addEventListener('click', () => {
@@ -363,6 +363,31 @@ footer{
         });
       }
     })();
-  </script>
+</script>
+
+<!-- ✅ LOGO CLICK: SOUND + HOME -->
+<script>
+(function(){
+  const logo = document.querySelector('header .logo');
+  if (!logo) return;
+
+  const audio = new Audio('logo-click.mp3');
+  audio.volume = 0.45;
+
+  logo.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // Sound
+    audio.currentTime = 0;
+    audio.play().catch(()=>{});
+
+    // Weiterleitung zu Home
+    setTimeout(() => {
+      window.location.href = 'home.html';
+    }, 1000);
+  });
+})();
+</script>
+
 </body>
 </html>
