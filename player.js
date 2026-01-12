@@ -170,7 +170,7 @@ function mountGlowBackdrop() {
   const resumeFrac = (id) => { const e = loadCW().find(x => x.id === id); return (e && e.d>0)? Math.min(1,e.t/e.d):0; };
 
   /* ---------- Overlay / Player / Setlist ---------- */
-  let overlay, videoEl, closeXBtn;
+  let overlay, videoEl, closeXBtn, setlistBtn;
   let setlistModal, setlistCols, setlistHeaderImg, setlistHeaderTitle;
   let currentItem = null, hls = null, saveTimer = null, lastSetlistItem = null;
 
@@ -207,16 +207,60 @@ closeXBtn.addEventListener('click', () => {
 
   closeOverlay();
 });
-    overlay.appendChild(closeXBtn);
+   overlay.appendChild(closeXBtn);
 
-    videoEl = document.createElement('video');
-    videoEl.id = 'videoEl';
-    videoEl.setAttribute('controls','');
-    videoEl.setAttribute('preload','metadata');
-    videoEl.setAttribute('playsinline','');
-    videoEl.style.cssText = 'width:min(100vw, 100vh * 16/9);max-height:100vh;background:#000;outline:none;border:none';
-    overlay.appendChild(videoEl);
+/* 🎵 SETLIST BUTTON (neben dem X) */
+setlistBtn = document.createElement('button');
+setlistBtn.id = 'playerSetlistBtn';
+setlistBtn.type = 'button';
+setlistBtn.textContent = 'Setlist';
 
+setlistBtn.style.cssText = `
+  position:absolute;
+  top:10px;
+  right:48px;
+  height:28px;
+  padding:4px 10px;
+  border-radius:8px;
+  border:1px solid #ffffff33;
+  background:#00000066;
+  color:#fff;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  cursor:pointer;
+  opacity:.6;
+`;
+
+setlistBtn.addEventListener('mouseenter', () => {
+  setlistBtn.style.opacity = '1';
+  setlistBtn.style.background = '#00000099';
+});
+setlistBtn.addEventListener('mouseleave', () => {
+  setlistBtn.style.opacity = '.6';
+  setlistBtn.style.background = '#00000066';
+});
+
+setlistBtn.addEventListener('click', () => {
+  if (!currentItem) return;
+  const root = getCatalogRoot(currentItem);
+  if (!root) return;
+  showSetlist(root);
+  NavStack.markSetlist(true);
+});
+
+overlay.appendChild(setlistBtn);
+
+/* 🎬 VIDEO ELEMENT */
+videoEl = document.createElement('video');
+videoEl.id = 'videoEl';
+videoEl.setAttribute('controls','');
+videoEl.setAttribute('preload','metadata');
+videoEl.setAttribute('playsinline','');
+videoEl.style.cssText =
+  'width:min(100vw, 100vh * 16/9);max-height:100vh;background:#000;outline:none;border:none';
+overlay.appendChild(videoEl);
     document.body.appendChild(overlay);
 
     // SETLIST MODAL
@@ -704,51 +748,20 @@ function getCatalogRoot(item){
   function playItem(item, startAt=0){
     if(!item?.source && !item?.mp4){ alert('No stream assigned for this video yet.'); return; }
     currentItem = item;
+    // 🎯 Setlist-Button nur anzeigen, wenn wirklich eine Setlist existiert
+const hasSetlist =
+  (Array.isArray(item.chapters) && item.chapters.length) ||
+  (Array.isArray(item.versions) && item.versions.some(v => v.chapters?.length)) ||
+  (Array.isArray(item.recordings) && item.recordings.length);
+
+if (setlistBtn) {
+  setlistBtn.style.display = hasSetlist ? 'block' : 'none';
+}
 
     // 🔒 Setlist IMMER zuerst ausblenden
 if (setlistModal) setlistModal.style.display = 'none';
 NavStack.markSetlist(false);
-// 🧭 Setlist-Logik: Wenn das Item selbst eine Setlist hat oder Teil einer Collection ist
-let parentSetlist = null;
 
-// (a) Wenn es Teil einer Collection ist
-if (item.groupId) {
-  parentSetlist = (window.catalog || []).find(x => x.id === item.groupId) || null;
-// 🔁 Beim Start: Sofort einmal Continue-Watching aktualisieren
-setTimeout(() => {
-  try { window.MJPLUS?.updateContinueWatching?.(); } catch {}
-}, 500);
-}
-
-// (b) Oder wenn das Item selbst eine Setlist hat (Kapitel, Varianten oder Bundle)
-if (!parentSetlist) {
-  const full = (window.catalog || []).find(x => x.id === item.id);
-  const hasChapters =
-    (Array.isArray(full?.chapters) && full.chapters.length > 0) ||
-    (Array.isArray(full?.versions) && full.versions.some(v => Array.isArray(v.chapters) && v.chapters.length > 0)) ||
-    (Array.isArray(full?.recordings) && full.recordings.length > 0);
-  if (hasChapters) parentSetlist = full;
-}
-
-// Setze NavStack & Merke letzte Setlist
-if (parentSetlist) {
-  lastSetlistItem = parentSetlist;
-  NavStack.markSetlist(true);
-} else {
-  NavStack.markSetlist(false);
-}
-// 🧭 Wenn der Clip zu einer Collection gehört, Setlist-Logik vorbereiten
-if (item.groupId) {
-  const parent = (window.catalog || []).find(x => x.id === item.groupId);
-  if (parent) {
-    lastSetlistItem = parent;       // ← korrektes Setlist-Item merken
-    NavStack.markSetlist(true);     // ← damit beim Schließen Setlist gezeigt wird
-  } else {
-    NavStack.markSetlist(false);
-  }
-} else {
-  NavStack.markSetlist(false);
-}
 
     ensureOverlay();
     openOverlay();
@@ -835,12 +848,11 @@ try { window.MJPLUS?.updateContinueWatching?.(); } catch {}
 
   function backToOrigin(){
     if (isSetlistOpen()){ hideSetlist(); return; } // kein goOrigin -> kein Neu-Mischen
-    if (isPlayerOpen()){
-      if (currentItem && Array.isArray(currentItem.chapters) && currentItem.chapters.length){
-        stopPlayback(); showSetlist(currentItem); NavStack.markSetlist(true); return;
-      }
-      stopPlayback(); goOrigin(); return;
-    }
+  if (isPlayerOpen()){
+  stopPlayback();
+  goOrigin();
+  return;
+}
     const onHome = document.body?.dataset?.page==='home';
     if (onHome){
       try{ if(window.cordova && navigator?.app?.exitApp) navigator.app.exitApp(); }catch{}
@@ -921,20 +933,6 @@ try { window.MJPLUS?.updateContinueWatching?.(); } catch {}
   return;
 }
 
-    // Normaler Aufruf (nicht fromContinue): Setlist wenn Bundle oder Kapitel vorhanden
-    const hasChapters =
-      (Array.isArray(full.chapters) && full.chapters.length > 0) ||
-      (Array.isArray(full.versions) && full.versions.some(v => Array.isArray(v.chapters) && v.chapters.length > 0));
-
-    if (isBundle(full) || hasChapters) {
-      if (isPlayerOpen()) stopPlayback();
-      showSetlist(full);
-      NavStack.markSetlist(true);
-      lastSetlistItem = full; // merken für späteres Wiederanzeigen
-    } else {
-      const playable = resolveVariant(full, null);
-      playItem(playable, 0);
-    }
   };
   MJ.playItem = playItem;
   MJ.stopPlayback = stopPlayback;
