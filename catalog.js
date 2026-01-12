@@ -1981,22 +1981,22 @@ window.catalog = [
       label: "Oct 27, 1996",
       chapters: [
   { sec:    0, label: "THE GREAT GATE OF KIEV (OPENING)" },
-  { sec:  336, label: "SCREAM" },                     // 05:36
-  { sec:  506, label: "THE DRILL" },                  // 08:26
-  { sec:  560, label: "THEY DON'T CARE ABOUT US" },   // 09:20
-  { sec:  730, label: "IN THE CLOSET" },              // 12:10
-  { sec:  847, label: "WANNA BE STARTIN' SOMETHIN'" },// 14:07
-  { sec: 1181, label: "STRANGER IN MOSCOW" },         // 19:41
-  { sec: 1576, label: "SMOOTH CRIMINAL" },            // 26:16
-  { sec: 1934, label: "YOU ARE NOT ALONE" },          // 32:14
-  { sec: 2268, label: "THE WAY YOU MAKE ME FEEL" },   // 37:48
-  { sec: 2526, label: "I WANT YOU BACK" },            // 42:06
-  { sec: 2619, label: "THE LOVE YOU SAVE" },          // 43:39
-  { sec: 2671, label: "I'LL BE THERE" },              // 44:31
-  { sec: 3305, label: "BILLIE JEAN" },                // 54:57
-  { sec: 3804, label: "THRILLER" },                   // 01:03:16
-  { sec: 419... , label: "BEAT IT" },                 // 01:10:01
-  { sec: 4872, label: "DANGEROUS" }                   // 01:21:12
+      { sec:  336, label: "SCREAM" },
+      { sec:  506, label: "THE DRILL" },
+      { sec:  560, label: "THEY DON'T CARE ABOUT US" },
+      { sec:  730, label: "IN THE CLOSET" },
+      { sec:  847, label: "WANNA BE STARTIN' SOMETHIN'" },
+      { sec: 1181, label: "STRANGER IN MOSCOW" },
+      { sec: 1576, label: "SMOOTH CRIMINAL" },
+      { sec: 1934, label: "YOU ARE NOT ALONE" },
+      { sec: 2268, label: "THE WAY YOU MAKE ME FEEL" },
+      { sec: 2526, label: "I WANT YOU BACK" },
+      { sec: 2619, label: "THE LOVE YOU SAVE" },
+      { sec: 2671, label: "I'LL BE THERE" },
+      { sec: 3305, label: "BILLIE JEAN" },
+      { sec: 3804, label: "THRILLER" },
+      { sec: 4201, label: "BEAT IT" },
+      { sec: 4872, label: "DANGEROUS" }
       ],
       versions: [
         {
