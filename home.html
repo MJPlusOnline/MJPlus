@@ -178,23 +178,48 @@
 <body data-page="home">
   <!-- ONE-TIME NOTICE (unverändert) -->
   <div id="noticeOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85); color:#fff;z-index:9999;align-items:center;justify-content:center;">
-    <div style="max-width:600px;margin:16px;padding:24px;background:#111;border-radius:12px; box-shadow:0 6px 30px rgba(0,0,0,.6);text-align:left;line-height:1.5em;position:relative;">
-      <h2 style="margin:0 0 12px;color:#e50914;">Important Notice</h2>
-      <p style="margin:0 0 10px;">
-       Dear MJPlus users,
-As some of you may already know, our previous hosting provider removed all of our stored videos. Since then, we’ve been working hard to restore the archive — and to bring back even more content than before.
-As of January 10, 2026, a small portion of the videos is already available again. Re-uploading and restoring the entire library takes time, so we kindly ask for your patience as we continue this process.
-Maintaining the MJPlus archive comes with ongoing hosting and storage costs. If you’d like to support the project, the “Buy Me a Coffee” button helps us keep the archive online and accessible to fans around the world.
+   <div style="max-width:600px;margin:16px;padding:24px;background:#111;border-radius:12px; box-shadow:0 6px 30px rgba(0,0,0,.6);text-align:left;line-height:1.5em;position:relative;">
+  
+  <h2 style="margin:0 0 12px;color:#e50914;">Important Notice</h2>
 
-Thank you for your continued patience, understanding, and support.
-— The MJPlus Team
-      </p>
-      <p style="margin:0 0 10px;">
-        Our purpose is solely to preserve and share unofficial content, including concerts, television recordings,
-        reports, documentaries, and other rare materials. We do not host or distribute any officially released content.
-      </p>
-      <button id="noticeClose" style="margin-top:14px;padding:8px 16px;background:#e50914;border:none;color:#fff;border-radius:6px; cursor:pointer;font-weight:bold;">Close</button>
-    </div>
+  <p style="margin:0 0 10px;">
+    Dear MJPlus users,
+  </p>
+
+  <p style="margin:0 0 10px;">
+    MJPlus is an independent fan-run archive and is not affiliated with the
+    Michael Jackson Estate. Officially released content is not hosted.
+   For more questions follow us on IG
+<a href="https://www.instagram.com/mjplusonline/"
+   target="_blank"
+   rel="noopener"
+   style="color:#e50914;font-weight:800;text-decoration:none;">
+  @MJPlusOnline
+</a>.
+  </p>
+
+  <p style="margin:0 0 10px;">
+    Maintaining the MJPlus archive comes with ongoing hosting and storage costs.
+    If you’d like to support the project, the “Buy Me a Coffee” button helps us
+    keep the archive online and accessible to fans around the world.
+  </p>
+
+  <p style="margin:0 0 10px;">
+    Thank you for your continued patience, understanding, and support.<br>
+    — The MJPlus Team
+  </p>
+
+  <p style="margin:0 0 10px;">
+    Our purpose is solely to preserve and share unofficial content, including concerts,
+    television recordings, reports, documentaries, and other rare materials.
+  </p>
+
+  <button id="noticeClose"
+    style="margin-top:14px;padding:8px 16px;background:#e50914;border:none;color:#fff;border-radius:6px; cursor:pointer;font-weight:bold;">
+    Close
+  </button>
+
+</div>
   </div>
 
  <script>
@@ -315,6 +340,15 @@ Thank you for your continued patience, understanding, and support.
     data-id="mjplus" data-description="Support me on Buy me a coffee!"
     data-message="" data-color="#ffd200" data-position="Right" data-x_margin="18" data-y_margin="18">
   </script>
+<!-- MJPlus Q&A Button (Home only) -->
+<a
+  href="qa.html"
+  class="mj-qa-fab"
+  aria-label="Q&A / Feedback"
+  title="Q&A / Feedback"
+>
+  Q&amp;A
+</a>
 <!-- MJPlus Email Contact (Home only) -->
 <div class="mj-contact-icons">
 
@@ -375,6 +409,40 @@ Thank you for your continued patience, understanding, and support.
 /* Instagram leicht pink beim Hover */
 .mj-email-fab.ig:hover{
   color:#ff2f92;
+}
+/* MJPlus – Q&A Side Button (Home only) */
+.mj-qa-fab{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: #e50914;
+  color: #fff;
+
+  padding: 12px 14px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  border-radius: 12px 0 0 12px;
+  text-decoration: none;
+
+  z-index: 9998;
+  box-shadow: 0 0 18px rgba(229,9,20,.45);
+
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    background .18s ease;
+}
+
+.mj-qa-fab:hover,
+.mj-qa-fab:focus-visible{
+  transform: translateY(-50%) scale(1.06);
+  box-shadow: 0 0 26px rgba(229,9,20,.7);
+  background: #ff1f2a;
 }
 </style>
 
