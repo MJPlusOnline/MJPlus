@@ -1238,10 +1238,10 @@ window.catalog = [
         },
         {
           key: "enhanced",
-          label: "https://videos.mjplus.online/MJPlus/Jacksons/MJ%20-%201979%20The%20Jacksons%20London%20%28BBC%20MSTR%29%20Upscale%20STREAM.mp4",
+          label: "Enhanced",
           type: "mp4",
-          source: "",
-          mp4: ""
+          source: "https://videos.mjplus.online/MJPlus/Jacksons/MJ%20-%201979%20The%20Jacksons%20London%20%28BBC%20MSTR%29%20Upscale%20STREAM.mp4",
+          mp4: "https://videos.mjplus.online/MJPlus/Jacksons/MJ%20-%201979%20The%20Jacksons%20London%20%28BBC%20MSTR%29%20Upscale%20STREAM.mp4"
         }
       ]
     }
