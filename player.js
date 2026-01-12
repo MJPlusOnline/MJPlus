@@ -748,23 +748,22 @@ function getCatalogRoot(item){
   function playItem(item, startAt=0){
     if(!item?.source && !item?.mp4){ alert('No stream assigned for this video yet.'); return; }
     currentItem = item;
+
+    ensureOverlay();
+    openOverlay();
     // 🎯 Setlist-Button nur anzeigen, wenn wirklich eine Setlist existiert
+const root = getCatalogRoot(item);
+
 const hasSetlist =
-  (Array.isArray(item.chapters) && item.chapters.length) ||
-  (Array.isArray(item.versions) && item.versions.some(v => v.chapters?.length)) ||
-  (Array.isArray(item.recordings) && item.recordings.length);
+  !!(
+    (Array.isArray(root?.chapters) && root.chapters.length) ||
+    (Array.isArray(root?.versions) && root.versions.some(v => v.chapters?.length)) ||
+    (Array.isArray(root?.recordings) && root.recordings.length)
+  );
 
 if (setlistBtn) {
   setlistBtn.style.display = hasSetlist ? 'block' : 'none';
 }
-
-    // 🔒 Setlist IMMER zuerst ausblenden
-if (setlistModal) setlistModal.style.display = 'none';
-NavStack.markSetlist(false);
-
-
-    ensureOverlay();
-    openOverlay();
 
     let fellBack = false;
     const tryFallbackToMp4 = ()=>{
