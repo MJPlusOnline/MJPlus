@@ -21,6 +21,12 @@
     }
   }
   header .logo { animation: imgGlow 3.5s ease-in-out infinite; transition: filter 0.3s ease; }
+    header .logo:hover{
+  filter:
+    drop-shadow(0 0 22px rgba(255,255,255,1))
+    drop-shadow(0 0 45px rgba(255,255,255,.85))
+    drop-shadow(0 0 70px rgba(255,255,255,.6));
+}
 
   :root{
     --accent:#e50914; --spaceX:clamp(14px,3vw,44px); --spaceY:clamp(12px,2.2vw,28px);
@@ -440,6 +446,21 @@
   background: #ff1f2a;
 }
 </style>
+<script>
+(function(){
+  const logo = document.querySelector('header .logo');
+  if (!logo) return;
 
+  const audio = new Audio('logo-click.mp3');
+  audio.volume = 0.4;
+
+  logo.style.cursor = 'pointer';
+
+  logo.addEventListener('click', () => {
+    audio.currentTime = 0;
+    audio.play().catch(()=>{});
+  });
+})();
+</script>
 </body>
 </html>
