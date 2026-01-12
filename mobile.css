@@ -1,4 +1,14 @@
-/* mobile.css – wird nur geladen bis 768px (über das media-Attribut im <link>) */
+:root{
+  --accent:#e50914;
+  --spaceX:16px;
+  --spaceY:16px;
+  --logoH:64px;
+  --navFS:14px;
+  --h2FS:16px;
+  --gap:10px;
+}
+
+/* mobile.css – wird nur geladen bis 768px */
 
 /* Kleinere, dezente Badges auf Mobile (nur auf Kacheln) */
 .tile .badge{
@@ -148,5 +158,4 @@ header nav .nav-btn:last-child {
 
 header {
   z-index: 1000;
-}
 }
