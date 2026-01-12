@@ -7,9 +7,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
   <link rel="stylesheet" href="mobile.css?v=2" media="(max-width: 768px)">
-  <link rel="stylesheet" href="logo-global.css">
   <style>
+/* --- Animated Logo Glow --- */
+@keyframes imgGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.6))
+            drop-shadow(0 0 12px rgba(255,255,255,0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(255,255,255,0.9))
+            drop-shadow(0 0 30px rgba(255,255,255,0.6));
+  }
+}
 
+:root{
+  --accent:#e50914; --spaceX:clamp(14px,3vw,44px); --spaceY:clamp(12px,2.2vw,28px);
+  --logoH:clamp(70px,9vh,110px); --navFS:clamp(11px,.95vw,15px); --h2FS:clamp(16px,1.2vw,20px);
+  --tileW:clamp(120px,10vw,170px); --gap:clamp(10px,1.2vw,16px);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{margin:0;background:#000;color:#fff;font:clamp(13px,1vw,16px)/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none} :focus,:focus-visible{outline:0}
+
+header{
+  position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;
+  padding:10px var(--spaceX);background:#000d;border-bottom:1px solid #ffffff14;
+  backdrop-filter:saturate(1.15) blur(4px)
+}
+header .logo{
+  height:var(--logoH);
+  display:block;
+  animation:imgGlow 3.5s ease-in-out infinite;
+  transition: filter .25s ease, transform .25s ease;
+  cursor: pointer;
+}
+
+header .logo:hover{
+  transform: scale(1.06);
+  filter:
+    drop-shadow(0 0 25px rgba(255,255,255,1))
+    drop-shadow(0 0 50px rgba(255,255,255,.9))
+    drop-shadow(0 0 90px rgba(255,255,255,.65));
+}
 nav{display:flex;gap:clamp(8px,.8vw,12px);align-items:center;white-space:nowrap}
 nav a, .nav-btn{
   color:#fff;font-size:var(--navFS);text-transform:uppercase;font-weight:800;letter-spacing:.04em;
@@ -132,6 +172,26 @@ nav a.active{color:var(--accent);text-shadow:0 0 10px rgba(229,9,20,.55)}
     // Search-Button (rot) initialisieren
     window.MJPLUS?.initSearchUI?.();
   </script>
-<script src="logo-global.js"></script>
+  <!-- GLOBAL LOGO CLICK: SOUND + HOME -->
+<script>
+(function(){
+  const logo = document.querySelector('header .logo');
+  if (!logo) return;
+
+  const audio = new Audio('logo-click.mp3');
+  audio.volume = 0.45;
+
+  logo.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    audio.currentTime = 0;
+    audio.play().catch(()=>{});
+
+    setTimeout(() => {
+      window.location.href = 'home.html';
+    }, 1000);
+  });
+})();
+</script>
 </body>
 </html>
