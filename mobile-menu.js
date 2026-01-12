@@ -46,14 +46,16 @@
     header.classList.toggle('nav-open');
   });
 
-  // Klick außerhalb → Menü schließen
-  document.addEventListener('click', (e) => {
-    if (!header.classList.contains('nav-open')) return;
-    if (e.target.closest('.menu-toggle')) return;
-    if (!header.contains(e.target)) {
-      header.classList.remove('nav-open');
-    }
-  });
+ // Klick außerhalb → Menü schließen (TOUCH-SAFE)
+document.addEventListener('pointerdown', (e) => {
+  if (!header.classList.contains('nav-open')) return;
+
+  // Klick auf Burger oder ins Menü → NICHT schließen
+  if (e.target.closest('.menu-toggle')) return;
+  if (e.target.closest('nav')) return;
+
+  header.classList.remove('nav-open');
+});
 
   // ESC-Taste → Menü schließen
   document.addEventListener('keydown', (e) => {
