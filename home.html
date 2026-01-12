@@ -454,17 +454,8 @@ header .logo:hover{
   background: #ff1f2a;
 }
 </style>
+  <!-- GLOBAL LOGO CLICK: SOUND (HOME) -->
 <script>
-(function(){
-  const logo = document.querySelector('header .logo');
-  if (!logo) return;
-
-  const audio = new Audio('logo-click.mp3');
-  audio.volume = 0.4;
-
-  logo.style.cursor = 'pointer';
-
- <script>
 (function(){
   const logo = document.querySelector('header .logo');
   if (!logo) return;
@@ -472,21 +463,14 @@ header .logo:hover{
   const audio = new Audio('logo-click.mp3');
   audio.volume = 0.45;
 
-  logo.style.cursor = 'pointer';
-
   logo.addEventListener('click', (e) => {
     e.preventDefault();
 
-    // Sound
+    // Sound IMMER abspielen
     audio.currentTime = 0;
     audio.play().catch(()=>{});
 
-    // kurze Verzögerung → Sound hörbar
-    setTimeout(() => {
-      if (!location.pathname.endsWith('home.html')) {
-        location.href = 'home.html';
-      }
-    }, 120);
+    // 🔥 Kein Redirect auf Home-Seite
   });
 })();
 </script>
