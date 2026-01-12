@@ -21,11 +21,19 @@
     }
   }
   header .logo { animation: imgGlow 3.5s ease-in-out infinite; transition: filter 0.3s ease; }
-    header .logo:hover{
+header .logo{
+  transition:
+    filter .25s ease,
+    transform .25s ease;
+}
+
+header .logo:hover{
+  transform: scale(1.08) translateY(-2px);
   filter:
-    drop-shadow(0 0 22px rgba(255,255,255,1))
-    drop-shadow(0 0 45px rgba(255,255,255,.85))
-    drop-shadow(0 0 70px rgba(255,255,255,.6));
+    drop-shadow(0 0 18px rgba(255,255,255,1))
+    drop-shadow(0 0 40px rgba(255,255,255,.95))
+    drop-shadow(0 0 90px rgba(255,255,255,.75))
+    drop-shadow(0 0 140px rgba(255,255,255,.45));
 }
 
   :root{
@@ -456,9 +464,29 @@
 
   logo.style.cursor = 'pointer';
 
-  logo.addEventListener('click', () => {
+ <script>
+(function(){
+  const logo = document.querySelector('header .logo');
+  if (!logo) return;
+
+  const audio = new Audio('logo-click.mp3');
+  audio.volume = 0.45;
+
+  logo.style.cursor = 'pointer';
+
+  logo.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // Sound
     audio.currentTime = 0;
     audio.play().catch(()=>{});
+
+    // kurze Verzögerung → Sound hörbar
+    setTimeout(() => {
+      if (!location.pathname.endsWith('home.html')) {
+        location.href = 'home.html';
+      }
+    }, 120);
   });
 })();
 </script>
