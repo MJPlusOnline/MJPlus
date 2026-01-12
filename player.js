@@ -197,17 +197,15 @@ function mountGlowBackdrop() {
     closeXBtn.addEventListener('focus',     ()=>{ closeXBtn.style.opacity='0.9'; });
     closeXBtn.addEventListener('blur',      ()=>{ closeXBtn.style.opacity='0.4'; });
     // beim Schließen des Videos: Setlist wieder zeigen, falls man daher kam
-    closeXBtn.addEventListener('click', () => {
+closeXBtn.addEventListener('click', () => {
   stopPlayback();
 
-const root = getCatalogRoot(currentItem);
-
-if (root) {
-  showSetlist(root);
-  NavStack.markSetlist(true);
-} else {
+  // ❗️Setlist IMMER sauber schließen
+  hideSetlist();
+  lastSetlistItem = null;
   NavStack.markSetlist(false);
-}
+
+  closeOverlay();
 });
     overlay.appendChild(closeXBtn);
 
