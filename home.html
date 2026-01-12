@@ -315,16 +315,68 @@ Thank you for your continued patience, understanding, and support.
     data-id="mjplus" data-description="Support me on Buy me a coffee!"
     data-message="" data-color="#ffd200" data-position="Right" data-x_margin="18" data-y_margin="18">
   </script>
-  <!-- MJPlus Email Contact (Home only) -->
-<a
-  href="mailto:behindthemusic93@gmail.com"
-  class="mj-email-fab"
-  aria-label="Contact MJPlus"
->
-  <svg viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M2 4h20v16H2V4zm10 7L4 6v12h16V6l-8 5z"/>
-  </svg>
-</a>
+<!-- MJPlus Email Contact (Home only) -->
+<div class="mj-contact-icons">
+
+  <!-- EMAIL -->
+  <a
+    href="mailto:behindthemusic93@gmail.com"
+    class="mj-email-fab"
+    aria-label="Contact MJPlus"
+    title="Email MJ+"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M2 4h20v16H2V4zm10 7L4 6v12h16V6l-8 5z"/>
+    </svg>
+  </a>
+
+   <!-- INSTAGRAM -->
+  <a
+    href="https://www.instagram.com/mjplusonline/"
+    class="mj-email-fab ig"
+    target="_blank"
+    rel="noopener"
+    aria-label="MJ+ on Instagram"
+    title="MJ+ on Instagram"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        fill="currentColor"
+        d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.51 4.51 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zm4.75-2.25a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
+    </svg>
+  </a>
+
+</div>
+
+<style>
+.mj-contact-icons{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.mj-email-fab{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  color:#fff;
+  transition:transform .18s, color .18s, box-shadow .18s;
+}
+
+.mj-email-fab:hover{
+  transform:scale(1.1);
+  color:var(--accent);
+  box-shadow:0 0 12px rgba(229,9,20,.5);
+}
+
+/* Instagram leicht pink beim Hover */
+.mj-email-fab.ig:hover{
+  color:#ff2f92;
+}
+</style>
+
 </body>
 </html>
-
