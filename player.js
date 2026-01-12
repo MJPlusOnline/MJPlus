@@ -183,19 +183,52 @@ function mountGlowBackdrop() {
     closeXBtn.addEventListener('focus',     ()=>{ closeXBtn.style.opacity='0.9'; });
     closeXBtn.addEventListener('blur',      ()=>{ closeXBtn.style.opacity='0.4'; });
     // beim Schließen des Videos: Setlist wieder zeigen, falls man daher kam
-    closeXBtn.addEventListener('click', () => {
+closeXBtn.addEventListener('click', () => {
   stopPlayback();
-
-const root = getCatalogRoot(currentItem);
-
-if (root) {
-  showSetlist(root);
-  NavStack.markSetlist(true);
-} else {
   NavStack.markSetlist(false);
-}
 });
     overlay.appendChild(closeXBtn);
+    // 🎵 SETLIST BUTTON (manuell, neben dem X)
+const setlistBtn = document.createElement('button');
+setlistBtn.id = 'playerSetlistBtn';
+setlistBtn.type = 'button';
+setlistBtn.textContent = 'Setlist';
+
+setlistBtn.style.cssText = `
+  position:absolute;
+  top:10px;
+  right:48px;
+  height:28px;
+  padding:4px 10px;
+  border-radius:8px;
+  border:1px solid #ffffff33;
+  background:#00000066;
+  color:#fff;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  cursor:pointer;
+  opacity:.6;
+`;
+
+setlistBtn.addEventListener('mouseenter', () => {
+  setlistBtn.style.opacity = '1';
+  setlistBtn.style.background = '#00000099';
+});
+setlistBtn.addEventListener('mouseleave', () => {
+  setlistBtn.style.opacity = '.6';
+  setlistBtn.style.background = '#00000066';
+});
+
+setlistBtn.addEventListener('click', () => {
+  const root = getCatalogRoot(currentItem);
+  if (!root) return;
+  showSetlist(root);
+  NavStack.markSetlist(true);
+});
+
+overlay.appendChild(setlistBtn);
 
     videoEl = document.createElement('video');
     videoEl.id = 'videoEl';
@@ -740,6 +773,18 @@ if (item.groupId) {
 
     ensureOverlay();
     openOverlay();
+    // 🎯 Setlist-Button nur anzeigen, wenn wirklich eine Setlist existiert
+const root = getCatalogRoot(item);
+
+const hasSetlist =
+  !!(
+    (Array.isArray(root?.chapters) && root.chapters.length) ||
+    (Array.isArray(root?.versions) && root.versions.some(v => v.chapters?.length)) ||
+    (Array.isArray(root?.recordings) && root.recordings.length)
+  );
+
+const btn = document.getElementById('playerSetlistBtn');
+if (btn) btn.style.display = hasSetlist ? 'block' : 'none';
 
     let fellBack = false;
     const tryFallbackToMp4 = ()=>{
@@ -823,12 +868,11 @@ try { window.MJPLUS?.updateContinueWatching?.(); } catch {}
 
   function backToOrigin(){
     if (isSetlistOpen()){ hideSetlist(); return; } // kein goOrigin -> kein Neu-Mischen
-    if (isPlayerOpen()){
-      if (currentItem && Array.isArray(currentItem.chapters) && currentItem.chapters.length){
-        stopPlayback(); showSetlist(currentItem); NavStack.markSetlist(true); return;
-      }
-      stopPlayback(); goOrigin(); return;
-    }
+  if (isPlayerOpen()){
+  stopPlayback();
+  goOrigin();
+  return;
+}
     const onHome = document.body?.dataset?.page==='home';
     if (onHome){
       try{ if(window.cordova && navigator?.app?.exitApp) navigator.app.exitApp(); }catch{}
@@ -914,15 +958,8 @@ try { window.MJPLUS?.updateContinueWatching?.(); } catch {}
       (Array.isArray(full.chapters) && full.chapters.length > 0) ||
       (Array.isArray(full.versions) && full.versions.some(v => Array.isArray(v.chapters) && v.chapters.length > 0));
 
-    if (isBundle(full) || hasChapters) {
-      if (isPlayerOpen()) stopPlayback();
-      showSetlist(full);
-      NavStack.markSetlist(true);
-      lastSetlistItem = full; // merken für späteres Wiederanzeigen
-    } else {
-      const playable = resolveVariant(full, null);
-      playItem(playable, 0);
-    }
+ const playable = resolveVariant(full, null);
+playItem(playable, 0);
   };
   MJ.playItem = playItem;
   MJ.stopPlayback = stopPlayback;
