@@ -324,8 +324,8 @@ window.catalog = [
         { label: "GONE TOO SOON / HEAL THE WORLD (1992 ROYAL CONCERT FOR AIDS)", link: "https://mjtvplus.com/0/%5b1992.01.20%5d%20Clinton's%20Inaugural%20Gala%20-%20Gone%20Too%20Soon,%20Heal%20The%20World.mp4" },
         { label: "DANGEROUS (1993 AMA'S)", link: 'https://videos.mjplus.online/MJPlus/TV/dangerous93.mp4' },
         { label: 'REMEMBER THE TIME (1993 SOUL TRAIN MUSIC AWARDS)', link: 'https://videos.mjplus.online/MJPlus/TV/MJ%20-%201993%20Soul%20Train%20Awards%20-%20Remember%20The%20Time.mp4' },
-        { label: "DANGEROUS (1995 WETTEN DASS...?)", link: 'https://mjtvplus.com/0/Wetten%20Dass%201995%20-%20Dangerous%20(ZDF%20logo%20removed).mp4' },
-        { label: "EARTH SONG (1995 WETTEN DASS...?)", link: 'https://mjtvplus.com/0/%5b1995.11.4%5d%20Wetter%20Dass%20-%20Earth%20Song%20(no%20logo%20Version).mp4' },
+        { label: "DANGEROUS (1995 WETTEN DASS...?)", link: 'https://videos.mjplus.online/MJPlus/TV/Wetten%20Dass%201995%20-%20Dangerous%20%28ZDF%20logo%20removed%29.mp4' },
+        { label: "EARTH SONG (1995 WETTEN DASS...?)", link: 'https://videos.mjplus.online/MJPlus/TV/%5B1995.11.4%5D%20Wetter%20Dass%20-%20Earth%20Song%20%28no%20logo%20Version%29.mp4' },
         { label: 'EARTH SONG (1996 BRIT AWARDS)', link: 'https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20-%20Earth%20Song%20%281996%20Brit%20Awards%20Performance%29.mp4' },
         { label: "EARTH SONG (1996 VMA'S)", link: 'https://mjtvplus.com/0/Earth%20Song%20VMA96.mp4' },
         { label: "ELIZABETH, I LOVE YOU (1997 ELIZABETH TAYLOR CELEBRATION)", link: "https://mjtvplus.com/0/%5b1997.02.16%5d%20Taylor's%2065th%20Birthday%20Gala%20-%20Elizabeth%20I%20Love%20You.mp4" },
@@ -996,8 +996,8 @@ window.catalog = [
       key: "original",
       label: "Original",
       type: "mp4",
-      source: "https://mjtvplus.com/0/Monza%20July%207%20New%20Rip.mp4",
-      mp4:    "https://mjtvplus.com/0/Monza%20July%207%20New%20Rip.mp4"
+      source: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/Monza%20July%207%20New%20Rip.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/Monza%20July%207%20New%20Rip.mp4"
     }
   ],
 
@@ -1386,8 +1386,8 @@ window.catalog = [
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "https://mjtvplus.com/0/Stockholm%20(17th)%20New%20Rip.mp4",
-          mp4:    "https://mjtvplus.com/0/Stockholm%20(17th)%20New%20Rip.mp4"
+          source: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/Stockholm%20%2817th%29%20New%20Rip.mp4",
+          mp4:    "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/Stockholm%20%2817th%29%20New%20Rip.mp4"
         }
       ]
     },
@@ -1480,8 +1480,8 @@ window.catalog = [
       key: "original",
       label: "Original",
       type: "mp4",
-      source: "https://mjtvplus.com/0/Oviedo%20New%20Rip.mp4",
-      mp4:    "https://mjtvplus.com/0/Oviedo%20New%20Rip.mp4"
+      source: "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/Oviedo%20New%20Rip.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/Dangerous%20Tour/Oviedo%20New%20Rip.mp4"
     }
   ],
   chapters: [
@@ -1576,8 +1576,8 @@ window.catalog = [
       key: "original",
       label: "Original",
       type: "mp4",
-      source: "https://mjtvplus.com/0/Milan%2097%20New%20Rip.mp4",
-      mp4:    "https://mjtvplus.com/0/Milan%2097%20New%20Rip.mp4"
+      source: "https://videos.mjplus.online/MJPlus/History%20Tour/Milan%2097%20New%20Rip.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/History%20Tour/Milan%2097%20New%20Rip.mp4"
     }
   ],
   chapters: [
@@ -1980,16 +1980,31 @@ window.catalog = [
       key: "oct27",
       label: "Oct 27, 1996",
       chapters: [
-        { sec: 0, label: "PLAY ALL" }
-        // Setlist folgt später
+  { sec:    0, label: "THE GREAT GATE OF KIEV (OPENING)" },
+  { sec:  336, label: "SCREAM" },                     // 05:36
+  { sec:  506, label: "THE DRILL" },                  // 08:26
+  { sec:  560, label: "THEY DON'T CARE ABOUT US" },   // 09:20
+  { sec:  730, label: "IN THE CLOSET" },              // 12:10
+  { sec:  847, label: "WANNA BE STARTIN' SOMETHIN'" },// 14:07
+  { sec: 1181, label: "STRANGER IN MOSCOW" },         // 19:41
+  { sec: 1576, label: "SMOOTH CRIMINAL" },            // 26:16
+  { sec: 1934, label: "YOU ARE NOT ALONE" },          // 32:14
+  { sec: 2268, label: "THE WAY YOU MAKE ME FEEL" },   // 37:48
+  { sec: 2526, label: "I WANT YOU BACK" },            // 42:06
+  { sec: 2619, label: "THE LOVE YOU SAVE" },          // 43:39
+  { sec: 2671, label: "I'LL BE THERE" },              // 44:31
+  { sec: 3305, label: "BILLIE JEAN" },                // 54:57
+  { sec: 3804, label: "THRILLER" },                   // 01:03:16
+  { sec: 419... , label: "BEAT IT" },                 // 01:10:01
+  { sec: 4872, label: "DANGEROUS" }                   // 01:21:12
       ],
       versions: [
         {
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "",
-          mp4: ""
+          source: "https://videos.mjplus.online/MJPlus/History%20Tour/KLOct27_original.mp4",
+          mp4: "https://videos.mjplus.online/MJPlus/History%20Tour/KLOct27_original.mp4"
         }
       ]
     },
@@ -2479,16 +2494,41 @@ window.catalog = [
       key: "nov11",
       label: "November 11 (1996)",
       chapters: [
-        { label: "PLAY ALL", sec: 0 }
-        // Setlist folgt, sobald du sie hast
+  { sec:    0, label: "THE GREAT GATE OF KIEV (OPENING)" },
+  { sec:  389, label: "SCREAM" },                       // 06:29
+  { sec:  560, label: "THE DRILL" },                    // 09:20
+  { sec:  618, label: "THEY DON'T CARE ABOUT US" },     // 10:18
+  { sec:  784, label: "IN THE CLOSET" },                // 13:04
+  { sec:  905, label: "WANNA BE STARTIN' SOMETHIN'" },  // 15:05
+  { sec: 1257, label: "STRANGER IN MOSCOW" },           // 20:57
+  { sec: 1777, label: "SMOOTH CRIMINAL" },              // 29:37
+  { sec: 2140, label: "YOU ARE NOT ALONE" },            // 35:40
+  { sec: 2489, label: "THE WAY YOU MAKE ME FEEL" },     // 41:29
+  { sec: 2763, label: "I WANT YOU BACK" },              // 46:03
+  { sec: 2846, label: "THE LOVE YOU SAVE" },            // 47:26
+  { sec: 2907, label: "I'LL BE THERE" },                // 48:27
+  { sec: 3289, label: "ROCK WITH YOU" },                // 54:49
+  { sec: 3369, label: "OFF THE WALL" },                 // 56:09
+  { sec: 3907, label: "BILLIE JEAN" },                  // 01:05:07
+  { sec: 4457, label: "THRILLER" },                     // 01:14:17
+  { sec: 4864, label: "BEAT IT" },                      // 01:21:04
+  { sec: 5340, label: "COME TOGETHER" },                // 01:29:00
+  { sec: 5429, label: "D.S." },                         // 01:30:29
+  { sec: 5771, label: "DANGEROUS" },                    // 01:36:11
+  { sec: 6110, label: "BLACK OR WHITE" },               // 01:41:50
+  { sec: 6487, label: "EARTH SONG" },                   // 01:48:07
+  { sec: 7229, label: "HEAL THE WORLD" },               // 02:00:29
+  { sec: 7774, label: "TDCAU & THE GREAT GATE OF KIEV (INTERLUDE)" }, // 02:09:34
+  { sec: 7962, label: "HISTORY" }                       // 02:12:42
+]
       ],
       versions: [
         {
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "",
-          mp4: ""
+          source: "https://videos.mjplus.online/MJPlus/History%20Tour/auckorange96.mp4",
+          mp4: "https://videos.mjplus.online/MJPlus/History%20Tour/auckorange96.mp4"
         }
       ]
     }
