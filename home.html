@@ -7,34 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
   <link rel="stylesheet" href="mobile.css?v=2" media="(max-width: 768px)">
+  <link rel="stylesheet" href="logo-global.css">
 
   <style>
-  /* --- Animated Logo Glow (deins bleibt) --- */
-  @keyframes imgGlow {
-    0%, 100% {
-      filter: drop-shadow(0 0 6px rgba(255,255,255,0.6))
-              drop-shadow(0 0 12px rgba(255,255,255,0.3));
-    }
-    50% {
-      filter: drop-shadow(0 0 16px rgba(255,255,255,0.9))
-              drop-shadow(0 0 30px rgba(255,255,255,0.6));
-    }
-  }
-  header .logo { animation: imgGlow 3.5s ease-in-out infinite; transition: filter 0.3s ease; }
-header .logo{
-  transition:
-    filter .25s ease,
-    transform .25s ease;
-}
-
-header .logo:hover{
-  transform: scale(1.08) translateY(-2px);
-  filter:
-    drop-shadow(0 0 18px rgba(255,255,255,1))
-    drop-shadow(0 0 40px rgba(255,255,255,.95))
-    drop-shadow(0 0 90px rgba(255,255,255,.75))
-    drop-shadow(0 0 140px rgba(255,255,255,.45));
-}
 
   :root{
     --accent:#e50914; --spaceX:clamp(14px,3vw,44px); --spaceY:clamp(12px,2.2vw,28px);
@@ -247,17 +222,20 @@ header .logo:hover{
 </script>
 
   <!-- Header + Nav -->
-  <header>
-    <img src="logo.png" alt="MJ+ Logo" class="logo">
-    <nav aria-label="Main menu">
-      <a href="home.html" class="active" tabindex="0" data-nav>Home</a>
-      <a href="live.html" tabindex="0" data-nav>Live</a>
-      <a href="tv-appearances.html" tabindex="0" data-nav>TV Appearances</a>
-      <a href="short-films.html" tabindex="0" data-nav>Short Films</a>
-      <a href="jacksons.html" tabindex="0" data-nav>The Jacksons</a>
-      <a href="feedback.html" tabindex="0" data-nav>Feedback</a>
-    </nav>
-  </header>
+<header>
+  <img src="logo.png" alt="MJ+ Logo" class="logo">
+
+  <button class="menu-toggle" aria-label="Menu">☰</button>
+
+  <nav aria-label="Main menu">
+    <a href="home.html" class="active" tabindex="0" data-nav>Home</a>
+    <a href="live.html" tabindex="0" data-nav>Live</a>
+    <a href="tv-appearances.html" tabindex="0" data-nav>TV Appearances</a>
+    <a href="short-films.html" tabindex="0" data-nav>Short Films</a>
+    <a href="jacksons.html" tabindex="0" data-nav>The Jacksons</a>
+    <a href="feedback.html" tabindex="0" data-nav>Feedback</a>
+  </nav>
+</header>
   <div class="menu-spacer"></div>
 
   <main id="appMain" aria-live="polite">
@@ -454,25 +432,6 @@ header .logo:hover{
   background: #ff1f2a;
 }
 </style>
-  <!-- GLOBAL LOGO CLICK: SOUND (HOME) -->
-<script>
-(function(){
-  const logo = document.querySelector('header .logo');
-  if (!logo) return;
-
-  const audio = new Audio('logo-click.mp3');
-  audio.volume = 0.45;
-
-  logo.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    // Sound IMMER abspielen
-    audio.currentTime = 0;
-    audio.play().catch(()=>{});
-
-    // 🔥 Kein Redirect auf Home-Seite
-  });
-})();
-</script>
+<script src="logo-global.js"></script>
 </body>
 </html>
