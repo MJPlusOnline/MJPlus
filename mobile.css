@@ -138,3 +138,16 @@ header nav .nav-btn:last-child {
   background: #111;
   transform: translateZ(0);
 }
+
+/* ---------- Mobile: Burger immer klickbar ---------- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
+  }
+
+  header {
+    z-index: 9998;
+  }
+}
