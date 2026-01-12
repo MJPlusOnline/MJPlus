@@ -320,7 +320,7 @@ window.catalog = [
         { label: 'ROCK WITH YOU (1980 BECAUSE WE CARE GALA)', link: 'https://mjtvplus.com/0/Rock%20With%20You%20%C2%A6%20Because%20We%20Care%20Gala,%201980%20.mp4' },
         { label: 'ROCK WITH YOU / EASE ON DOWN (1981 DIANA ROSS)', link: 'https://mjtvplus.com/0/DianaCBS81_1.mp4' },
         { label: 'YOU WERE THERE (1990 SAMMY DAVIS JR. 60TH ANNIVERSARY)', link: 'https://videos.mjplus.online/MJPlus/TV/MJ%20-%201990%20You%20Were%20There%204K%20Upscale%20%28No%20Logo%29.mp4' },
-        { label: "BLACK OR WHITE / WILL YOU BE THERE (1991 MTV 10TH ANNIVERSARY)", link: "https://mjtvplus.com/0/%5b1991.06.06%5d%20MTV's%2010th%20Anniversary%20Special%20-%20Black%20Or%20White,%20Will%20You%20Be%20There.mp4" },
+        { label: "BLACK OR WHITE / WILL YOU BE THERE (1991 MTV 10TH ANNIVERSARY)", link: "https://videos.mjplus.online/MJPlus/TV/91Black%20Or%20WhiteWill%20You%20Be%20There.mp4" },
         { label: "GONE TOO SOON / HEAL THE WORLD (1992 ROYAL CONCERT FOR AIDS)", link: "https://mjtvplus.com/0/%5b1992.01.20%5d%20Clinton's%20Inaugural%20Gala%20-%20Gone%20Too%20Soon,%20Heal%20The%20World.mp4" },
         { label: "DANGEROUS (1993 AMA'S)", link: 'https://videos.mjplus.online/MJPlus/TV/dangerous93.mp4' },
         { label: 'REMEMBER THE TIME (1993 SOUL TRAIN MUSIC AWARDS)', link: 'https://videos.mjplus.online/MJPlus/TV/MJ%20-%201993%20Soul%20Train%20Awards%20-%20Remember%20The%20Time.mp4' },
