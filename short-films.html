@@ -354,7 +354,7 @@ footer{
     window.MJPLUS?.initSearchUI?.();
   </script>
 
-  <!-- MOBILE: Enter-Button -> Home -->
+    <!-- MOBILE: Enter-Button -> Home -->
   <script>
     (function () {
       if (window.matchMedia('(max-width: 768px)').matches) {
@@ -364,5 +364,29 @@ footer{
       }
     })();
   </script>
+
+  <!-- GLOBAL LOGO CLICK: SOUND + HOME -->
+  <script>
+  (function(){
+    const logo = document.querySelector('header .logo');
+    if (!logo) return;
+
+    const audio = new Audio('logo-click.mp3');
+    audio.volume = 0.45;
+
+    logo.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      audio.currentTime = 0;
+      audio.play().catch(()=>{});
+
+      // 1 Sekunde Sound → dann Home
+      setTimeout(() => {
+        window.location.href = 'home.html';
+      }, 1000);
+    });
+  })();
+  </script>
+
 </body>
 </html>
