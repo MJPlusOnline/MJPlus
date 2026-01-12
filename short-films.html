@@ -142,8 +142,6 @@ footer{
 
    <header>
    <img src="logo.png" alt="MJ+ Logo" class="logo">
-     
-       <button class="menu-toggle" aria-label="Menu">☰</button>
 <nav aria-label="Main menu">
   <a href="home.html" tabindex="0" data-nav>Home</a>
   <a href="live.html" tabindex="0" data-nav>Live</a>
@@ -300,15 +298,15 @@ footer{
         tile.setAttribute('data-ytid', id);
         tile.setAttribute('title', title);
 
-        tile.innerHTML = `
+        tile.innerHTML = 
           <div class="thumb-wrap">
             <img class="thumb" loading="lazy" src="https://img.youtube.com/vi/${id}/hqdefault.jpg" alt="${title}">
             <div class="titleBand">${title}</div>
           </div>
-        `;
+        ;
 
         tile.addEventListener('click', ()=>{
-          const clean = `https://www.youtube.com/watch?v=${id}&autoplay=1`;
+          const clean = https://www.youtube.com/watch?v=${id}&autoplay=1;
           window.open(clean, '_blank', 'noopener,noreferrer');
         });
 
@@ -357,7 +355,7 @@ footer{
       }
     })();
   </script>
- <script src="mobile-menu.js?v=1.0.0"></script>
-<script src="logo-global.js"></script>
+  <script src="logo-global.js"></script>
+
 </body>
 </html>
