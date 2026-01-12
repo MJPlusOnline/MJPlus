@@ -175,8 +175,8 @@ window.catalog = [
       key: "original",
       label: "Original",
       type: "mp4",
-      source: "",
-      mp4: "",
+      source: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Osaka%20OG%20File.mp4",
+      mp4: "https://videos.mjplus.online/MJPlus/Bad%20Tour/Osaka%20OG%20File.mp4",
       chapters: [
         { sec:   0, label: "PLAY ALL" },
         { sec:  10, label: "WANNA BE STARTIN' SOMETHIN'" },
