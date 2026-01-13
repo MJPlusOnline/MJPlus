@@ -317,7 +317,7 @@ window.catalog = [
         { label: 'PLAY ALL', sec: 0 },
         { label: 'DISNEY MEDLEY (1979)', link: 'https://mjtvplus.com/0/DisneyMedley79.mp4' },
         { label: 'ROCK WITH YOU (1979 THE DIANA ROSS SHOW)', link: '' },
-        { label: 'ROCK WITH YOU (1980 BECAUSE WE CARE GALA)', link: 'https://mjtvplus.com/0/Rock%20With%20You%20%C2%A6%20Because%20We%20Care%20Gala,%201980%20.mp4' },
+        { label: 'ROCK WITH YOU (1980 BECAUSE WE CARE GALA)', link: 'https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20-%20Rock%20With%20You%20¦%20Because%20We%20Care%20Gala%2C%201980%20%28Remastered%2C%2060fps%29%20%281440p_60fps_AV1-128kbit_AAC%29.mp4' },
         { label: 'ROCK WITH YOU / EASE ON DOWN (1981 DIANA ROSS)', link: 'https://mjtvplus.com/0/DianaCBS81_1.mp4' },
         { label: 'YOU WERE THERE (1990 SAMMY DAVIS JR. 60TH ANNIVERSARY)', link: 'https://videos.mjplus.online/MJPlus/TV/MJ%20-%201990%20You%20Were%20There%204K%20Upscale%20%28No%20Logo%29.mp4' },
         { label: "BLACK OR WHITE / WILL YOU BE THERE (1991 MTV 10TH ANNIVERSARY)", link: "https://videos.mjplus.online/MJPlus/TV/91Black%20Or%20WhiteWill%20You%20Be%20There.mp4" },
@@ -2191,8 +2191,8 @@ window.catalog = [
           key: "original",
           label: "Original",
           type: "mp4",
-          source: "https://mjtvplus.com/0/VHS%20173.mp4",
-          mp4: "https://mjtvplus.com/0/VHS%20173.mp4"
+          source: "https://videos.mjplus.online/MJPlus/History%20Tour/VHS%20173moscow96.mp4",
+          mp4: "https://videos.mjplus.online/MJPlus/History%20Tour/VHS%20173moscow96.mp4"
         }
       ]
     }
@@ -2241,6 +2241,54 @@ window.catalog = [
         }
       ]
     }
+  ]
+},
+{
+  id: "historytour-prague96",
+  title: "Prague 1996 (07.09.1996)",
+  poster: "prague96.jpg",
+  type: "multi",
+  category: ["live"],
+  tier: "am",
+
+  versions: [
+    {
+      key: "original",
+      label: "Original",
+      type: "mp4",
+      source: "https://videos.mjplus.online/MJPlus/History%20Tour/Praga%2096%20New%20Rip.mp4",
+      mp4:    "https://videos.mjplus.online/MJPlus/History%20Tour/Praga%2096%20New%20Rip.mp4"
+    },
+    {
+      key: "enhanced",
+      label: "Enhanced",
+      type: "mp4",
+      source: "", // coming soon
+      mp4: ""     // coming soon
+    }
+  ],
+
+  chapters: [
+    { sec:   35, label: "INTRO" },
+    { sec:  517, label: "SCREAM" },
+    { sec:  685, label: "THEY DON'T CARE ABOUT US" },
+    { sec:  911, label: "IN THE CLOSET" },
+    { sec: 1034, label: "WANNA BE STARTIN' SOMETHIN'" },
+    { sec: 1298, label: "STRANGER IN MOSCOW" },
+    { sec: 1568, label: "SMOOTH CRIMINAL" },
+    { sec: 1839, label: "THE WIND (INTERLUDE)" },
+    { sec: 1924, label: "YOU ARE NOT ALONE" },
+    { sec: 2231, label: "THE WAY YOU MAKE ME FEEL" },
+    { sec: 2486, label: "JACKSON 5 MEDLEY" },
+    { sec: 2941, label: "OFF THE WALL MEDLEY" },
+    { sec: 3196, label: "INTERLUDE" },
+    { sec: 3418, label: "BILLIE JEAN" },
+    { sec: 3906, label: "THRILLER" },
+    { sec: 4210, label: "BEAT IT" },
+    { sec: 4681, label: "COME TOGETHER" },
+    { sec: 4772, label: "D.S." },
+    { sec: 4919, label: "DANGEROUS" },
+    { sec: 5144, label: "BLACK OR WHITE" }
   ]
 },
 {
@@ -2578,7 +2626,7 @@ window.catalog = [
   type: 'single',
   category: ['TV Appearances'],
   tier: 'interview',
-  source: 'https://mjtvplus.com/0/Geraldo_Interview_2003_merged_lossless.mp4'
+  source: 'https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20Interview%20with%20Geraldo%20Rivera%2050fps%20%28720p_50fps_H264-128kbit_AAC%29.mp4'
 },
 {
   id: 'superbowl93',
@@ -2976,6 +3024,39 @@ window.catalog = [
       ]
     }
   ]
+},
+{
+  id: "60minutes-2003",
+  title: "60 Minutes Interview (2003)",
+  poster: "60minutes.jpg",
+  type: "single",
+  category: ["tv", "interview"],
+  tier: "interview",
+
+  source: "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20-%2060%20Minutes%20Interview%20%28720p_30fps_H264-128kbit_AAC%29.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20-%2060%20Minutes%20Interview%20%28720p_30fps_H264-128kbit_AAC%29.mp4"
+},
+{
+  id: "ebony-jet-1987",
+  title: "Ebony / Jet Interview (1987)",
+  poster: "ebony87.jpg",
+  type: "single",
+  category: ["tv", "interview"],
+  tier: "interview",
+
+  source: "https://videos.mjplus.online/MJPlus/TV/MICHAEL%20JACKSON%20¦%20EBONY⁄JET%20FULL%20INTERVIEW%20%281987%29%20¦%20HD%20RESTORED%201080P%20%281080p_50fps_H264-128kbit_AAC%29.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/TV/MICHAEL%20JACKSON%20¦%20EBONY⁄JET%20FULL%20INTERVIEW%20%281987%29%20¦%20HD%20RESTORED%201080P%20%281080p_50fps_H264-128kbit_AAC%29.mp4"
+},
+{
+  id: "rtl-spezial-1997",
+  title: "RTL Spezial – Michael Jackson (1997)",
+  poster: "rtlspezial97.jpg",
+  type: "single",
+  category: ["tv"],
+  tier: "tv",
+
+  source: "https://videos.mjplus.online/MJPlus/TV/MJ_1997_RTL_Spezial_merged.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/TV/MJ_1997_RTL_Spezial_merged.mp4"
 },
 {
   id: "oprahouttakes93",
