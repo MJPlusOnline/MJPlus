@@ -3092,6 +3092,54 @@ window.catalog = [
   mp4:    "https://videos.mjplus.online/MJPlus/TV/Barbara%20Walters.mp4"
 },
 {
+  id: "taketwo-2003",
+  title: "Take Two – The Footage You Were Never Meant To See (2003)",
+  poster: "taketwo2003.jpg",
+  type: "single",
+  category: ["tv", "interview"],
+  tier: "tv",
+
+  versions: [
+    {
+      key: "languages",
+      label: "Select Language",
+      type: "list",
+      chapters: [
+        {
+          label: "English",
+          link: "https://videos.mjplus.online/MJPlus/TV/The%20Michael%20Jackson%20Interview%20TAKE%20TWO%20The%20Footage%20You%20Were%20Never%20Meant%20To%20See%20%282003%29stream.mp4"
+        },
+        {
+          label: "German",
+          link: "https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20-%20Take%202%20%28german%2C%20Jetzt%20rede%20ich%29.mp4"
+        }
+      ]
+    }
+  ]
+},
+{
+  id: "welttournee ard 1996",
+  title: "Auf Welttournee - Eine Woche an der Seite des King Of Pop (1996)",
+  poster: "welttournee96.jpg",
+  type: "single",
+  category: ["tv"],
+  tier: "tv",
+
+  source: "https://videos.mjplus.online/MJPlus/TV/michael%20Jackson%20auf%20Welttournee%20-%20Eine%20Woche%20an%20der%20Seite%20des%20King%20of%20Pop%20%281996%29.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/TV/michael%20Jackson%20auf%20Welttournee%20-%20Eine%20Woche%20an%20der%20Seite%20des%20King%20of%20Pop%20%281996%29.mp4"
+},
+{
+  id: "Familie Wolf",
+  title: "Ferien mit MJ - Familie Wolf (2003)",
+  poster: "wolf03.jpg",
+  type: "single",
+  category: ["tv"],
+  tier: "tv",
+
+  source: "https://videos.mjplus.online/MJPlus/TV/Ferien%20mit%20Michael%20Jackson%20-%20Die%20Traumreise%20der%20Familie%20Wolf%20%281080p_25fps%29.mp4",
+  mp4:    "https://videos.mjplus.online/MJPlus/TV/Ferien%20mit%20Michael%20Jackson%20-%20Die%20Traumreise%20der%20Familie%20Wolf%20%281080p_25fps%29.mp4"
+},
+{
   id: 'gothenburg97',
   title: 'Gothenburg, August 16, 1997',
   category: ['Live'],
@@ -3161,8 +3209,6 @@ window.catalog = [
   { id:"historyreports96",    title:"History Tour Report 1996",    poster:"historyreports96.jpg",    source:"", type:"hls", category:"live", tier:"pro" },
   { id:"historyreports97",    title:"History Tour Report 1997",    poster:"historyreports97.jpg",    source:"", type:"hls", category:"live", tier:"pro" },
 
-  // --- Interviews (sichtbar auf Home + Interviews, nicht unter Live) ---
-  { id:"taketwo2003",           title:"Take Two – The Footage You Were Never Meant to See (2003)", poster:"taketwo2003.jpg", source:"https://mjtvplus.com/0/Michael%20Jackson%20-%20Take%202%20(german,%20Jetzt%20rede%20ich).mp4", type:"mp4", category:["interviews","home"], tier:"doc" },
 
   // --- The Jacksons ---
 
