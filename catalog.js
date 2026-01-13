@@ -2626,7 +2626,7 @@ window.catalog = [
   type: 'single',
   category: ['TV Appearances'],
   tier: 'interview',
-  source: 'https://videos.mjplus.online/MJPlus/TV/Michael%20Jackson%20Interview%20with%20Geraldo%20Rivera%2050fps%20%28720p_50fps_H264-128kbit_AAC%29.mp4'
+  source: 'https://videos.mjplus.online/MJPlus/TV/Geraldo.mp4'
 },
 {
   id: 'superbowl93',
