@@ -2520,8 +2520,7 @@ window.catalog = [
   { sec: 7229, label: "HEAL THE WORLD" },               // 02:00:29
   { sec: 7774, label: "TDCAU & THE GREAT GATE OF KIEV (INTERLUDE)" }, // 02:09:34
   { sec: 7962, label: "HISTORY" }                       // 02:12:42
-]
-      ],
+],
       versions: [
         {
           key: "original",
