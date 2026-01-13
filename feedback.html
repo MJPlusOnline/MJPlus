@@ -68,16 +68,31 @@
       padding:14px 18px;
     }
 
-    @keyframes imgGlow {
-      0%,100% {
-        filter:drop-shadow(0 0 6px rgba(255,255,255,.6))
-               drop-shadow(0 0 12px rgba(255,255,255,.3));
-      }
-      50% {
-        filter:drop-shadow(0 0 16px rgba(255,255,255,.9))
-               drop-shadow(0 0 30px rgba(255,255,255,.6));
-      }
-    }
+    /* --- Animated Logo Glow --- */
+@keyframes imgGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.6))
+            drop-shadow(0 0 12px rgba(255,255,255,0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(255,255,255,0.9))
+            drop-shadow(0 0 30px rgba(255,255,255,0.6));
+  }
+}
+
+header .logo {
+  animation: imgGlow 3.5s ease-in-out infinite;
+  transition: filter .25s ease, transform .25s ease;
+  cursor: pointer;
+}
+
+header .logo:hover {
+  transform: scale(1.06);
+  filter:
+    drop-shadow(0 0 25px rgba(255,255,255,1))
+    drop-shadow(0 0 50px rgba(255,255,255,.9))
+    drop-shadow(0 0 90px rgba(255,255,255,.65));
+}
 
     @media (max-width:768px){
       header {
@@ -107,6 +122,7 @@
   </style>
 </head>
 <body data-page="feedback">
+<audio id="logoClickSound" src="logo-click.mp3" preload="auto"></audio>
   <header>
     <img src="logo.png" alt="MJ+ Logo" class="logo">
     <nav aria-label="Main menu">
@@ -238,5 +254,28 @@
   <script src="catalog.js?v=1.0.3"></script>
   <script src="player.js?v=1.0.3"></script>
   <script src="playlist.js"></script>
+<script>
+(function () {
+  const logo = document.querySelector('header .logo');
+  const sound = document.getElementById('logoClickSound');
+
+  if (!logo) return;
+
+  logo.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    try {
+      if (sound) {
+        sound.currentTime = 0;
+        sound.play();
+      }
+    } catch {}
+
+    setTimeout(() => {
+      window.location.href = 'home.html';
+    }, 1000);
+  });
+})();
+</script>
 </body>
 </html>
