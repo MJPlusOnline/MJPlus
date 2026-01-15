@@ -939,8 +939,8 @@ window.catalog = [
           key: "enhanced",
           label: "Enhanced",
           type: "mp4",
-          source: "https://mjtvplus.com/0/MJ%20-%202001%2030th%202001%204Kupload.mp4",   // später Link einfügen
-          mp4: "https://mjtvplus.com/0/MJ%20-%202001%2030th%202001%204Kupload.mp4"
+          source: "https://videos.mjplus.online/MJPlus/Special%20Performances/msg4k.mp4",   // später Link einfügen
+          mp4: "https://videos.mjplus.online/MJPlus/Special%20Performances/msg4k.mp4"
         }
       ]
     }
